@@ -5,3 +5,7 @@
 /Docs/JoltPhysics.chm
 /Docs/JoltPhysics.chw
 /*.jor
+
+/Build/cmake-build-*/
+/Build/html/
+/Build/latex/

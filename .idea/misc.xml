@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/Build">
+    <contentRoot DIR="$PROJECT_DIR$" />
+  </component>
+  <component name="CidrRootsConfiguration">
+    <sourceRoots>
+      <file path="$PROJECT_DIR$/Jolt" />
+      <file path="$PROJECT_DIR$/PerformanceTest" />
+      <file path="$PROJECT_DIR$/Samples" />
+      <file path="$PROJECT_DIR$/TestFramework" />
+      <file path="$PROJECT_DIR$/UnitTests" />
+    </sourceRoots>
+  </component>
+</project>
