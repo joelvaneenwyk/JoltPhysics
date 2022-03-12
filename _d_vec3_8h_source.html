@@ -62,7 +62,7 @@ $(function() {
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="_swizzle_8h.html">Math/Swizzle.h</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifdef JPH_USE_AVX </span><span class="comment">// DVec3 currently uses AVX intrinsics but the class is currently unused so we can leave it out (it will be used in the future to support objects at a large distance from the origin)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifdef JPH_USE_AVX2 </span><span class="comment">// DVec3 currently uses AVX2 intrinsics but the class is currently unused so we can leave it out (it will be used in the future to support objects at a large distance from the origin)</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_j_p_h.html">JPH</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -215,15 +215,15 @@ $(function() {
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#include &quot;<a class="code" href="_d_vec3_8inl.html">DVec3.inl</a>&quot;</span></div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">#endif </span><span class="comment">// JPH_USE_AVX</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">#endif </span><span class="comment">// JPH_USE_AVX2</span></div>
 <div class="ttc" id="a_d_vec3_8inl_html"><div class="ttname"><a href="_d_vec3_8inl.html">DVec3.inl</a></div></div>
 <div class="ttc" id="a_issue_reporting_8h_html_aaf6b1df827e11b7ca5f6f8778bd8f8cd"><div class="ttname"><a href="_issue_reporting_8h.html#aaf6b1df827e11b7ca5f6f8778bd8f8cd">JPH_ASSERT</a></div><div class="ttdeci">#define JPH_ASSERT(...)</div><div class="ttdef"><b>Definition:</b> IssueReporting.h:32</div></div>
 <div class="ttc" id="a_swizzle_8h_html"><div class="ttname"><a href="_swizzle_8h.html">Swizzle.h</a></div></div>
 <div class="ttc" id="anamespace_j_p_h_html"><div class="ttname"><a href="namespace_j_p_h.html">JPH</a></div><div class="ttdef"><b>Definition:</b> AABBTreeBuilder.cpp:8</div></div>
 <div class="ttc" id="anamespace_j_p_h_html_a0b295e20795f9fa0dfbe4ef459f11311"><div class="ttname"><a href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">JPH::Vec3Arg</a></div><div class="ttdeci">Vec3 Vec3Arg</div><div class="ttdef"><b>Definition:</b> MathTypes.h:18</div></div>
 <div class="ttc" id="anamespace_j_p_h_html_a1116590ba207697f3461c6e7ac6f92ba"><div class="ttname"><a href="namespace_j_p_h.html#a1116590ba207697f3461c6e7ac6f92ba">JPH::DVec3Arg</a></div><div class="ttdeci">DVec3 DVec3Arg</div><div class="ttdef"><b>Definition:</b> MathTypes.h:19</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_a58d2b9f9521ae5f8b0646c2fb2034e4b"><div class="ttname"><a href="namespace_j_p_h.html#a58d2b9f9521ae5f8b0646c2fb2034e4b">JPH::uint64</a></div><div class="ttdeci">uint64_t uint64</div><div class="ttdef"><b>Definition:</b> Core.h:153</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_a96db2939bdaf608fc550d84157d618e0"><div class="ttname"><a href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">JPH::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> Core.h:149</div></div>
+<div class="ttc" id="anamespace_j_p_h_html_a58d2b9f9521ae5f8b0646c2fb2034e4b"><div class="ttname"><a href="namespace_j_p_h.html#a58d2b9f9521ae5f8b0646c2fb2034e4b">JPH::uint64</a></div><div class="ttdeci">uint64_t uint64</div><div class="ttdef"><b>Definition:</b> Core.h:172</div></div>
+<div class="ttc" id="anamespace_j_p_h_html_a96db2939bdaf608fc550d84157d618e0"><div class="ttname"><a href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">JPH::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> Core.h:168</div></div>
 <div class="ttc" id="anamespace_j_p_h_html_ad3bd3396a4a332bfc4b484820ea12758"><div class="ttname"><a href="namespace_j_p_h.html#ad3bd3396a4a332bfc4b484820ea12758">JPH::operator*</a></div><div class="ttdeci">Vec4 operator*(float inV1, Vec4Arg inV2)</div><div class="ttdoc">Multiply vector with float.</div><div class="ttdef"><b>Definition:</b> Vec4.inl:365</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a431cb190f67bd65482310ba3825d1a30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#a431cb190f67bd65482310ba3825d1a30">~BodyManager</a> ()</td></tr>
 <tr class="memdesc:a431cb190f67bd65482310ba3825d1a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="class_j_p_h_1_1_body_manager.html#a431cb190f67bd65482310ba3825d1a30">More...</a><br /></td></tr>
 <tr class="separator:a431cb190f67bd65482310ba3825d1a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2934da718250bc345358bf890906502"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#ac2934da718250bc345358bf890906502">Init</a> (<a class="el" href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">uint</a> inMaxBodies, <a class="el" href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">uint</a> inNumBodyMutexes)</td></tr>
-<tr class="memdesc:ac2934da718250bc345358bf890906502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the manager.  <a href="class_j_p_h_1_1_body_manager.html#ac2934da718250bc345358bf890906502">More...</a><br /></td></tr>
-<tr class="separator:ac2934da718250bc345358bf890906502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7406d38c3e178aacc97005fa045972ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#a7406d38c3e178aacc97005fa045972ae">Init</a> (<a class="el" href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">uint</a> inMaxBodies, <a class="el" href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">uint</a> inNumBodyMutexes, const <a class="el" href="class_j_p_h_1_1_broad_phase_layer_interface.html">BroadPhaseLayerInterface</a> &amp;inLayerInterface)</td></tr>
+<tr class="memdesc:a7406d38c3e178aacc97005fa045972ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the manager.  <a href="class_j_p_h_1_1_body_manager.html#a7406d38c3e178aacc97005fa045972ae">More...</a><br /></td></tr>
+<tr class="separator:a7406d38c3e178aacc97005fa045972ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d7d30fd548682c6acac37e1903de1ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#a2d7d30fd548682c6acac37e1903de1ee">GetNumBodies</a> () const</td></tr>
 <tr class="memdesc:a2d7d30fd548682c6acac37e1903de1ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current amount of bodies that are in the body manager.  <a href="class_j_p_h_1_1_body_manager.html#a2d7d30fd548682c6acac37e1903de1ee">More...</a><br /></td></tr>
 <tr class="separator:a2d7d30fd548682c6acac37e1903de1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf99d3896628ccbfccdb7ff241ed5927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#aaf99d3896628ccbfccdb7ff241ed5927">UnlockAllBodies</a> () const</td></tr>
 <tr class="memdesc:aaf99d3896628ccbfccdb7ff241ed5927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock all bodies. This should only be done during <a class="el" href="class_j_p_h_1_1_physics_system.html#a3ac306aa3c34bdbc3b60f6b427c4bd75">PhysicsSystem::Update()</a>.  <a href="class_j_p_h_1_1_body_manager.html#aaf99d3896628ccbfccdb7ff241ed5927">More...</a><br /></td></tr>
 <tr class="separator:aaf99d3896628ccbfccdb7ff241ed5927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa145b97fefa561955cec51c0a98b40af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#aa145b97fefa561955cec51c0a98b40af">SetBodyObjectLayerInternal</a> (<a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;ioBody, <a class="el" href="namespace_j_p_h.html#adba3f6b6d15eb4d53f8b8e087e787f5b">ObjectLayer</a> inLayer) const</td></tr>
+<tr class="memdesc:aa145b97fefa561955cec51c0a98b40af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to update body's layer (should only be called by the <a class="el" href="class_j_p_h_1_1_body_interface.html">BodyInterface</a> since it also requires updating the broadphase)  <a href="class_j_p_h_1_1_body_manager.html#aa145b97fefa561955cec51c0a98b40af">More...</a><br /></td></tr>
+<tr class="separator:aa145b97fefa561955cec51c0a98b40af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef06f0ca6ecd93cb3724f77111f1f03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_manager.html#aef06f0ca6ecd93cb3724f77111f1f03d">InvalidateContactCacheForBody</a> (<a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;ioBody)</td></tr>
 <tr class="memdesc:aef06f0ca6ecd93cb3724f77111f1f03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Body::EFlags::InvalidateContactCache flag for the specified body. This means that the collision cache is invalid for any body pair involving that body until the next physics step.  <a href="class_j_p_h_1_1_body_manager.html#aef06f0ca6ecd93cb3724f77111f1f03d">More...</a><br /></td></tr>
 <tr class="separator:aef06f0ca6ecd93cb3724f77111f1f03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -795,8 +798,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac2934da718250bc345358bf890906502" name="ac2934da718250bc345358bf890906502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2934da718250bc345358bf890906502">&#9670;&nbsp;</a></span>Init()</h2>
+<a id="a7406d38c3e178aacc97005fa045972ae" name="a7406d38c3e178aacc97005fa045972ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7406d38c3e178aacc97005fa045972ae">&#9670;&nbsp;</a></span>Init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -811,7 +814,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a96db2939bdaf608fc550d84157d618e0">uint</a>&#160;</td>
-          <td class="paramname"><em>inNumBodyMutexes</em>&#160;</td>
+          <td class="paramname"><em>inNumBodyMutexes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_broad_phase_layer_interface.html">BroadPhaseLayerInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>inLayerInterface</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -957,6 +966,44 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Listener that is notified whenever a body is activated/deactivated. </p>
+
+</div>
+</div>
+<a id="aa145b97fefa561955cec51c0a98b40af" name="aa145b97fefa561955cec51c0a98b40af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa145b97fefa561955cec51c0a98b40af">&#9670;&nbsp;</a></span>SetBodyObjectLayerInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyManager::SetBodyObjectLayerInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;&#160;</td>
+          <td class="paramname"><em>ioBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#adba3f6b6d15eb4d53f8b8e087e787f5b">ObjectLayer</a>&#160;</td>
+          <td class="paramname"><em>inLayer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function to update body's layer (should only be called by the <a class="el" href="class_j_p_h_1_1_body_interface.html">BodyInterface</a> since it also requires updating the broadphase) </p>
 
 </div>
 </div>

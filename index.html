@@ -69,7 +69,8 @@ JPH::BodyID body_id = ...; // Obtain ID to body
         ...
     }
 }
-</pre><p> When another thread has removed the body between the time the body ID was obtained and the lock, the lock will fail. While the lock is taken, other threads cannot modify the body, so it is safe to work with it. Each body ID contains a sequence number, so body ID's will only be reused after many add/remove cycles.</p>
+</pre><p> When another thread has removed the body between the time the body ID was obtained and the lock, the lock will fail. While the lock is taken, other threads cannot modify the body, so it is safe to work with it. Each body ID contains a sequence number, so body ID's will only be reused after many add/remove cycles. To write to a body use <a class="el" href="class_j_p_h_1_1_body_lock_write.html">BodyLockWrite</a>.</p>
+<p >You cannot use BodyLockRead to lock multiple bodies (if two threads lock the same bodies in opposite order you'll get a deadlock). Use <a class="el" href="class_j_p_h_1_1_body_lock_multi_read.html">BodyLockMultiRead</a> or <a class="el" href="class_j_p_h_1_1_body_lock_multi_write.html">BodyLockMultiWrite</a> to lock them in a consistent order.</p>
 <h1>Shapes</h1>
 <p >Each body has a shape attached that determines the collision volume. The following shapes are available (in order of computational complexity):</p>
 <ul>

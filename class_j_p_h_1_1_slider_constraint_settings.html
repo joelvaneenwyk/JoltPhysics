@@ -87,6 +87,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36024ffddfb87277a86319bdd7c0eaea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_j_p_h_1_1_two_body_constraint.html">TwoBodyConstraint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a36024ffddfb87277a86319bdd7c0eaea">Create</a> (<a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody1, <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody2) const override</td></tr>
 <tr class="memdesc:a36024ffddfb87277a86319bdd7c0eaea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an an instance of this constraint.  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a36024ffddfb87277a86319bdd7c0eaea">More...</a><br /></td></tr>
 <tr class="separator:a36024ffddfb87277a86319bdd7c0eaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75876f62057bf05716a84b07d9f14258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a75876f62057bf05716a84b07d9f14258">SetPoint</a> (const <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody1, const <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody2)</td></tr>
+<tr class="memdesc:a75876f62057bf05716a84b07d9f14258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple way of setting the anchor points so that the current relative position is chosen as the '0' position.  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a75876f62057bf05716a84b07d9f14258">More...</a><br /></td></tr>
+<tr class="separator:a75876f62057bf05716a84b07d9f14258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f2d38562e600b22ef01f55066f3e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a48f2d38562e600b22ef01f55066f3e99">SetSliderAxis</a> (<a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inSliderAxis)</td></tr>
+<tr class="memdesc:a48f2d38562e600b22ef01f55066f3e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple way of setting the slider and normal axis in world space (assumes the bodies are already oriented correctly when the constraint is created)  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a48f2d38562e600b22ef01f55066f3e99">More...</a><br /></td></tr>
+<tr class="separator:a48f2d38562e600b22ef01f55066f3e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5079d0b32a863e2ba1e24c339b072af4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_j_p_h_1_1_two_body_constraint.html">TwoBodyConstraint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_two_body_constraint_settings.html#a5079d0b32a863e2ba1e24c339b072af4">Create</a> (<a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody1, <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody2) const =0</td></tr>
 <tr class="separator:a5079d0b32a863e2ba1e24c339b072af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7a4b3bc6b76d49ae06dc9af75ab88b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_constraint_settings.html#acb7a4b3bc6b76d49ae06dc9af75ab88b">SaveBinaryState</a> (<a class="el" href="class_j_p_h_1_1_stream_out.html">StreamOut</a> &amp;inStream) const</td></tr>
@@ -133,11 +139,21 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:adac3cb9580dffa02256e04178dc2d866"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#adac3cb9580dffa02256e04178dc2d866">mSliderAxis</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td></tr>
-<tr class="memdesc:adac3cb9580dffa02256e04178dc2d866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis along which movement is possible (world space direction).  <a href="class_j_p_h_1_1_slider_constraint_settings.html#adac3cb9580dffa02256e04178dc2d866">More...</a><br /></td></tr>
-<tr class="separator:adac3cb9580dffa02256e04178dc2d866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6845be87716ff1482802b295ad88513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#ad6845be87716ff1482802b295ad88513">mPoint1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td></tr>
+<tr class="separator:ad6845be87716ff1482802b295ad88513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1146924072dafde176654f96782c3e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a1146924072dafde176654f96782c3e5f">mSliderAxis1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td></tr>
+<tr class="separator:a1146924072dafde176654f96782c3e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edbcfe953f4d102fdf3a68a38890cce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a5edbcfe953f4d102fdf3a68a38890cce">mNormalAxis1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a14ccc2db83b351cb8f933938cee56321">Vec3::sAxisY</a>()</td></tr>
+<tr class="separator:a5edbcfe953f4d102fdf3a68a38890cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da">mPoint2</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td></tr>
+<tr class="memdesc:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (in world space)  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da">More...</a><br /></td></tr>
+<tr class="separator:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae2878af3d19e806c7b032abad2c8c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#acae2878af3d19e806c7b032abad2c8c2">mSliderAxis2</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td></tr>
+<tr class="separator:acae2878af3d19e806c7b032abad2c8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434b6e90ee18bc7fc899ed2c4de953cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a434b6e90ee18bc7fc899ed2c4de953cc">mNormalAxis2</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a14ccc2db83b351cb8f933938cee56321">Vec3::sAxisY</a>()</td></tr>
+<tr class="separator:a434b6e90ee18bc7fc899ed2c4de953cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c31e9a4f2ebe36877de9f48427ef702"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a9c31e9a4f2ebe36877de9f48427ef702">mLimitsMin</a> = -FLT_MAX</td></tr>
-<tr class="memdesc:a9c31e9a4f2ebe36877de9f48427ef702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bodies are assumed to be placed so that the slider position = 0, movement will be limited between [mLimitsMin, mLimitsMax] where mLimitsMin e [-inf, 0] and mLimitsMax e [0, inf].  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a9c31e9a4f2ebe36877de9f48427ef702">More...</a><br /></td></tr>
+<tr class="memdesc:a9c31e9a4f2ebe36877de9f48427ef702"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the bodies move so that mPoint1 coincides with mPoint2 the slider position is defined to be 0, movement will be limited between [mLimitsMin, mLimitsMax] where mLimitsMin e [-inf, 0] and mLimitsMax e [0, inf].  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a9c31e9a4f2ebe36877de9f48427ef702">More...</a><br /></td></tr>
 <tr class="separator:a9c31e9a4f2ebe36877de9f48427ef702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445c04b9d658f462ab106b69a0d0eab7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a445c04b9d658f462ab106b69a0d0eab7">mLimitsMax</a> = FLT_MAX</td></tr>
 <tr class="separator:a445c04b9d658f462ab106b69a0d0eab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,6 +302,56 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a75876f62057bf05716a84b07d9f14258" name="a75876f62057bf05716a84b07d9f14258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75876f62057bf05716a84b07d9f14258">&#9670;&nbsp;</a></span>SetPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::SliderConstraintSettings::SetPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBody1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBody2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Simple way of setting the anchor points so that the current relative position is chosen as the '0' position. </p>
+
+</div>
+</div>
+<a id="a48f2d38562e600b22ef01f55066f3e99" name="a48f2d38562e600b22ef01f55066f3e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48f2d38562e600b22ef01f55066f3e99">&#9670;&nbsp;</a></span>SetSliderAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::SliderConstraintSettings::SetSliderAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inSliderAxis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Simple way of setting the slider and normal axis in world space (assumes the bodies are already oriented correctly when the constraint is created) </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a445c04b9d658f462ab106b69a0d0eab7" name="a445c04b9d658f462ab106b69a0d0eab7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a445c04b9d658f462ab106b69a0d0eab7">&#9670;&nbsp;</a></span>mLimitsMax</h2>
@@ -313,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Bodies are assumed to be placed so that the slider position = 0, movement will be limited between [mLimitsMin, mLimitsMax] where mLimitsMin e [-inf, 0] and mLimitsMax e [0, inf]. </p>
+<p>When the bodies move so that mPoint1 coincides with mPoint2 the slider position is defined to be 0, movement will be limited between [mLimitsMin, mLimitsMax] where mLimitsMin e [-inf, 0] and mLimitsMax e [0, inf]. </p>
 
 </div>
 </div>
@@ -349,19 +415,90 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adac3cb9580dffa02256e04178dc2d866" name="adac3cb9580dffa02256e04178dc2d866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adac3cb9580dffa02256e04178dc2d866">&#9670;&nbsp;</a></span>mSliderAxis</h2>
+<a id="a5edbcfe953f4d102fdf3a68a38890cce" name="a5edbcfe953f4d102fdf3a68a38890cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edbcfe953f4d102fdf3a68a38890cce">&#9670;&nbsp;</a></span>mNormalAxis1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mSliderAxis = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mNormalAxis1 = <a class="el" href="class_j_p_h_1_1_vec3.html#a14ccc2db83b351cb8f933938cee56321">Vec3::sAxisY</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Axis along which movement is possible (world space direction). </p>
+</div>
+</div>
+<a id="a434b6e90ee18bc7fc899ed2c4de953cc" name="a434b6e90ee18bc7fc899ed2c4de953cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434b6e90ee18bc7fc899ed2c4de953cc">&#9670;&nbsp;</a></span>mNormalAxis2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mNormalAxis2 = <a class="el" href="class_j_p_h_1_1_vec3.html#a14ccc2db83b351cb8f933938cee56321">Vec3::sAxisY</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6845be87716ff1482802b295ad88513" name="ad6845be87716ff1482802b295ad88513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6845be87716ff1482802b295ad88513">&#9670;&nbsp;</a></span>mPoint1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mPoint1 = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p ><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 1 constraint reference frame (in world space). Slider axis is the axis along which movement is possible (world space direction), normal axis is a perpendicular vector to define the frame. </p>
+
+</div>
+</div>
+<a id="a7ac0aa3a9808ce829b1786aa5382b0da" name="a7ac0aa3a9808ce829b1786aa5382b0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac0aa3a9808ce829b1786aa5382b0da">&#9670;&nbsp;</a></span>mPoint2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mPoint2 = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (in world space) </p>
+
+</div>
+</div>
+<a id="a1146924072dafde176654f96782c3e5f" name="a1146924072dafde176654f96782c3e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1146924072dafde176654f96782c3e5f">&#9670;&nbsp;</a></span>mSliderAxis1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mSliderAxis1 = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acae2878af3d19e806c7b032abad2c8c2" name="acae2878af3d19e806c7b032abad2c8c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae2878af3d19e806c7b032abad2c8c2">&#9670;&nbsp;</a></span>mSliderAxis2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::SliderConstraintSettings::mSliderAxis2 = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

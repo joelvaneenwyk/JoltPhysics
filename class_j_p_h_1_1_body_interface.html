@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2348a70452fe3be33d36492186cf44a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9713aefa23295a3d896b27c0553b1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a0e9713aefa23295a3d896b27c0553b1d">CreateAndAddBody</a> (const <a class="el" href="class_j_p_h_1_1_body_creation_settings.html">BodyCreationSettings</a> &amp;inSettings, <a class="el" href="namespace_j_p_h.html#a400137dab0c4d43f999020d19ee7d60b">EActivation</a> inActivationMode)</td></tr>
 <tr class="separator:a0e9713aefa23295a3d896b27c0553b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6893f4030ce70189c0500781f7bae205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a6893f4030ce70189c0500781f7bae205">ActivateConstraint</a> (const <a class="el" href="class_j_p_h_1_1_two_body_constraint.html">TwoBodyConstraint</a> *inConstraint)</td></tr>
+<tr class="memdesc:a6893f4030ce70189c0500781f7bae205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate non-static bodies attached to a constraint.  <a href="class_j_p_h_1_1_body_interface.html#a6893f4030ce70189c0500781f7bae205">More...</a><br /></td></tr>
+<tr class="separator:a6893f4030ce70189c0500781f7bae205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f09525365fbf4afc0a5e3166204b2ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a0f09525365fbf4afc0a5e3166204b2ad">MoveKinematic</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inTargetPosition, <a class="el" href="namespace_j_p_h.html#a08eb0672d985143ff0fcdd489184a8b4">QuatArg</a> inTargetRotation, float inDeltaTime)</td></tr>
 <tr class="memdesc:a0f09525365fbf4afc0a5e3166204b2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set velocity of body such that it will be positioned at inTargetPosition/Rotation in inDeltaTime seconds (will activate body if needed)  <a href="class_j_p_h_1_1_body_interface.html#a0f09525365fbf4afc0a5e3166204b2ad">More...</a><br /></td></tr>
 <tr class="separator:a0f09525365fbf4afc0a5e3166204b2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0639a7cd7d51696f302abb579eea9755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a0639a7cd7d51696f302abb579eea9755">AddLinearVelocity</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inLinearVelocity)</td></tr>
 <tr class="memdesc:a0639a7cd7d51696f302abb579eea9755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add velocity to current velocity.  <a href="class_j_p_h_1_1_body_interface.html#a0639a7cd7d51696f302abb579eea9755">More...</a><br /></td></tr>
 <tr class="separator:a0639a7cd7d51696f302abb579eea9755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef78a27c02db1b91790b78be5af580b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#aef78a27c02db1b91790b78be5af580b7">AddLinearAndAngularVelocity</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inLinearVelocity, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inAngularVelocity)</td></tr>
+<tr class="memdesc:aef78a27c02db1b91790b78be5af580b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add linear and angular to current velocities.  <a href="class_j_p_h_1_1_body_interface.html#aef78a27c02db1b91790b78be5af580b7">More...</a><br /></td></tr>
+<tr class="separator:aef78a27c02db1b91790b78be5af580b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0af3a5bdb1b0c76ffae77bdd5e0a80e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#ac0af3a5bdb1b0c76ffae77bdd5e0a80e">SetAngularVelocity</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inAngularVelocity)</td></tr>
 <tr class="separator:ac0af3a5bdb1b0c76ffae77bdd5e0a80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc63a1eaac5ed9287e893d21e1fc740e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#adc63a1eaac5ed9287e893d21e1fc740e">GetAngularVelocity</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID) const</td></tr>
@@ -193,6 +199,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a16a9e95503e1de48455d9fb307c97c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0b79e07ede8a27025d203c7691b93f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#af0b79e07ede8a27025d203c7691b93f1">GetWorldTransform</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID) const</td></tr>
 <tr class="separator:af0b79e07ede8a27025d203c7691b93f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6e3316c6c93dc25e0ebf1a0dd27213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a0a6e3316c6c93dc25e0ebf1a0dd27213">GetCenterOfMassTransform</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID) const</td></tr>
+<tr class="separator:a0a6e3316c6c93dc25e0ebf1a0dd27213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Add forces to the body</div></td></tr>
+<tr class="memitem:a8e810e49f8557bd0300853e8d052103a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a8e810e49f8557bd0300853e8d052103a">AddForce</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inForce)</td></tr>
+<tr class="memdesc:a8e810e49f8557bd0300853e8d052103a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="class_j_p_h_1_1_body.html#abf7b667b72330ad769846ccc841b3366" title="Add force (unit: N) at center of mass for the next time step, will be reset after the next call to Ph...">Body::AddForce</a>.  <a href="class_j_p_h_1_1_body_interface.html#a8e810e49f8557bd0300853e8d052103a">More...</a><br /></td></tr>
+<tr class="separator:a8e810e49f8557bd0300853e8d052103a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72527ffa540555ecf4f113bf78084920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a72527ffa540555ecf4f113bf78084920">AddForce</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inForce, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inPoint)</td></tr>
+<tr class="memdesc:a72527ffa540555ecf4f113bf78084920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applied at inPoint.  <a href="class_j_p_h_1_1_body_interface.html#a72527ffa540555ecf4f113bf78084920">More...</a><br /></td></tr>
+<tr class="separator:a72527ffa540555ecf4f113bf78084920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30279dade0e32b7b9ef9331a3c1e50dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a30279dade0e32b7b9ef9331a3c1e50dc">AddTorque</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inTorque)</td></tr>
+<tr class="memdesc:a30279dade0e32b7b9ef9331a3c1e50dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="class_j_p_h_1_1_body.html#ae7f1bcc8801e9c6703d1af877c4e1d3f" title="Add torque (unit: N m) for the next time step, will be reset after the next call to PhysicsSimulation...">Body::AddTorque</a>.  <a href="class_j_p_h_1_1_body_interface.html#a30279dade0e32b7b9ef9331a3c1e50dc">More...</a><br /></td></tr>
+<tr class="separator:a30279dade0e32b7b9ef9331a3c1e50dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5127e91ba1e41b5fb9ec05861b2a8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#a5b5127e91ba1e41b5fb9ec05861b2a8f">AddForceAndTorque</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inForce, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inTorque)</td></tr>
+<tr class="memdesc:a5b5127e91ba1e41b5fb9ec05861b2a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A combination of <a class="el" href="class_j_p_h_1_1_body.html#abf7b667b72330ad769846ccc841b3366" title="Add force (unit: N) at center of mass for the next time step, will be reset after the next call to Ph...">Body::AddForce</a> and <a class="el" href="class_j_p_h_1_1_body.html#ae7f1bcc8801e9c6703d1af877c4e1d3f" title="Add torque (unit: N m) for the next time step, will be reset after the next call to PhysicsSimulation...">Body::AddTorque</a>.  <a href="class_j_p_h_1_1_body_interface.html#a5b5127e91ba1e41b5fb9ec05861b2a8f">More...</a><br /></td></tr>
+<tr class="separator:a5b5127e91ba1e41b5fb9ec05861b2a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Add an impulse to the body</div></td></tr>
 <tr class="memitem:ac4e6b72e124a3714622341f5634a36d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_body_interface.html#ac4e6b72e124a3714622341f5634a36d6">AddImpulse</a> (const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;inBodyID, <a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inImpulse)</td></tr>
 <tr class="memdesc:ac4e6b72e124a3714622341f5634a36d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applied at center of mass.  <a href="class_j_p_h_1_1_body_interface.html#ac4e6b72e124a3714622341f5634a36d6">More...</a><br /></td></tr>
@@ -361,6 +382,26 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6893f4030ce70189c0500781f7bae205" name="a6893f4030ce70189c0500781f7bae205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6893f4030ce70189c0500781f7bae205">&#9670;&nbsp;</a></span>ActivateConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyInterface::ActivateConstraint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_two_body_constraint.html">TwoBodyConstraint</a> *&#160;</td>
+          <td class="paramname"><em>inConstraint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate non-static bodies attached to a constraint. </p>
+
+</div>
+</div>
 <a id="a0861913100ac742a9e5fa1afdc84bf47" name="a0861913100ac742a9e5fa1afdc84bf47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0861913100ac742a9e5fa1afdc84bf47">&#9670;&nbsp;</a></span>AddAngularImpulse()</h2>
 
@@ -520,6 +561,108 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8e810e49f8557bd0300853e8d052103a" name="a8e810e49f8557bd0300853e8d052103a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e810e49f8557bd0300853e8d052103a">&#9670;&nbsp;</a></span>AddForce() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyInterface::AddForce </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBodyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inForce</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="class_j_p_h_1_1_body.html#abf7b667b72330ad769846ccc841b3366" title="Add force (unit: N) at center of mass for the next time step, will be reset after the next call to Ph...">Body::AddForce</a>. </p>
+
+</div>
+</div>
+<a id="a72527ffa540555ecf4f113bf78084920" name="a72527ffa540555ecf4f113bf78084920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72527ffa540555ecf4f113bf78084920">&#9670;&nbsp;</a></span>AddForce() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyInterface::AddForce </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBodyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inForce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applied at inPoint. </p>
+
+</div>
+</div>
+<a id="a5b5127e91ba1e41b5fb9ec05861b2a8f" name="a5b5127e91ba1e41b5fb9ec05861b2a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5127e91ba1e41b5fb9ec05861b2a8f">&#9670;&nbsp;</a></span>AddForceAndTorque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyInterface::AddForceAndTorque </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBodyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inForce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inTorque</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A combination of <a class="el" href="class_j_p_h_1_1_body.html#abf7b667b72330ad769846ccc841b3366" title="Add force (unit: N) at center of mass for the next time step, will be reset after the next call to Ph...">Body::AddForce</a> and <a class="el" href="class_j_p_h_1_1_body.html#ae7f1bcc8801e9c6703d1af877c4e1d3f" title="Add torque (unit: N m) for the next time step, will be reset after the next call to PhysicsSimulation...">Body::AddTorque</a>. </p>
+
+</div>
+</div>
 <a id="ac4e6b72e124a3714622341f5634a36d6" name="ac4e6b72e124a3714622341f5634a36d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4e6b72e124a3714622341f5634a36d6">&#9670;&nbsp;</a></span>AddImpulse() <span class="overload">[1/2]</span></h2>
 
@@ -586,6 +729,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aef78a27c02db1b91790b78be5af580b7" name="aef78a27c02db1b91790b78be5af580b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef78a27c02db1b91790b78be5af580b7">&#9670;&nbsp;</a></span>AddLinearAndAngularVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyInterface::AddLinearAndAngularVelocity </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBodyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inLinearVelocity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inAngularVelocity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add linear and angular to current velocities. </p>
+
+</div>
+</div>
 <a id="a0639a7cd7d51696f302abb579eea9755" name="a0639a7cd7d51696f302abb579eea9755"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0639a7cd7d51696f302abb579eea9755">&#9670;&nbsp;</a></span>AddLinearVelocity()</h2>
 
@@ -613,6 +792,36 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add velocity to current velocity. </p>
+
+</div>
+</div>
+<a id="a30279dade0e32b7b9ef9331a3c1e50dc" name="a30279dade0e32b7b9ef9331a3c1e50dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30279dade0e32b7b9ef9331a3c1e50dc">&#9670;&nbsp;</a></span>AddTorque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::BodyInterface::AddTorque </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBodyID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inTorque</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>See <a class="el" href="class_j_p_h_1_1_body.html#ae7f1bcc8801e9c6703d1af877c4e1d3f" title="Add torque (unit: N m) for the next time step, will be reset after the next call to PhysicsSimulation...">Body::AddTorque</a>. </p>
 
 </div>
 </div>
@@ -758,6 +967,24 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a> JPH::BodyInterface::GetCenterOfMassPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
+          <td class="paramname"><em>inBodyID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a6e3316c6c93dc25e0ebf1a0dd27213" name="a0a6e3316c6c93dc25e0ebf1a0dd27213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6e3316c6c93dc25e0ebf1a0dd27213">&#9670;&nbsp;</a></span>GetCenterOfMassTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_p_h_1_1_mat44.html">Mat44</a> JPH::BodyInterface::GetCenterOfMassTransform </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_body_i_d.html">BodyID</a> &amp;&#160;</td>
           <td class="paramname"><em>inBodyID</em></td><td>)</td>

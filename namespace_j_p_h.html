@@ -179,6 +179,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_broad_phase_layer_filter.html">BroadPhaseLayerFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter class for broadphase layers.  <a href="class_j_p_h_1_1_broad_phase_layer_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_broad_phase_layer_interface.html">BroadPhaseLayerInterface</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface that the application should implement to allow mapping object layers to broadphase layers.  <a href="class_j_p_h_1_1_broad_phase_layer_interface.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_broad_phase_quad_tree.html">BroadPhaseQuadTree</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast SIMD based quad tree <a class="el" href="class_j_p_h_1_1_broad_phase.html" title="Used to do coarse collision detection operations to quickly prune out bodies that will not collide.">BroadPhase</a> that is multithreading aware and tries to do a minimal amount of locking.  <a href="class_j_p_h_1_1_broad_phase_quad_tree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,7 +494,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oriented box.  <a href="class_j_p_h_1_1_oriented_box.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_path_constraint.html">PathConstraint</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A point constraint constrains 2 bodies on a single point (removing 3 degrees of freedom)  <a href="class_j_p_h_1_1_path_constraint.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path constraint, used to constrain the degrees of freedom between two bodies to a path.  <a href="class_j_p_h_1_1_path_constraint.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_path_constraint_path.html">PathConstraintPath</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path for a path constraint. It allows attaching two bodies to each other while giving the second body the freedom to move along a path relative to the first.  <a href="class_j_p_h_1_1_path_constraint_path.html#details">More...</a><br /></td></tr>
@@ -500,7 +503,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A path that follows a Hermite spline.  <a href="class_j_p_h_1_1_path_constraint_path_hermite.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_path_constraint_settings.html">PathConstraintSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point constraint settings, used to create a point constraint.  <a href="class_j_p_h_1_1_path_constraint_settings.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path constraint settings, used to constrain the degrees of freedom between two bodies to a path.  <a href="class_j_p_h_1_1_path_constraint_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_physics_lock.html">PhysicsLock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -927,14 +930,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a4b5ab5f3e0a7b568bfcbeda71242e3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c783655f601a30959e4ea39d25522bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a3c783655f601a30959e4ea39d25522bf">BodyPairCollector</a> = <a class="el" href="class_j_p_h_1_1_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="struct_j_p_h_1_1_body_pair.html">BodyPair</a>, <a class="el" href="class_j_p_h_1_1_collision_collector_traits_collide_shape.html">CollisionCollectorTraitsCollideShape</a> &gt;</td></tr>
 <tr class="separator:a3c783655f601a30959e4ea39d25522bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f19a5900770e579a846daf0d8fbd07d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a7f19a5900770e579a846daf0d8fbd07d">ObjectToBroadPhaseLayer</a> = vector&lt; <a class="el" href="class_j_p_h_1_1_broad_phase_layer.html">BroadPhaseLayer</a> &gt;</td></tr>
-<tr class="separator:a7f19a5900770e579a846daf0d8fbd07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caf4f4b52f660cc2ca5a27949334c11"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a0caf4f4b52f660cc2ca5a27949334c11">ObjectVsBroadPhaseLayerFilter</a> = bool(*)(<a class="el" href="namespace_j_p_h.html#adba3f6b6d15eb4d53f8b8e087e787f5b">ObjectLayer</a> inLayer1, <a class="el" href="class_j_p_h_1_1_broad_phase_layer.html">BroadPhaseLayer</a> inLayer2)</td></tr>
 <tr class="memdesc:a0caf4f4b52f660cc2ca5a27949334c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to test if an object can collide with a broadphase layer. Used while finding collision pairs.  <a href="namespace_j_p_h.html#a0caf4f4b52f660cc2ca5a27949334c11">More...</a><br /></td></tr>
 <tr class="separator:a0caf4f4b52f660cc2ca5a27949334c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bf933946144e7119a81cdd9b3ee4e1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a5bf933946144e7119a81cdd9b3ee4e1f">BroadPhaseLayerToString</a> = const char *(*)(<a class="el" href="class_j_p_h_1_1_broad_phase_layer.html">BroadPhaseLayer</a> inLayer)</td></tr>
-<tr class="memdesc:a5bf933946144e7119a81cdd9b3ee4e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to convert a broadphase layer to a string for debugging purposes.  <a href="namespace_j_p_h.html#a5bf933946144e7119a81cdd9b3ee4e1f">More...</a><br /></td></tr>
-<tr class="separator:a5bf933946144e7119a81cdd9b3ee4e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c00bead2751e37bd3624136e1c12e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a88c00bead2751e37bd3624136e1c12e9">RayCastBodyCollector</a> = <a class="el" href="class_j_p_h_1_1_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="class_j_p_h_1_1_broad_phase_cast_result.html">BroadPhaseCastResult</a>, <a class="el" href="class_j_p_h_1_1_collision_collector_traits_cast_ray.html">CollisionCollectorTraitsCastRay</a> &gt;</td></tr>
 <tr class="separator:a88c00bead2751e37bd3624136e1c12e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33f833b871b5cd1016e1f48a4ed9f07"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ad33f833b871b5cd1016e1f48a4ed9f07">CastShapeBodyCollector</a> = <a class="el" href="class_j_p_h_1_1_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="class_j_p_h_1_1_broad_phase_cast_result.html">BroadPhaseCastResult</a>, <a class="el" href="class_j_p_h_1_1_collision_collector_traits_cast_shape.html">CollisionCollectorTraitsCastShape</a> &gt;</td></tr>
@@ -1777,22 +1775,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5bf933946144e7119a81cdd9b3ee4e1f" name="a5bf933946144e7119a81cdd9b3ee4e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bf933946144e7119a81cdd9b3ee4e1f">&#9670;&nbsp;</a></span>BroadPhaseLayerToString</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespace_j_p_h.html#a5bf933946144e7119a81cdd9b3ee4e1f">JPH::BroadPhaseLayerToString</a> = typedef const char * (*)(<a class="el" href="class_j_p_h_1_1_broad_phase_layer.html">BroadPhaseLayer</a> inLayer)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function to convert a broadphase layer to a string for debugging purposes. </p>
-
-</div>
-</div>
 <a id="a37bb734a2bc0373bb8ab8152775fd03f" name="a37bb734a2bc0373bb8ab8152775fd03f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37bb734a2bc0373bb8ab8152775fd03f">&#9670;&nbsp;</a></span>ByteBufferVector</h2>
 
@@ -2096,21 +2078,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function to test if two objects can collide based on their object layer. Used while finding collision pairs. </p>
-
-</div>
-</div>
-<a id="a7f19a5900770e579a846daf0d8fbd07d" name="a7f19a5900770e579a846daf0d8fbd07d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f19a5900770e579a846daf0d8fbd07d">&#9670;&nbsp;</a></span>ObjectToBroadPhaseLayer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespace_j_p_h.html#a7f19a5900770e579a846daf0d8fbd07d">JPH::ObjectToBroadPhaseLayer</a> = typedef vector&lt;<a class="el" href="class_j_p_h_1_1_broad_phase_layer.html">BroadPhaseLayer</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >An array whose length corresponds to the max amount of object layers that should be supported. To map these to a broadphase layer you'd do vector[<a class="el" href="class_j_p_h_1_1_broad_phase_layer.html">BroadPhaseLayer</a>]. The broadphase layers should be tightly packed, i.e. the lowest value should be 0 and the amount of sub structures that are created in the broadphase is max(inObjectToBroadPhaseLayer). </p>
 
 </div>
 </div>
@@ -2834,7 +2801,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>How to constrain the rotation of the body to a <a class="el" href="class_j_p_h_1_1_path_constraint.html" title="A point constraint constrains 2 bodies on a single point (removing 3 degrees of freedom)">PathConstraint</a>. </p>
+<p>How to constrain the rotation of the body to a <a class="el" href="class_j_p_h_1_1_path_constraint.html" title="Path constraint, used to constrain the degrees of freedom between two bodies to a path.">PathConstraint</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a194186eeea9956a9798e51965b264452ab24ce0cd392a5b0b8dedc66c25213594" name="a194186eeea9956a9798e51965b264452ab24ce0cd392a5b0b8dedc66c25213594"></a>Free&#160;</td><td class="fielddoc"><p >Do not constrain the rotation of the body at all. </p>
 </td></tr>

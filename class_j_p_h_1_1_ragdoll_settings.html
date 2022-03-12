@@ -97,6 +97,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aadbb087fccc6af21476f6ef5fba3333e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_ragdoll_settings.html#aadbb087fccc6af21476f6ef5fba3333e">Stabilize</a> ()</td></tr>
 <tr class="separator:aadbb087fccc6af21476f6ef5fba3333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f652eb64cb32ec51c6adca5806d01c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_ragdoll_settings.html#a5f652eb64cb32ec51c6adca5806d01c3">DisableParentChildCollisions</a> (const <a class="el" href="class_j_p_h_1_1_mat44.html">Mat44</a> *inJointMatrices=nullptr, float inMinSeparationDistance=0.0f)</td></tr>
+<tr class="separator:a5f652eb64cb32ec51c6adca5806d01c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab15010ee8838c1bd22055c7bb02bde1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_ragdoll_settings.html#aab15010ee8838c1bd22055c7bb02bde1">SaveBinaryState</a> (<a class="el" href="class_j_p_h_1_1_stream_out.html">StreamOut</a> &amp;inStream, bool inSaveShapes, bool inSaveGroupFilter) const</td></tr>
 <tr class="separator:aab15010ee8838c1bd22055c7bb02bde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab229b35ea80c1b599b1aec71e636e60c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_ragdoll.html">Ragdoll</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_ragdoll_settings.html#ab229b35ea80c1b599b1aec71e636e60c">CreateRagdoll</a> (<a class="el" href="class_j_p_h_1_1_collision_group.html#af893b27b65e89d0b677e934494637803">CollisionGroup::GroupID</a> inCollisionGroup, <a class="el" href="namespace_j_p_h.html#a58d2b9f9521ae5f8b0646c2fb2034e4b">uint64</a> inUserData, <a class="el" href="class_j_p_h_1_1_physics_system.html">PhysicsSystem</a> *inSystem) const</td></tr>
@@ -298,6 +300,42 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Create ragdoll instance from these settings </p><dl class="section return"><dt>Returns</dt><dd>Newly created ragdoll or null when out of bodies </dd></dl>
+
+</div>
+</div>
+<a id="a5f652eb64cb32ec51c6adca5806d01c3" name="a5f652eb64cb32ec51c6adca5806d01c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f652eb64cb32ec51c6adca5806d01c3">&#9670;&nbsp;</a></span>DisableParentChildCollisions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JPH::RagdollSettings::DisableParentChildCollisions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_j_p_h_1_1_mat44.html">Mat44</a> *&#160;</td>
+          <td class="paramname"><em>inJointMatrices</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inMinSeparationDistance</em> = <code>0.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >After the ragdoll has been fully configured, call this function to automatically create and add a <a class="el" href="class_j_p_h_1_1_group_filter_table.html">GroupFilterTable</a> collision filter to all bodies and configure them so that parent and children don't collide.</p>
+<p >This will:</p><ul>
+<li>Create a <a class="el" href="class_j_p_h_1_1_group_filter_table.html">GroupFilterTable</a> and assign it to all of the bodies in a ragdoll.</li>
+<li>Each body in your ragdoll will get a SubGroupID that is equal to the joint index in the <a class="el" href="class_j_p_h_1_1_skeleton.html" title="Resource that contains the joint hierarchy for a skeleton.">Skeleton</a> that it is attached to.</li>
+<li>Loop over all joints in the <a class="el" href="class_j_p_h_1_1_skeleton.html" title="Resource that contains the joint hierarchy for a skeleton.">Skeleton</a> and call GroupFilterTable::DisableCollision(joint index, parent joint index).</li>
+<li>When a pose is provided through inJointMatrices the function will detect collisions between joints (they must be separated by more than inMinSeparationDistance to be treated as not colliding) and automatically disable collisions.</li>
+</ul>
+<p >When you create an instance using Ragdoll::CreateRagdoll pass in a unique GroupID for each ragdoll (e.g. a simple counter), note that this number should be unique throughout the <a class="el" href="class_j_p_h_1_1_physics_system.html">PhysicsSystem</a>, so if you have different types of ragdolls they should not share the same GroupID. </p>
 
 </div>
 </div>
