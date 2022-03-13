@@ -88,7 +88,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a36024ffddfb87277a86319bdd7c0eaea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an an instance of this constraint.  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a36024ffddfb87277a86319bdd7c0eaea">More...</a><br /></td></tr>
 <tr class="separator:a36024ffddfb87277a86319bdd7c0eaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75876f62057bf05716a84b07d9f14258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a75876f62057bf05716a84b07d9f14258">SetPoint</a> (const <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody1, const <a class="el" href="class_j_p_h_1_1_body.html">Body</a> &amp;inBody2)</td></tr>
-<tr class="memdesc:a75876f62057bf05716a84b07d9f14258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple way of setting the anchor points so that the current relative position is chosen as the '0' position.  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a75876f62057bf05716a84b07d9f14258">More...</a><br /></td></tr>
+<tr class="memdesc:a75876f62057bf05716a84b07d9f14258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple way of setting the anchor points in world space so that the current relative position is chosen as the '0' position.  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a75876f62057bf05716a84b07d9f14258">More...</a><br /></td></tr>
 <tr class="separator:a75876f62057bf05716a84b07d9f14258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f2d38562e600b22ef01f55066f3e99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a48f2d38562e600b22ef01f55066f3e99">SetSliderAxis</a> (<a class="el" href="namespace_j_p_h.html#a0b295e20795f9fa0dfbe4ef459f11311">Vec3Arg</a> inSliderAxis)</td></tr>
 <tr class="memdesc:a48f2d38562e600b22ef01f55066f3e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple way of setting the slider and normal axis in world space (assumes the bodies are already oriented correctly when the constraint is created)  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a48f2d38562e600b22ef01f55066f3e99">More...</a><br /></td></tr>
@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a797fc4617b46785b377211c60e836220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">EConstraintSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a797fc4617b46785b377211c60e836220">mSpace</a> = <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177">EConstraintSpace::WorldSpace</a></td></tr>
+<tr class="memdesc:a797fc4617b46785b377211c60e836220"><td class="mdescLeft">&#160;</td><td class="mdescRight">This determines in which space the constraint is setup, all properties below should be in the specified space.  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a797fc4617b46785b377211c60e836220">More...</a><br /></td></tr>
+<tr class="separator:a797fc4617b46785b377211c60e836220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6845be87716ff1482802b295ad88513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#ad6845be87716ff1482802b295ad88513">mPoint1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td></tr>
 <tr class="separator:ad6845be87716ff1482802b295ad88513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1146924072dafde176654f96782c3e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a1146924072dafde176654f96782c3e5f">mSliderAxis1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td></tr>
@@ -146,7 +149,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5edbcfe953f4d102fdf3a68a38890cce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a5edbcfe953f4d102fdf3a68a38890cce">mNormalAxis1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a14ccc2db83b351cb8f933938cee56321">Vec3::sAxisY</a>()</td></tr>
 <tr class="separator:a5edbcfe953f4d102fdf3a68a38890cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da">mPoint2</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td></tr>
-<tr class="memdesc:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (in world space)  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da">More...</a><br /></td></tr>
+<tr class="memdesc:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (space determined by mSpace)  <a href="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da">More...</a><br /></td></tr>
 <tr class="separator:a7ac0aa3a9808ce829b1786aa5382b0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae2878af3d19e806c7b032abad2c8c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_slider_constraint_settings.html#acae2878af3d19e806c7b032abad2c8c2">mSliderAxis2</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#a1fef81d639585cc0b8cdfd2d43fb37b7">Vec3::sAxisX</a>()</td></tr>
 <tr class="separator:acae2878af3d19e806c7b032abad2c8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Simple way of setting the anchor points so that the current relative position is chosen as the '0' position. </p>
+<p>Simple way of setting the anchor points in world space so that the current relative position is chosen as the '0' position. </p>
 
 </div>
 </div>
@@ -454,7 +457,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p ><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 1 constraint reference frame (in world space). Slider axis is the axis along which movement is possible (world space direction), normal axis is a perpendicular vector to define the frame. </p>
+<p ><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 1 constraint reference frame (space determined by mSpace). Slider axis is the axis along which movement is possible (direction), normal axis is a perpendicular vector to define the frame. </p>
 
 </div>
 </div>
@@ -470,7 +473,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (in world space) </p>
+<p><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (space determined by mSpace) </p>
 
 </div>
 </div>
@@ -499,6 +502,22 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a797fc4617b46785b377211c60e836220" name="a797fc4617b46785b377211c60e836220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797fc4617b46785b377211c60e836220">&#9670;&nbsp;</a></span>mSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">EConstraintSpace</a> JPH::SliderConstraintSettings::mSpace = <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177">EConstraintSpace::WorldSpace</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This determines in which space the constraint is setup, all properties below should be in the specified space. </p>
 
 </div>
 </div>

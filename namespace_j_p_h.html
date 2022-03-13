@@ -1103,7 +1103,13 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_j_p_h.html#a579047271b67f1079385bfd68707bddaa5ad55d96abf0e50647d6de116530d6df">User4</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a579047271b67f1079385bfd68707bdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum to identify constraint type.  <a href="namespace_j_p_h.html#a579047271b67f1079385bfd68707bdda">More...</a><br /></td></tr>
 <tr class="separator:a579047271b67f1079385bfd68707bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab79085a149f8c70774fb607e48ae0f1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">EConstraintSpace</a> { <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a337c8a797ceff07104efbfcdea102759">LocalToBodyCOM</a>
+, <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177">WorldSpace</a>
+ }</td></tr>
+<tr class="memdesc:aab79085a149f8c70774fb607e48ae0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Certain constraints support setting them up in local or world space. This governs what is used.  <a href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">More...</a><br /></td></tr>
+<tr class="separator:aab79085a149f8c70774fb607e48ae0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38479a97b8b30cc91a53b1ac7a07f9f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ae38479a97b8b30cc91a53b1ac7a07f9f">EMotorState</a> { <a class="el" href="namespace_j_p_h.html#ae38479a97b8b30cc91a53b1ac7a07f9fad15305d7a4e34e02489c74a5ef542f36">Off</a>
 , <a class="el" href="namespace_j_p_h.html#ae38479a97b8b30cc91a53b1ac7a07f9fa88156d46910a2d733443c339a9231d12">Velocity</a>
 , <a class="el" href="namespace_j_p_h.html#ae38479a97b8b30cc91a53b1ac7a07f9fa52f5e0bc3859bc5f5e25130b6c7e8881">Position</a>
@@ -2617,6 +2623,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aab79085a149f8c70774fb607e48ae0f1" name="aab79085a149f8c70774fb607e48ae0f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab79085a149f8c70774fb607e48ae0f1">&#9670;&nbsp;</a></span>EConstraintSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">JPH::EConstraintSpace</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Certain constraints support setting them up in local or world space. This governs what is used. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aab79085a149f8c70774fb607e48ae0f1a337c8a797ceff07104efbfcdea102759" name="aab79085a149f8c70774fb607e48ae0f1a337c8a797ceff07104efbfcdea102759"></a>LocalToBodyCOM&#160;</td><td class="fielddoc"><p >All constraint properties are specified in local space to center of mass of the bodies that are being constrained (so e.g. 'constraint position 1' will be local to body 1 COM, 'constraint position 2' will be local to body 2 COM). Note that this means you need to subtract <a class="el" href="class_j_p_h_1_1_shape.html#abdd580a03bcdfb07eec924c495c193de" title="All shapes are centered around their center of mass. This function returns the center of mass positio...">Shape::GetCenterOfMass()</a> from positions! </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177" name="aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177"></a>WorldSpace&#160;</td><td class="fielddoc"><p >All constraint properties are specified in world space. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a579047271b67f1079385bfd68707bdda" name="a579047271b67f1079385bfd68707bdda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a579047271b67f1079385bfd68707bdda">&#9670;&nbsp;</a></span>EConstraintType</h2>
 
@@ -2636,6 +2672,8 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Enum to identify constraint type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a579047271b67f1079385bfd68707bddaa4457d440870ad6d42bab9082d9bf9b61" name="a579047271b67f1079385bfd68707bddaa4457d440870ad6d42bab9082d9bf9b61"></a>Fixed&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a579047271b67f1079385bfd68707bddaa2a3cd5946cfd317eb99c3d32e35e2d4c" name="a579047271b67f1079385bfd68707bddaa2a3cd5946cfd317eb99c3d32e35e2d4c"></a>Point&#160;</td><td class="fielddoc"></td></tr>

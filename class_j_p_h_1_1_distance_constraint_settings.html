@@ -133,13 +133,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a6c1c00780d094dc14ece89f23b1f1cea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">EConstraintSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_distance_constraint_settings.html#a6c1c00780d094dc14ece89f23b1f1cea">mSpace</a> = <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177">EConstraintSpace::WorldSpace</a></td></tr>
+<tr class="memdesc:a6c1c00780d094dc14ece89f23b1f1cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This determines in which space the constraint is setup, all properties below should be in the specified space.  <a href="class_j_p_h_1_1_distance_constraint_settings.html#a6c1c00780d094dc14ece89f23b1f1cea">More...</a><br /></td></tr>
+<tr class="separator:a6c1c00780d094dc14ece89f23b1f1cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecec8be5ac56dc30fbf4baeaab015a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_distance_constraint_settings.html#aecec8be5ac56dc30fbf4baeaab015a35">mPoint1</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td></tr>
 <tr class="separator:aecec8be5ac56dc30fbf4baeaab015a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be9d234ab9abd8defe016f268e431e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_p_h_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_distance_constraint_settings.html#a1be9d234ab9abd8defe016f268e431e9">mPoint2</a> = <a class="el" href="class_j_p_h_1_1_vec3.html#af03e434232a5bdea46c51037da01fd15">Vec3::sZero</a>()</td></tr>
-<tr class="memdesc:a1be9d234ab9abd8defe016f268e431e9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (in world space)  <a href="class_j_p_h_1_1_distance_constraint_settings.html#a1be9d234ab9abd8defe016f268e431e9">More...</a><br /></td></tr>
+<tr class="memdesc:a1be9d234ab9abd8defe016f268e431e9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (space determined by mSpace)  <a href="class_j_p_h_1_1_distance_constraint_settings.html#a1be9d234ab9abd8defe016f268e431e9">More...</a><br /></td></tr>
 <tr class="separator:a1be9d234ab9abd8defe016f268e431e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34504e177dc20510cd9232680af2c5c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_distance_constraint_settings.html#a34504e177dc20510cd9232680af2c5c0">mMinDistance</a> = -1.0f</td></tr>
-<tr class="memdesc:a34504e177dc20510cd9232680af2c5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ability to override the distance range at which the two points are kept apart. If the value is negative, it will be replaced by the distance between mPoint1 and mPoint2.  <a href="class_j_p_h_1_1_distance_constraint_settings.html#a34504e177dc20510cd9232680af2c5c0">More...</a><br /></td></tr>
+<tr class="memdesc:a34504e177dc20510cd9232680af2c5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ability to override the distance range at which the two points are kept apart. If the value is negative, it will be replaced by the distance between mPoint1 and mPoint2 (works only if mSpace is world space).  <a href="class_j_p_h_1_1_distance_constraint_settings.html#a34504e177dc20510cd9232680af2c5c0">More...</a><br /></td></tr>
 <tr class="separator:a34504e177dc20510cd9232680af2c5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76fa718862d9058c38c6b30e560d3eed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_distance_constraint_settings.html#a76fa718862d9058c38c6b30e560d3eed">mMaxDistance</a> = -1.0f</td></tr>
 <tr class="separator:a76fa718862d9058c38c6b30e560d3eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ability to override the distance range at which the two points are kept apart. If the value is negative, it will be replaced by the distance between mPoint1 and mPoint2. </p>
+<p>Ability to override the distance range at which the two points are kept apart. If the value is negative, it will be replaced by the distance between mPoint1 and mPoint2 (works only if mSpace is world space). </p>
 
 </div>
 </div>
@@ -357,7 +360,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p ><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 1 constraint reference frame (in world space). <a class="el" href="class_j_p_h_1_1_constraint.html" title="Base class for all physics constraints. A constraint removes one or more degrees of freedom for a rig...">Constraint</a> will keep mPoint1 (a point on body 1, world space) and mPoint2 (a point on body 2, world space) at the same distance. Note that this constraint can be used as a cheap <a class="el" href="class_j_p_h_1_1_point_constraint.html" title="A point constraint constrains 2 bodies on a single point (removing 3 degrees of freedom)">PointConstraint</a> by setting mPoint1 = mPoint2 (but this removes only 1 degree of freedom instead of 3). </p>
+<p ><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 1 constraint reference frame (space determined by mSpace). <a class="el" href="class_j_p_h_1_1_constraint.html" title="Base class for all physics constraints. A constraint removes one or more degrees of freedom for a rig...">Constraint</a> will keep mPoint1 (a point on body 1) and mPoint2 (a point on body 2) at the same distance. Note that this constraint can be used as a cheap <a class="el" href="class_j_p_h_1_1_point_constraint.html" title="A point constraint constrains 2 bodies on a single point (removing 3 degrees of freedom)">PointConstraint</a> by setting mPoint1 = mPoint2 (but this removes only 1 degree of freedom instead of 3). </p>
 
 </div>
 </div>
@@ -373,7 +376,23 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (in world space) </p>
+<p><a class="el" href="class_j_p_h_1_1_body.html">Body</a> 2 constraint reference frame (space determined by mSpace) </p>
+
+</div>
+</div>
+<a id="a6c1c00780d094dc14ece89f23b1f1cea" name="a6c1c00780d094dc14ece89f23b1f1cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1c00780d094dc14ece89f23b1f1cea">&#9670;&nbsp;</a></span>mSpace</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1">EConstraintSpace</a> JPH::DistanceConstraintSettings::mSpace = <a class="el" href="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177">EConstraintSpace::WorldSpace</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This determines in which space the constraint is setup, all properties below should be in the specified space. </p>
 
 </div>
 </div>

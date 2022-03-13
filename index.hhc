@@ -1211,6 +1211,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mHalfConeAngle"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#aaa10273bc5cf8b895f0062b3a64513a1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a8d653c4bd19846d630f2eeb4a5fead49"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a02a9bd2410864e25293fd0be7dffb052"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a79ea0020c446fd9aa4912f3591f529d7"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis1"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#ae3eeb7b040898265ee30629686bfea8d"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis2"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a78e674ce7ddd5ed887663f63b54c0103"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
@@ -1740,6 +1741,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mMinDistance"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a34504e177dc20510cd9232680af2c5c0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#aecec8be5ac56dc30fbf4baeaab015a35"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a1be9d234ab9abd8defe016f268e431e9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a6c1c00780d094dc14ece89f23b1f1cea"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="DualAxisConstraintPart"><param name="Local" value="class_j_p_h_1_1_dual_axis_constraint_part.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -2065,6 +2067,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mNormalAxis2"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#aa5a7ba12f87c86060c0d9708aa60cfc0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a5cc51eac2c6eabc8e213153b96e15d97"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a5b5b87c95326ec248f6de4fb69f99785"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a89055d6b8fa5a8692b3bcfb9d8f40fe9"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="HingeRotationConstraintPart"><param name="Local" value="class_j_p_h_1_1_hinge_rotation_constraint_part.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -3116,6 +3119,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="SaveBinaryState"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#af65c6d2e4d155aee0337c8dee8deecec"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#af710ceb8e970eb81441c0d89bf312d45"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#ab281c0c0d3a9cccf0de363c839136e75"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#ac68d212c39f74182457512c261bbb167"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="PointConvexSupport"><param name="Local" value="struct_j_p_h_1_1_point_convex_support.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -3780,6 +3784,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mMotorSettings"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#aeb6d2ef805dac4c0ee801dc32109a979"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition1"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#af7037dac82039a27e5830fc52194afb8"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition2"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#a8912f983cdd8cdaecb86edd75906a8f5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#af2ac776a2d57d3bf94b0ca21354d744a"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="SkeletalAnimation"><param name="Local" value="class_j_p_h_1_1_skeletal_animation.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -3893,6 +3898,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mSliderAxis1"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a1146924072dafde176654f96782c3e5f"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mSliderAxis2"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#acae2878af3d19e806c7b032abad2c8c2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a797fc4617b46785b377211c60e836220"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="SpecifiedBroadPhaseLayerFilter"><param name="Local" value="class_j_p_h_1_1_specified_broad_phase_layer_filter.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -4185,6 +4191,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPlaneHalfConeAngle"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#af4098555d2383a487bd6574075d71ba1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition1"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a70ac3ccf05b7c5c7f750f8874d732d6c"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition2"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a5c03b13244a4cad6659ce6c64acbf6b4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#aac17b7e4eeca4cadc5eae82d2db6e3ff"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mSwingMotorSettings"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a33fd7248882318aa6e07b36382bb1cda"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis1"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a633922e7da47213a195c1ff9cbb9aca0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis2"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a65078c69757cbd53586fd6295572cbd0"><param name="ImageNumber" value="11"></OBJECT>
@@ -5148,6 +5155,11 @@
         <UL>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="CollectFaces"><param name="Local" value="namespace_j_p_h.html#a14106d95dfff2c91679751133ad9b8b8a745d09152cc2f19f8d94f805226bae7e"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="NoFaces"><param name="Local" value="namespace_j_p_h.html#a14106d95dfff2c91679751133ad9b8b8af92940cc2936d4efee54451acd04e6b8"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="EConstraintSpace"><param name="Local" value="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="LocalToBodyCOM"><param name="Local" value="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a337c8a797ceff07104efbfcdea102759"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="WorldSpace"><param name="Local" value="namespace_j_p_h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="EConstraintType"><param name="Local" value="namespace_j_p_h.html#a579047271b67f1079385bfd68707bdda"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -6715,6 +6727,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mHalfConeAngle"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#aaa10273bc5cf8b895f0062b3a64513a1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a8d653c4bd19846d630f2eeb4a5fead49"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a02a9bd2410864e25293fd0be7dffb052"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a79ea0020c446fd9aa4912f3591f529d7"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis1"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#ae3eeb7b040898265ee30629686bfea8d"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis2"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a78e674ce7ddd5ed887663f63b54c0103"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
@@ -7244,6 +7257,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mMinDistance"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a34504e177dc20510cd9232680af2c5c0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#aecec8be5ac56dc30fbf4baeaab015a35"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a1be9d234ab9abd8defe016f268e431e9"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a6c1c00780d094dc14ece89f23b1f1cea"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="DualAxisConstraintPart"><param name="Local" value="class_j_p_h_1_1_dual_axis_constraint_part.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -7569,6 +7583,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mNormalAxis2"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#aa5a7ba12f87c86060c0d9708aa60cfc0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a5cc51eac2c6eabc8e213153b96e15d97"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a5b5b87c95326ec248f6de4fb69f99785"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a89055d6b8fa5a8692b3bcfb9d8f40fe9"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="HingeRotationConstraintPart"><param name="Local" value="class_j_p_h_1_1_hinge_rotation_constraint_part.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -8620,6 +8635,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="SaveBinaryState"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#af65c6d2e4d155aee0337c8dee8deecec"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#af710ceb8e970eb81441c0d89bf312d45"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#ab281c0c0d3a9cccf0de363c839136e75"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#ac68d212c39f74182457512c261bbb167"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="PointConvexSupport"><param name="Local" value="struct_j_p_h_1_1_point_convex_support.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -9284,6 +9300,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mMotorSettings"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#aeb6d2ef805dac4c0ee801dc32109a979"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition1"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#af7037dac82039a27e5830fc52194afb8"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition2"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#a8912f983cdd8cdaecb86edd75906a8f5"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#af2ac776a2d57d3bf94b0ca21354d744a"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="SkeletalAnimation"><param name="Local" value="class_j_p_h_1_1_skeletal_animation.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -9397,6 +9414,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mSliderAxis1"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a1146924072dafde176654f96782c3e5f"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mSliderAxis2"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#acae2878af3d19e806c7b032abad2c8c2"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a797fc4617b46785b377211c60e836220"><param name="ImageNumber" value="11"></OBJECT>
         </UL>
       <LI><OBJECT type="text/sitemap"><param name="Name" value="SpecifiedBroadPhaseLayerFilter"><param name="Local" value="class_j_p_h_1_1_specified_broad_phase_layer_filter.html"><param name="ImageNumber" value="1"></OBJECT>
         <UL>
@@ -9689,6 +9707,7 @@
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPlaneHalfConeAngle"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#af4098555d2383a487bd6574075d71ba1"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition1"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a70ac3ccf05b7c5c7f750f8874d732d6c"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition2"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a5c03b13244a4cad6659ce6c64acbf6b4"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#aac17b7e4eeca4cadc5eae82d2db6e3ff"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mSwingMotorSettings"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a33fd7248882318aa6e07b36382bb1cda"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis1"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a633922e7da47213a195c1ff9cbb9aca0"><param name="ImageNumber" value="11"></OBJECT>
         <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis2"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a65078c69757cbd53586fd6295572cbd0"><param name="ImageNumber" value="11"></OBJECT>
@@ -16711,6 +16730,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mHalfConeAngle"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#aaa10273bc5cf8b895f0062b3a64513a1"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a8d653c4bd19846d630f2eeb4a5fead49"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a02a9bd2410864e25293fd0be7dffb052"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a79ea0020c446fd9aa4912f3591f529d7"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis1"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#ae3eeb7b040898265ee30629686bfea8d"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis2"><param name="Local" value="class_j_p_h_1_1_cone_constraint_settings.html#a78e674ce7ddd5ed887663f63b54c0103"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
@@ -16761,6 +16781,11 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="SolveVelocityConstraint"><param name="Local" value="class_j_p_h_1_1_constraint.html#a44e60d3fb6213020f51cfe4390fbbefb"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="WarmStartVelocityConstraint"><param name="Local" value="class_j_p_h_1_1_constraint.html#a92f3872eabb937ad94de52e3cbfa3e67"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="ConstraintManager"><param name="Local" value="class_j_p_h_1_1_constraint.html#ad0bf54a2be7863a42cdd8ee748f89582"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="EConstraintSpace"><param name="Local" value="_constraint_8h.html#aab79085a149f8c70774fb607e48ae0f1"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="LocalToBodyCOM"><param name="Local" value="_constraint_8h.html#aab79085a149f8c70774fb607e48ae0f1a337c8a797ceff07104efbfcdea102759"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="WorldSpace"><param name="Local" value="_constraint_8h.html#aab79085a149f8c70774fb607e48ae0f1a43c5bd4a88c440bd0862f954e4faa177"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="EConstraintType"><param name="Local" value="_constraint_8h.html#a579047271b67f1079385bfd68707bdda"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -16868,6 +16893,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mMinDistance"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a34504e177dc20510cd9232680af2c5c0"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#aecec8be5ac56dc30fbf4baeaab015a35"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a1be9d234ab9abd8defe016f268e431e9"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_distance_constraint_settings.html#a6c1c00780d094dc14ece89f23b1f1cea"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="JPH::DistanceConstraint"><param name="Local" value="class_j_p_h_1_1_distance_constraint.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -16938,6 +16964,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mNormalAxis2"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#aa5a7ba12f87c86060c0d9708aa60cfc0"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a5cc51eac2c6eabc8e213153b96e15d97"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a5b5b87c95326ec248f6de4fb69f99785"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_hinge_constraint_settings.html#a89055d6b8fa5a8692b3bcfb9d8f40fe9"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="JPH::HingeConstraint"><param name="Local" value="class_j_p_h_1_1_hinge_constraint.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -17121,6 +17148,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="SaveBinaryState"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#af65c6d2e4d155aee0337c8dee8deecec"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint1"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#af710ceb8e970eb81441c0d89bf312d45"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#ab281c0c0d3a9cccf0de363c839136e75"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_point_constraint_settings.html#ac68d212c39f74182457512c261bbb167"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="JPH::PointConstraint"><param name="Local" value="class_j_p_h_1_1_point_constraint.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -17172,6 +17200,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mMotorSettings"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#aeb6d2ef805dac4c0ee801dc32109a979"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition1"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#af7037dac82039a27e5830fc52194afb8"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition2"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#a8912f983cdd8cdaecb86edd75906a8f5"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint_settings.html#af2ac776a2d57d3bf94b0ca21354d744a"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="JPH::SixDOFConstraint"><param name="Local" value="class_j_p_h_1_1_six_d_o_f_constraint.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -17227,6 +17256,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPoint2"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a7ac0aa3a9808ce829b1786aa5382b0da"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mSliderAxis1"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a1146924072dafde176654f96782c3e5f"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mSliderAxis2"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#acae2878af3d19e806c7b032abad2c8c2"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_slider_constraint_settings.html#a797fc4617b46785b377211c60e836220"><param name="ImageNumber" value="11"></OBJECT>
               </UL>
             <LI><OBJECT type="text/sitemap"><param name="Name" value="JPH::SliderConstraint"><param name="Local" value="class_j_p_h_1_1_slider_constraint.html"><param name="ImageNumber" value="1"></OBJECT>
               <UL>
@@ -17278,6 +17308,7 @@
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPlaneHalfConeAngle"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#af4098555d2383a487bd6574075d71ba1"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition1"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a70ac3ccf05b7c5c7f750f8874d732d6c"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mPosition2"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a5c03b13244a4cad6659ce6c64acbf6b4"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="mSpace"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#aac17b7e4eeca4cadc5eae82d2db6e3ff"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mSwingMotorSettings"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a33fd7248882318aa6e07b36382bb1cda"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis1"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a633922e7da47213a195c1ff9cbb9aca0"><param name="ImageNumber" value="11"></OBJECT>
               <LI><OBJECT type="text/sitemap"><param name="Name" value="mTwistAxis2"><param name="Local" value="class_j_p_h_1_1_swing_twist_constraint_settings.html#a65078c69757cbd53586fd6295572cbd0"><param name="ImageNumber" value="11"></OBJECT>
