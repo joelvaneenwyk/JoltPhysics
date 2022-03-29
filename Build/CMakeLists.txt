@@ -39,12 +39,12 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 	set(CMAKE_CXX_FLAGS "/std:c++17 /Zc:__cplusplus /GR- /Gm- /Wall /WX /EHsc /nologo /diagnostics:classic /FC /fp:except- /Zc:inline /Zi /DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE")
 	
 	# Set compiler flags for various configurations
-	set(CMAKE_CXX_FLAGS_DEBUG "/D_DEBUG /GS /Od /Ob0 /RTC1 /DJPH_PROFILE_ENABLED /DJPH_DEBUG_RENDERER")
-	set(CMAKE_CXX_FLAGS_RELEASE "/DNDEBUG /GS- /GL /Gy /O2 /Oi /Ot /DJPH_PROFILE_ENABLED /DJPH_DEBUG_RENDERER")
-	set(CMAKE_CXX_FLAGS_DISTRIBUTION "/DNDEBUG /GS- /GL /Gy /O2 /Oi /Ot")
-	set(CMAKE_CXX_FLAGS_RELEASEASAN "/DNDEBUG /DJPH_PROFILE_ENABLED /DJPH_DISABLE_TEMP_ALLOCATOR /DJPH_DEBUG_RENDERER -fsanitize=address /Od")
-	set(CMAKE_CXX_FLAGS_RELEASEUBSAN "/DNDEBUG /DJPH_PROFILE_ENABLED /DJPH_DEBUG_RENDERER -fsanitize=undefined,implicit-conversion")
-	set(CMAKE_CXX_FLAGS_RELEASECOVERAGE "/DNDEBUG -fprofile-instr-generate -fcoverage-mapping")
+	set(CMAKE_CXX_FLAGS_DEBUG "/GS /Od /Ob0 /RTC1")
+	set(CMAKE_CXX_FLAGS_RELEASE "/GS- /GL /Gy /O2 /Oi /Ot")
+	set(CMAKE_CXX_FLAGS_DISTRIBUTION "/GS- /GL /Gy /O2 /Oi /Ot")
+	set(CMAKE_CXX_FLAGS_RELEASEASAN "-fsanitize=address /Od")
+	set(CMAKE_CXX_FLAGS_RELEASEUBSAN "-fsanitize=undefined,implicit-conversion")
+	set(CMAKE_CXX_FLAGS_RELEASECOVERAGE "-fprofile-instr-generate -fcoverage-mapping")
 
 	# Set linker flags
 	set(CMAKE_EXE_LINKER_FLAGS "/machine:x64 /SUBSYSTEM:WINDOWS /ignore:4221 /DEBUG:FASTLINK")
@@ -148,12 +148,11 @@ elseif ("${CMAKE_SYSTEM_NAME}" STREQUAL "Linux" OR "${CMAKE_SYSTEM_NAME}" STREQU
 	endif()
 
 	# Set compiler flags for various configurations
-	set(CMAKE_CXX_FLAGS_DEBUG "-D_DEBUG -DJPH_PROFILE_ENABLED -DJPH_DEBUG_RENDERER") # Clang reorders variables so that div by zero occurs if we enable exception checking
-	set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG -DJPH_PROFILE_ENABLED -DJPH_DEBUG_RENDERER")
-	set(CMAKE_CXX_FLAGS_DISTRIBUTION "-O3 -DNDEBUG")
-	set(CMAKE_CXX_FLAGS_RELEASEASAN "-DNDEBUG -DJPH_PROFILE_ENABLED -DJPH_DISABLE_TEMP_ALLOCATOR -DJPH_DEBUG_RENDERER -fsanitize=address")
-	set(CMAKE_CXX_FLAGS_RELEASEUBSAN "-DNDEBUG -DJPH_PROFILE_ENABLED -DJPH_DEBUG_RENDERER -fsanitize=undefined,implicit-conversion")
-	set(CMAKE_CXX_FLAGS_RELEASECOVERAGE "-DNDEBUG -fprofile-instr-generate -fcoverage-mapping")
+	set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+	set(CMAKE_CXX_FLAGS_DISTRIBUTION "-O3")
+	set(CMAKE_CXX_FLAGS_RELEASEASAN "-fsanitize=address")
+	set(CMAKE_CXX_FLAGS_RELEASEUBSAN "-fsanitize=undefined,implicit-conversion")
+	set(CMAKE_CXX_FLAGS_RELEASECOVERAGE "-fprofile-instr-generate -fcoverage-mapping")
 
 	# Set linker flags
 	set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
@@ -176,7 +175,7 @@ if (TARGET_UNIT_TESTS)
     # Create UnitTests executable
     include(${PHYSICS_REPO_ROOT}/UnitTests/UnitTests.cmake)
     add_executable(UnitTests ${UNIT_TESTS_SRC_FILES})
-    target_include_directories(UnitTests PUBLIC ${JOLT_PHYSICS_ROOT} ${UNIT_TESTS_ROOT})
+    target_include_directories(UnitTests PUBLIC ${UNIT_TESTS_ROOT})
     target_link_libraries (UnitTests LINK_PUBLIC Jolt)
     if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
         target_link_options(UnitTests PUBLIC "/SUBSYSTEM:CONSOLE")
@@ -200,7 +199,7 @@ if (TARGET_HELLO_WORLD)
 	# Example 'Hello World' application
 	include(${PHYSICS_REPO_ROOT}/HelloWorld/HelloWorld.cmake)
 	add_executable(HelloWorld ${HELLO_WORLD_SRC_FILES})
-	target_include_directories(HelloWorld PUBLIC ${JOLT_PHYSICS_ROOT} ${HELLO_WORLD_ROOT})
+	target_include_directories(HelloWorld PUBLIC ${HELLO_WORLD_ROOT})
 	target_link_libraries (HelloWorld LINK_PUBLIC Jolt)
 	if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 		target_link_options(HelloWorld PUBLIC "/SUBSYSTEM:CONSOLE")
@@ -211,7 +210,7 @@ if (TARGET_PERFORMANCE_TEST)
 	# Performance Test application
 	include(${PHYSICS_REPO_ROOT}/PerformanceTest/PerformanceTest.cmake)
 	add_executable(PerformanceTest ${PERFORMANCE_TEST_SRC_FILES})
-	target_include_directories(PerformanceTest PUBLIC ${JOLT_PHYSICS_ROOT} ${PERFORMANCE_TEST_ROOT})
+	target_include_directories(PerformanceTest PUBLIC ${PERFORMANCE_TEST_ROOT})
 	target_link_libraries (PerformanceTest LINK_PUBLIC Jolt)
 	if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 		target_link_options(PerformanceTest PUBLIC "/SUBSYSTEM:CONSOLE")

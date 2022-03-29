@@ -3,15 +3,15 @@
 
 #pragma once
 
-#include <Physics/Body/BodyInterface.h>
-#include <Physics/Collision/NarrowPhaseQuery.h>
-#include <Physics/Collision/ContactListener.h>
-#include <Physics/Constraints/ContactConstraintManager.h>
-#include <Physics/Constraints/ConstraintManager.h>
-#include <Physics/IslandBuilder.h>
-#include <Physics/PhysicsUpdateContext.h>
+#include <Jolt/Physics/Body/BodyInterface.h>
+#include <Jolt/Physics/Collision/NarrowPhaseQuery.h>
+#include <Jolt/Physics/Collision/ContactListener.h>
+#include <Jolt/Physics/Constraints/ContactConstraintManager.h>
+#include <Jolt/Physics/Constraints/ConstraintManager.h>
+#include <Jolt/Physics/IslandBuilder.h>
+#include <Jolt/Physics/PhysicsUpdateContext.h>
 
-namespace JPH {
+JPH_NAMESPACE_BEGIN
 
 class JobSystem;
 class StateRecorder;
@@ -258,4 +258,4 @@ private:
 	PhysicsSettings				mPhysicsSettings;
 };
 
-} // JPH
+JPH_NAMESPACE_END

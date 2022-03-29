@@ -3,9 +3,9 @@
 
 #pragma once
 
-#include <Physics/Collision/Shape/Shape.h>
+#include <Jolt/Physics/Collision/Shape/Shape.h>
 
-namespace JPH {
+JPH_NAMESPACE_BEGIN
 
 /// Class that constructs a DecoratedShape
 class DecoratedShapeSettings : public ShapeSettings
@@ -58,4 +58,4 @@ protected:
 	RefConst<Shape>					mInnerShape;
 };
 
-} // JPH
+JPH_NAMESPACE_END

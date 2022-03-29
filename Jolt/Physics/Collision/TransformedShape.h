@@ -3,14 +3,14 @@
 
 #pragma once
 
-#include <Physics/Collision/ObjectLayer.h>
-#include <Physics/Collision/ShapeFilter.h>
-#include <Physics/Collision/Shape/Shape.h>
-#include <Physics/Collision/Shape/SubShapeID.h>
-#include <Physics/Collision/BackFaceMode.h>
-#include <Physics/Body/BodyID.h>
+#include <Jolt/Physics/Collision/ObjectLayer.h>
+#include <Jolt/Physics/Collision/ShapeFilter.h>
+#include <Jolt/Physics/Collision/Shape/Shape.h>
+#include <Jolt/Physics/Collision/Shape/SubShapeID.h>
+#include <Jolt/Physics/Collision/BackFaceMode.h>
+#include <Jolt/Physics/Body/BodyID.h>
 
-namespace JPH {
+JPH_NAMESPACE_BEGIN
 
 struct RayCast;
 class CollideShapeSettings;
@@ -159,4 +159,4 @@ public:
 static_assert(sizeof(TransformedShape) == 64, "Not properly packed");
 static_assert(alignof(TransformedShape) == 16, "Not properly aligned");
 
-} // JPH
+JPH_NAMESPACE_END

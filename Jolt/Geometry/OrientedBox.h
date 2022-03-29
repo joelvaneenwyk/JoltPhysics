@@ -3,12 +3,12 @@
 
 #pragma once
 
-#include <Geometry/Triangle.h>
-#include <Geometry/IndexedTriangle.h>
-#include <Geometry/AABox.h>
-#include <Math/Mat44.h>
+#include <Jolt/Geometry/Triangle.h>
+#include <Jolt/Geometry/IndexedTriangle.h>
+#include <Jolt/Geometry/AABox.h>
+#include <Jolt/Math/Mat44.h>
 
-namespace JPH {
+JPH_NAMESPACE_BEGIN
 
 class AABox;
 
@@ -34,4 +34,4 @@ public:
 	Vec3			mHalfExtents;														///< Half extents (half the size of the edge) of the local space axis aligned box
 };
 
-} // JPH
+JPH_NAMESPACE_END
