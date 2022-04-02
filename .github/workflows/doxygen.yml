@@ -3,6 +3,8 @@ name: Doxygen Action
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
+    branches: [ main ]
 
 # Builds and deploys doxygen documentation
 jobs:

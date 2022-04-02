@@ -13,6 +13,8 @@ on:
       - 'Docs/**'
       - '**.md'
       - '**.txt'
+  workflow_dispatch:
+    branches: [ main ]
 
 jobs:
   linux-clang:
