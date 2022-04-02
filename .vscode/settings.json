@@ -1,3 +1,15 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/Build"
+    "cmake.sourceDirectory": "${workspaceFolder}/Build",
+    "cSpell.words": [
+        "Architecting",
+        "Broadphase",
+        "cfamily",
+        "cmake",
+        "mkdir",
+        "profdata",
+        "profraw",
+        "ragdoll",
+        "ragdolls",
+        "RTTI"
+    ]
 }

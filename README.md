@@ -1,8 +1,8 @@
-[![CLA assistant](https://cla-assistant.io/readme/badge/jrouwe/JoltPhysics)](https://cla-assistant.io/jrouwe/JoltPhysics)
-[![Build Status](https://github.com/jrouwe/JoltPhysics/actions/workflows/build.yml/badge.svg)](https://github.com/jrouwe/JoltPhysics/actions/)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jrouwe_JoltPhysics&metric=alert_status)](https://sonarcloud.io/dashboard?id=jrouwe_JoltPhysics)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=jrouwe_JoltPhysics&metric=bugs)](https://sonarcloud.io/dashboard?id=jrouwe_JoltPhysics)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=jrouwe_JoltPhysics&metric=code_smells)](https://sonarcloud.io/dashboard?id=jrouwe_JoltPhysics)
+[![CLA assistant](https://cla-assistant.io/readme/badge/joelvaneenwyk/JoltPhysics)](https://cla-assistant.io/jrouwe/JoltPhysics)
+[![Build Status](https://github.com/joelvaneenwyk/JoltPhysics/actions/workflows/build.yml/badge.svg)](https://github.com/jrouwe/JoltPhysics/actions/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=joelvaneenwyk_JoltPhysics&metric=alert_status)](https://sonarcloud.io/dashboard?id=joelvaneenwyk_JoltPhysics)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=joelvaneenwyk_JoltPhysics&metric=bugs)](https://sonarcloud.io/dashboard?id=joelvaneenwyk_JoltPhysics)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=joelvaneenwyk_JoltPhysics&metric=code_smells)](https://sonarcloud.io/dashboard?id=joelvaneenwyk_JoltPhysics)
 
 # Jolt Physics
 
@@ -27,9 +27,9 @@ If you're interested in how Jolt scales with multiple CPUs and compares to other
 So why create yet another physics engine? First of all, this has been a personal learning project and secondly I wanted to address some issues that I had with existing physics engines:
 
 * In games we usually need to do many more things than to simulate the physics world and we need to do this across multiple threads. We therefore place a lot of emphasis on concurrently accessing the physics simulation data outside of the main physics simulation update:
-	* Sections of the world can be loaded / unloaded in the background. A batch of physics bodies can be prepared on a background thread without locking or affecting the physics simulation and then inserted into the world all at once with a minimal impact on performance.
-	* Collision queries can run in parallel with other operations like insertion / removal of bodies. The query code is guaranteed to see a body in a consistent state, but when a body is changed during a collision query there is no guarantee if the change is visible to the query or not. If a thread modifies the position of a body and then does a collision query, it will immediately see the updated state (this is often a problem when working with a read version and a write version of the world).
-	* It is also possible to run collision queries in parallel to the main physics simulation by doing the broad phase query before the simulation step. This way, long running processes (like navigation mesh generation) can be spread out across multiple frames while still running the physics simulation every frame.
+  * Sections of the world can be loaded / unloaded in the background. A batch of physics bodies can be prepared on a background thread without locking or affecting the physics simulation and then inserted into the world all at once with a minimal impact on performance.
+  * Collision queries can run in parallel with other operations like insertion / removal of bodies. The query code is guaranteed to see a body in a consistent state, but when a body is changed during a collision query there is no guarantee if the change is visible to the query or not. If a thread modifies the position of a body and then does a collision query, it will immediately see the updated state (this is often a problem when working with a read version and a write version of the world).
+  * It is also possible to run collision queries in parallel to the main physics simulation by doing the broad phase query before the simulation step. This way, long running processes (like navigation mesh generation) can be spread out across multiple frames while still running the physics simulation every frame.
 * One of the main sources of performance problems we found was waking up too many bodies while loading / unloading content. Therefore, bodies will not automatically wake up when created and neighboring bodies will not be woken up when bodies are removed. This can be triggered manually if desired.
 * The simulation runs deterministically, so you could replicate a simulation to a remote client by merely replicating the inputs to the simulation. Read the [Deterministic Simulation](https://jrouwe.github.io/JoltPhysics/) section to understand the limits of this.
 * The simulation of this physics engine tries to simulate behavior of rigid bodies in the real world but makes approximations in the simulation so should mainly be used for games or VR simulations.
@@ -38,37 +38,37 @@ For more information see the [Architecture and API documentation](https://jrouwe
 
 ## Features
 
-* Simulation of rigid bodies of various shapes using continous collision detection:
-	* Sphere.
-	* Box.
-	* Capsule.
-	* Tapered-capsule.
-	* Cylinder.
-	* Convex hull.
-	* Compound.
-	* Mesh (triangle).
-	* Terrain (height field).
+* Simulation of rigid bodies of various shapes using continuous collision detection:
+  * Sphere.
+  * Box.
+  * Capsule.
+  * Tapered-capsule.
+  * Cylinder.
+  * Convex hull.
+  * Compound.
+  * Mesh (triangle).
+  * Terrain (height field).
 * Simulation of constraints between bodies:
-	* Fixed.
-	* Point.
-	* Distance (including springs).
-	* Hinge.
-	* Slider (also called prismatic).
-	* Cone.
-	* Smooth spline paths.
-	* Swing-twist (for humanoid shoulders).
-	* 6 DOF.
+  * Fixed.
+  * Point.
+  * Distance (including springs).
+  * Hinge.
+  * Slider (also called prismatic).
+  * Cone.
+  * Smooth spline paths.
+  * Swing-twist (for humanoid shoulders).
+  * 6 DOF.
 * Motors to drive the constraints.
 * Collision detection:
-	* Casting rays.
-	* Testing shapes vs shapes.
-	* Casting a shape vs another shape.
-	* Broadphase only tests for quickly determining which objects may intersect.
+  * Casting rays.
+  * Testing shapes vs shapes.
+  * Casting a shape vs another shape.
+  * Broadphase only tests for quickly determining which objects may intersect.
 * Sensors (trigger volumes).
 * Animated ragdolls:
-	* Hard keying (kinematic only rigid bodies).
-	* Soft keying (setting velocities on dynamic rigid bodies).
-	* Driving constraint motors to an animated pose.
+  * Hard keying (kinematic only rigid bodies).
+  * Soft keying (setting velocities on dynamic rigid bodies).
+  * Driving constraint motors to an animated pose.
 * Game character simulation (capsule), although many games may want to implement characters just using collision tests for more control over the simulation.
 * Vehicle simulation of wheeled and tracked vehicles.
 * Water buoyancy calculations.
