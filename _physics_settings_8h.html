@@ -54,7 +54,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">PhysicsSettings.h File Reference</div></div>
 </div><!--header-->
@@ -64,32 +63,149 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_p_h_1_1_physics_settings.html">JPH::PhysicsSettings</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_physics_settings.html">PhysicsSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5aa994f1812ac27fca70b203f6b7af25"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a5aa994f1812ac27fca70b203f6b7af25">JPH::cDefaultCollisionTolerance</a> = 1.0e-4f</td></tr>
-<tr class="memdesc:a5aa994f1812ac27fca70b203f6b7af25"><td class="mdescLeft">&#160;</td><td class="mdescRight">If objects are closer than this distance, they are considered to be colliding (used for GJK) (unit: meter)  <a href="namespace_j_p_h.html#a5aa994f1812ac27fca70b203f6b7af25">More...</a><br /></td></tr>
-<tr class="separator:a5aa994f1812ac27fca70b203f6b7af25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a115ea4955188fe6bf33202fd8f0cc6d0"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a115ea4955188fe6bf33202fd8f0cc6d0">JPH::cDefaultPenetrationTolerance</a> = 1.0e-4f</td></tr>
-<tr class="memdesc:a115ea4955188fe6bf33202fd8f0cc6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A factor that determines the accuracy of the penetration depth calculation. If the change of the squared distance is less than tolerance * current_penetration_depth^2 the algorithm will terminate. (unit: dimensionless)  <a href="namespace_j_p_h.html#a115ea4955188fe6bf33202fd8f0cc6d0">More...</a><br /></td></tr>
-<tr class="separator:a115ea4955188fe6bf33202fd8f0cc6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc97878d71a39184a205ac84c0a2cc96"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#afc97878d71a39184a205ac84c0a2cc96">JPH::cDefaultConvexRadius</a> = 0.05f</td></tr>
-<tr class="memdesc:afc97878d71a39184a205ac84c0a2cc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much padding to add around objects.  <a href="namespace_j_p_h.html#afc97878d71a39184a205ac84c0a2cc96">More...</a><br /></td></tr>
-<tr class="separator:afc97878d71a39184a205ac84c0a2cc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55e2f743c25e024d6f150bbd1089d1c9"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a55e2f743c25e024d6f150bbd1089d1c9">JPH::cMaxPhysicsJobs</a> = 2048</td></tr>
-<tr class="memdesc:a55e2f743c25e024d6f150bbd1089d1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of jobs to allow.  <a href="namespace_j_p_h.html#a55e2f743c25e024d6f150bbd1089d1c9">More...</a><br /></td></tr>
-<tr class="separator:a55e2f743c25e024d6f150bbd1089d1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7452ff3ba2eeb2ad66ce53051fad9d44"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a7452ff3ba2eeb2ad66ce53051fad9d44">JPH::cMaxPhysicsBarriers</a> = 8</td></tr>
-<tr class="memdesc:a7452ff3ba2eeb2ad66ce53051fad9d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of barriers to allow.  <a href="namespace_j_p_h.html#a7452ff3ba2eeb2ad66ce53051fad9d44">More...</a><br /></td></tr>
-<tr class="separator:a7452ff3ba2eeb2ad66ce53051fad9d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4199156431c225865fda0e5e6bc593fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_physics_settings_8h.html#a4199156431c225865fda0e5e6bc593fd">cDefaultCollisionTolerance</a> = 1.0e-4f</td></tr>
+<tr class="memdesc:a4199156431c225865fda0e5e6bc593fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">If objects are closer than this distance, they are considered to be colliding (used for GJK) (unit: meter)  <a href="_physics_settings_8h.html#a4199156431c225865fda0e5e6bc593fd">More...</a><br /></td></tr>
+<tr class="separator:a4199156431c225865fda0e5e6bc593fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeaa0f0b4cc2e2de1021f3669d5d83d9"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_physics_settings_8h.html#adeaa0f0b4cc2e2de1021f3669d5d83d9">cDefaultPenetrationTolerance</a> = 1.0e-4f</td></tr>
+<tr class="memdesc:adeaa0f0b4cc2e2de1021f3669d5d83d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A factor that determines the accuracy of the penetration depth calculation. If the change of the squared distance is less than tolerance * current_penetration_depth^2 the algorithm will terminate. (unit: dimensionless)  <a href="_physics_settings_8h.html#adeaa0f0b4cc2e2de1021f3669d5d83d9">More...</a><br /></td></tr>
+<tr class="separator:adeaa0f0b4cc2e2de1021f3669d5d83d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef9aad6ecef0a70378bbe649f08720e"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_physics_settings_8h.html#aeef9aad6ecef0a70378bbe649f08720e">cDefaultConvexRadius</a> = 0.05f</td></tr>
+<tr class="memdesc:aeef9aad6ecef0a70378bbe649f08720e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much padding to add around objects.  <a href="_physics_settings_8h.html#aeef9aad6ecef0a70378bbe649f08720e">More...</a><br /></td></tr>
+<tr class="separator:aeef9aad6ecef0a70378bbe649f08720e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db4388fe9fc48dbc7b8dd7d43f86825"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_physics_settings_8h.html#a0db4388fe9fc48dbc7b8dd7d43f86825">cMaxPhysicsJobs</a> = 2048</td></tr>
+<tr class="memdesc:a0db4388fe9fc48dbc7b8dd7d43f86825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of jobs to allow.  <a href="_physics_settings_8h.html#a0db4388fe9fc48dbc7b8dd7d43f86825">More...</a><br /></td></tr>
+<tr class="separator:a0db4388fe9fc48dbc7b8dd7d43f86825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559bcb71de078738aede3ed80cd394f8"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_physics_settings_8h.html#a559bcb71de078738aede3ed80cd394f8">cMaxPhysicsBarriers</a> = 8</td></tr>
+<tr class="memdesc:a559bcb71de078738aede3ed80cd394f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of barriers to allow.  <a href="_physics_settings_8h.html#a559bcb71de078738aede3ed80cd394f8">More...</a><br /></td></tr>
+<tr class="separator:a559bcb71de078738aede3ed80cd394f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a4199156431c225865fda0e5e6bc593fd" name="a4199156431c225865fda0e5e6bc593fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4199156431c225865fda0e5e6bc593fd">&#9670;&nbsp;</a></span>cDefaultCollisionTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> constexpr float cDefaultCollisionTolerance = 1.0e-4f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If objects are closer than this distance, they are considered to be colliding (used for GJK) (unit: meter) </p>
+
+</div>
+</div>
+<a id="aeef9aad6ecef0a70378bbe649f08720e" name="aeef9aad6ecef0a70378bbe649f08720e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef9aad6ecef0a70378bbe649f08720e">&#9670;&nbsp;</a></span>cDefaultConvexRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float cDefaultConvexRadius = 0.05f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How much padding to add around objects. </p>
+
+</div>
+</div>
+<a id="adeaa0f0b4cc2e2de1021f3669d5d83d9" name="adeaa0f0b4cc2e2de1021f3669d5d83d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeaa0f0b4cc2e2de1021f3669d5d83d9">&#9670;&nbsp;</a></span>cDefaultPenetrationTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float cDefaultPenetrationTolerance = 1.0e-4f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A factor that determines the accuracy of the penetration depth calculation. If the change of the squared distance is less than tolerance * current_penetration_depth^2 the algorithm will terminate. (unit: dimensionless) </p>
+<p >Stop when there's less than 1% change </p>
+
+</div>
+</div>
+<a id="a559bcb71de078738aede3ed80cd394f8" name="a559bcb71de078738aede3ed80cd394f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559bcb71de078738aede3ed80cd394f8">&#9670;&nbsp;</a></span>cMaxPhysicsBarriers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int cMaxPhysicsBarriers = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum amount of barriers to allow. </p>
+
+</div>
+</div>
+<a id="a0db4388fe9fc48dbc7b8dd7d43f86825" name="a0db4388fe9fc48dbc7b8dd7d43f86825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db4388fe9fc48dbc7b8dd7d43f86825">&#9670;&nbsp;</a></span>cMaxPhysicsJobs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int cMaxPhysicsJobs = 2048</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum amount of jobs to allow. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

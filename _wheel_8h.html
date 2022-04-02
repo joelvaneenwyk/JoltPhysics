@@ -54,38 +54,47 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">Wheel.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_body_8h_source.html">Physics/Body/Body.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_axis_constraint_part_8h_source.html">Physics/Constraints/ConstraintPart/AxisConstraintPart.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_serializable_object_8h_source.html">ObjectStream/SerializableObject.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Core/StreamIn.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Core/StreamOut.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_body_8h_source.html">Jolt/Physics/Body/Body.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_axis_constraint_part_8h_source.html">Jolt/Physics/Constraints/ConstraintPart/AxisConstraintPart.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_serializable_object_8h_source.html">Jolt/ObjectStream/SerializableObject.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Jolt/Core/StreamIn.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Jolt/Core/StreamOut.h</a>&gt;</code><br />
 </div>
 <p><a href="_wheel_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_wheel_settings.html">JPH::WheelSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for wheel settings, each <a class="el" href="class_j_p_h_1_1_vehicle_controller.html" title="Runtime data for interface that controls acceleration / decelleration of the vehicle.">VehicleController</a> can implement a derived class of this.  <a href="class_j_p_h_1_1_wheel_settings.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wheel_settings.html">WheelSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for wheel settings, each <a class="el" href="class_vehicle_controller.html" title="Runtime data for interface that controls acceleration / decelleration of the vehicle.">VehicleController</a> can implement a derived class of this.  <a href="class_wheel_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_wheel.html">JPH::Wheel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for runtime data for a wheel, each <a class="el" href="class_j_p_h_1_1_vehicle_controller.html" title="Runtime data for interface that controls acceleration / decelleration of the vehicle.">VehicleController</a> can implement a derived class of this.  <a href="class_j_p_h_1_1_wheel.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_wheel.html">Wheel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for runtime data for a wheel, each <a class="el" href="class_vehicle_controller.html" title="Runtime data for interface that controls acceleration / decelleration of the vehicle.">VehicleController</a> can implement a derived class of this.  <a href="class_wheel.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a461c0be47e6d1f647165dc43083ab321"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a461c0be47e6d1f647165dc43083ab321">JPH::Wheels</a> = vector&lt; Wheel * &gt;</td></tr>
-<tr class="separator:a461c0be47e6d1f647165dc43083ab321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6352124dfb16754b047eec4037b49ed3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_wheel_8h.html#a6352124dfb16754b047eec4037b49ed3">Wheels</a> = vector&lt; <a class="el" href="class_wheel.html">Wheel</a> * &gt;</td></tr>
+<tr class="separator:a6352124dfb16754b047eec4037b49ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a6352124dfb16754b047eec4037b49ed3" name="a6352124dfb16754b047eec4037b49ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6352124dfb16754b047eec4037b49ed3">&#9670;&nbsp;</a></span>Wheels</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_wheel_8h.html#a6352124dfb16754b047eec4037b49ed3">Wheels</a> =  vector&lt;<a class="el" href="class_wheel.html">Wheel</a> *&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

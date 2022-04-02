@@ -54,40 +54,65 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">VehicleTransmission.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_serializable_object_8h_source.html">ObjectStream/SerializableObject.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Core/StreamIn.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Core/StreamOut.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_state_recorder_8h_source.html">Physics/StateRecorder.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_serializable_object_8h_source.html">Jolt/ObjectStream/SerializableObject.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Jolt/Core/StreamIn.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Jolt/Core/StreamOut.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_state_recorder_8h_source.html">Jolt/Physics/StateRecorder.h</a>&gt;</code><br />
 </div>
 <p><a href="_vehicle_transmission_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_vehicle_transmission_settings.html">JPH::VehicleTransmissionSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for the transmission of a vehicle (gear box)  <a href="class_j_p_h_1_1_vehicle_transmission_settings.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_transmission_settings.html">VehicleTransmissionSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for the transmission of a vehicle (gear box)  <a href="class_vehicle_transmission_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_vehicle_transmission.html">JPH::VehicleTransmission</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime data for transmission.  <a href="class_j_p_h_1_1_vehicle_transmission.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_transmission.html">VehicleTransmission</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime data for transmission.  <a href="class_vehicle_transmission.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aff171708b0f72a96b1d3f47c1bb30fb6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aff171708b0f72a96b1d3f47c1bb30fb6">JPH::ETransmissionMode</a> : uint8 { <a class="el" href="namespace_j_p_h.html#aff171708b0f72a96b1d3f47c1bb30fb6a06b9281e396db002010bde1de57262eb">JPH::Auto</a>
-, <a class="el" href="namespace_j_p_h.html#aff171708b0f72a96b1d3f47c1bb30fb6ae1ba155a9f2e8c3be94020eef32a0301">JPH::Manual</a>
+<tr class="memitem:ad3e125d6d786c09fddfa10be390f851d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vehicle_transmission_8h.html#ad3e125d6d786c09fddfa10be390f851d">ETransmissionMode</a> : uint8 { <a class="el" href="_vehicle_transmission_8h.html#ad3e125d6d786c09fddfa10be390f851da06b9281e396db002010bde1de57262eb">Auto</a>
+, <a class="el" href="_vehicle_transmission_8h.html#ad3e125d6d786c09fddfa10be390f851dae1ba155a9f2e8c3be94020eef32a0301">Manual</a>
  }</td></tr>
-<tr class="memdesc:aff171708b0f72a96b1d3f47c1bb30fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">How gears are shifted.  <a href="namespace_j_p_h.html#aff171708b0f72a96b1d3f47c1bb30fb6">More...</a><br /></td></tr>
-<tr class="separator:aff171708b0f72a96b1d3f47c1bb30fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ad3e125d6d786c09fddfa10be390f851d"><td class="mdescLeft">&#160;</td><td class="mdescRight">How gears are shifted.  <a href="_vehicle_transmission_8h.html#ad3e125d6d786c09fddfa10be390f851d">More...</a><br /></td></tr>
+<tr class="separator:ad3e125d6d786c09fddfa10be390f851d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ad3e125d6d786c09fddfa10be390f851d" name="ad3e125d6d786c09fddfa10be390f851d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e125d6d786c09fddfa10be390f851d">&#9670;&nbsp;</a></span>ETransmissionMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="_vehicle_transmission_8h.html#ad3e125d6d786c09fddfa10be390f851d">ETransmissionMode</a> : <a class="el" href="_core_8h.html#aa17fc6cc2c9a4ad80e9fcdd3f64320e1">uint8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How gears are shifted. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3e125d6d786c09fddfa10be390f851da06b9281e396db002010bde1de57262eb" name="ad3e125d6d786c09fddfa10be390f851da06b9281e396db002010bde1de57262eb"></a>Auto&#160;</td><td class="fielddoc"><p >Automatically shift gear up and down. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad3e125d6d786c09fddfa10be390f851dae1ba155a9f2e8c3be94020eef32a0301" name="ad3e125d6d786c09fddfa10be390f851dae1ba155a9f2e8c3be94020eef32a0301"></a>Manual&#160;</td><td class="fielddoc"><p >Manual gear shift (call SetTransmissionInput) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

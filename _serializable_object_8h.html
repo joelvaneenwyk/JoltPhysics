@@ -54,25 +54,19 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">SerializableObject.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_serializable_attribute_8h_source.html">ObjectStream/SerializableAttribute.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_object_stream_types_8h_source.html">ObjectStream/ObjectStreamTypes.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_serializable_attribute_8h_source.html">Jolt/ObjectStream/SerializableAttribute.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_object_stream_types_8h_source.html">Jolt/ObjectStream/ObjectStreamTypes.h</a>&gt;</code><br />
 </div>
 <p><a href="_serializable_object_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_serializable_object.html">JPH::SerializableObject</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serializable_object.html">SerializableObject</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -105,30 +99,30 @@ Macros</h2></td></tr>
 <tr class="separator:aeda845bb1f1c295d27ef50d70b319823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2ccb45b6d52e1c8a1785bc62b412e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#ada2ccb45b6d52e1c8a1785bc62b412e4">JPH_IMPLEMENT_SERIALIZABLE_ABSTRACT_BASE</a>(class_name)</td></tr>
 <tr class="separator:ada2ccb45b6d52e1c8a1785bc62b412e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a7d32f5239cd276fd0012072a2a4ccd23">JPH_DECLARE_PRIMITIVE</a>(name)&#160;&#160;&#160;	inline void OSVisitCompounds(const name &amp;inObject, const CompoundVisitor &amp;inVisitor) { }</td></tr>
+<tr class="memitem:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a7d32f5239cd276fd0012072a2a4ccd23">JPH_DECLARE_PRIMITIVE</a>(name)&#160;&#160;&#160;	inline void <a class="el" href="_serializable_object_8h.html#a6d0d1d325bba959b2c451e01a5f6af3a">OSVisitCompounds</a>(const name &amp;inObject, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor) { }</td></tr>
 <tr class="separator:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa35419ad948fe33a836c7118427553c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aa35419ad948fe33a836c7118427553c9">JPH::OSVisitCompounds</a> (const void *inObject, const RTTI *inRTTI, const CompoundVisitor &amp;inVisitor)</td></tr>
-<tr class="memdesc:aa35419ad948fe33a836c7118427553c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic visitor that recurses to all attributes.  <a href="namespace_j_p_h.html#aa35419ad948fe33a836c7118427553c9">More...</a><br /></td></tr>
-<tr class="separator:aa35419ad948fe33a836c7118427553c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaee5dcfb7068598e23f5532395e0f01"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:adaee5dcfb7068598e23f5532395e0f01"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#adaee5dcfb7068598e23f5532395e0f01">JPH::OSVisitCompounds</a> (const Ref&lt; T &gt; &amp;inObject, const CompoundVisitor &amp;inVisitor)</td></tr>
-<tr class="memdesc:adaee5dcfb7068598e23f5532395e0f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define visitor templates.  <a href="namespace_j_p_h.html#adaee5dcfb7068598e23f5532395e0f01">More...</a><br /></td></tr>
-<tr class="separator:adaee5dcfb7068598e23f5532395e0f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d4f74b27ed3fdd074bcdbbf8240cd24"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a5d4f74b27ed3fdd074bcdbbf8240cd24"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a5d4f74b27ed3fdd074bcdbbf8240cd24">JPH::OSVisitCompounds</a> (const RefConst&lt; T &gt; &amp;inObject, const CompoundVisitor &amp;inVisitor)</td></tr>
-<tr class="separator:a5d4f74b27ed3fdd074bcdbbf8240cd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82765108929b8d71ceddd0c91e600f28"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a82765108929b8d71ceddd0c91e600f28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a82765108929b8d71ceddd0c91e600f28">JPH::OSVisitCompounds</a> (const vector&lt; T &gt; &amp;inObject, const CompoundVisitor &amp;inVisitor)</td></tr>
-<tr class="separator:a82765108929b8d71ceddd0c91e600f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b54d666e8e72bb1c1bfa7a2c406c2a4"><td class="memTemplParams" colspan="2">template&lt;class T , uint N&gt; </td></tr>
-<tr class="memitem:a5b54d666e8e72bb1c1bfa7a2c406c2a4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a5b54d666e8e72bb1c1bfa7a2c406c2a4">JPH::OSVisitCompounds</a> (const StaticArray&lt; T, N &gt; &amp;inObject, const CompoundVisitor &amp;inVisitor)</td></tr>
-<tr class="separator:a5b54d666e8e72bb1c1bfa7a2c406c2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa047d88e63979921529d3e5a452d6a39"><td class="memTemplParams" colspan="2">template&lt;class T , uint N&gt; </td></tr>
-<tr class="memitem:aa047d88e63979921529d3e5a452d6a39"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aa047d88e63979921529d3e5a452d6a39">JPH::OSVisitCompounds</a> (const T(&amp;inObject)[N], const CompoundVisitor &amp;inVisitor)</td></tr>
-<tr class="separator:aa047d88e63979921529d3e5a452d6a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b2d7eae26e4744985e4d77a942ebbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a87b2d7eae26e4744985e4d77a942ebbc">OSVisitCompounds</a> (const void *inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor)</td></tr>
+<tr class="memdesc:a87b2d7eae26e4744985e4d77a942ebbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic visitor that recurses to all attributes.  <a href="_serializable_object_8h.html#a87b2d7eae26e4744985e4d77a942ebbc">More...</a><br /></td></tr>
+<tr class="separator:a87b2d7eae26e4744985e4d77a942ebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0042be0a8507367441fb7514d6cf06a0"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a0042be0a8507367441fb7514d6cf06a0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a0042be0a8507367441fb7514d6cf06a0">OSVisitCompounds</a> (const <a class="el" href="class_ref.html">Ref</a>&lt; T &gt; &amp;inObject, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor)</td></tr>
+<tr class="memdesc:a0042be0a8507367441fb7514d6cf06a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define visitor templates.  <a href="_serializable_object_8h.html#a0042be0a8507367441fb7514d6cf06a0">More...</a><br /></td></tr>
+<tr class="separator:a0042be0a8507367441fb7514d6cf06a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec564e3cba18f386f7af2660b86017d"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a0ec564e3cba18f386f7af2660b86017d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a0ec564e3cba18f386f7af2660b86017d">OSVisitCompounds</a> (const <a class="el" href="class_ref_const.html">RefConst</a>&lt; T &gt; &amp;inObject, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor)</td></tr>
+<tr class="separator:a0ec564e3cba18f386f7af2660b86017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86dc290e24bc315107970dfb3b79437e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a86dc290e24bc315107970dfb3b79437e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a86dc290e24bc315107970dfb3b79437e">OSVisitCompounds</a> (const vector&lt; T &gt; &amp;inObject, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor)</td></tr>
+<tr class="separator:a86dc290e24bc315107970dfb3b79437e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe08583e9d38019009e9d1de5df0f821"><td class="memTemplParams" colspan="2">template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </td></tr>
+<tr class="memitem:afe08583e9d38019009e9d1de5df0f821"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#afe08583e9d38019009e9d1de5df0f821">OSVisitCompounds</a> (const <a class="el" href="class_static_array.html">StaticArray</a>&lt; T, N &gt; &amp;inObject, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor)</td></tr>
+<tr class="separator:afe08583e9d38019009e9d1de5df0f821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0d1d325bba959b2c451e01a5f6af3a"><td class="memTemplParams" colspan="2">template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </td></tr>
+<tr class="memitem:a6d0d1d325bba959b2c451e01a5f6af3a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_serializable_object_8h.html#a6d0d1d325bba959b2c451e01a5f6af3a">OSVisitCompounds</a> (const T(&amp;inObject)[N], const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor)</td></tr>
+<tr class="separator:a6d0d1d325bba959b2c451e01a5f6af3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a7d32f5239cd276fd0012072a2a4ccd23" name="a7d32f5239cd276fd0012072a2a4ccd23"></a>
@@ -142,7 +136,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;	inline void OSVisitCompounds(const name &amp;inObject, const CompoundVisitor &amp;inVisitor) { }</td>
+          <td>&#160;&#160;&#160;	inline void <a class="el" href="_serializable_object_8h.html#a6d0d1d325bba959b2c451e01a5f6af3a">OSVisitCompounds</a>(const name &amp;inObject, const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor) { }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -300,22 +294,25 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="namespace_j_p_h.html#a0b48ee1dfeefe0e86005623e7e09ddcc">OSReadData</a>(ObjectStreamIn &amp;ioStream, class_name &amp;inInstance);                               \</div>
-<div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="namespace_j_p_h.html#a0b48ee1dfeefe0e86005623e7e09ddcc">OSReadData</a>(ObjectStreamIn &amp;ioStream, class_name *&amp;inPointer);                               \</div>
-<div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="namespace_j_p_h.html#abc7b71b89b96428809703024195e8f58">OSIsType</a>(class_name *inNull, <span class="keywordtype">int</span> inArrayDepth, ObjectStream::EDataType inDataType, <span class="keyword">const</span> <span class="keywordtype">char</span> *inClassName); \</div>
-<div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="namespace_j_p_h.html#abc7b71b89b96428809703024195e8f58">OSIsType</a>(class_name **inNull, <span class="keywordtype">int</span> inArrayDepth, ObjectStream::EDataType inDataType, <span class="keyword">const</span> <span class="keywordtype">char</span> *inClassName); \</div>
-<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="namespace_j_p_h.html#a3fa8bfe056ef1de8816b3c06c57109db">OSWriteData</a>(ObjectStreamOut &amp;ioStream, <span class="keyword">const</span> class_name &amp;inInstance);                       \</div>
-<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="namespace_j_p_h.html#a3fa8bfe056ef1de8816b3c06c57109db">OSWriteData</a>(ObjectStreamOut &amp;ioStream, class_name *<span class="keyword">const</span> &amp;inPointer);                       \</div>
-<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="namespace_j_p_h.html#a37d372b3e96245087b4a5d1c93e9efb0">OSWriteDataType</a>(ObjectStreamOut &amp;ioStream, class_name *inNull);                             \</div>
-<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="namespace_j_p_h.html#a37d372b3e96245087b4a5d1c93e9efb0">OSWriteDataType</a>(ObjectStreamOut &amp;ioStream, class_name **inNull);                            \</div>
-<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="namespace_j_p_h.html#aa047d88e63979921529d3e5a452d6a39">OSVisitCompounds</a>(<span class="keyword">const</span> class_name &amp;inObject, <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_j_p_h.html#af9f1989d0d24a054d4fa7c7aebc519be">CompoundVisitor</a> &amp;inVisitor);             \</div>
-<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="namespace_j_p_h.html#aa047d88e63979921529d3e5a452d6a39">OSVisitCompounds</a>(<span class="keyword">const</span> class_name *inObject, <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_j_p_h.html#af9f1989d0d24a054d4fa7c7aebc519be">CompoundVisitor</a> &amp;inVisitor);</div>
-<div class="ttc" id="anamespace_j_p_h_html_a0b48ee1dfeefe0e86005623e7e09ddcc"><div class="ttname"><a href="namespace_j_p_h.html#a0b48ee1dfeefe0e86005623e7e09ddcc">JPH::OSReadData</a></div><div class="ttdeci">bool OSReadData(ObjectStreamIn &amp;ioStream, vector&lt; T &gt; &amp;inArray)</div><div class="ttdoc">Define serialization templates for dynamic arrays.</div><div class="ttdef"><b>Definition:</b> ObjectStreamIn.h:170</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_a37d372b3e96245087b4a5d1c93e9efb0"><div class="ttname"><a href="namespace_j_p_h.html#a37d372b3e96245087b4a5d1c93e9efb0">JPH::OSWriteDataType</a></div><div class="ttdeci">void OSWriteDataType(ObjectStreamOut &amp;ioStream, vector&lt; T &gt; *inNull)</div><div class="ttdef"><b>Definition:</b> ObjectStreamOut.h:129</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_a3fa8bfe056ef1de8816b3c06c57109db"><div class="ttname"><a href="namespace_j_p_h.html#a3fa8bfe056ef1de8816b3c06c57109db">JPH::OSWriteData</a></div><div class="ttdeci">void OSWriteData(ObjectStreamOut &amp;ioStream, const vector&lt; T &gt; &amp;inArray)</div><div class="ttdef"><b>Definition:</b> ObjectStreamOut.h:136</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_aa047d88e63979921529d3e5a452d6a39"><div class="ttname"><a href="namespace_j_p_h.html#aa047d88e63979921529d3e5a452d6a39">JPH::OSVisitCompounds</a></div><div class="ttdeci">void OSVisitCompounds(const T(&amp;inObject)[N], const CompoundVisitor &amp;inVisitor)</div><div class="ttdef"><b>Definition:</b> SerializableObject.h:199</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_abc7b71b89b96428809703024195e8f58"><div class="ttname"><a href="namespace_j_p_h.html#abc7b71b89b96428809703024195e8f58">JPH::OSIsType</a></div><div class="ttdeci">bool OSIsType(vector&lt; T &gt; *inArray, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</div><div class="ttdef"><b>Definition:</b> ObjectStream.h:63</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_af9f1989d0d24a054d4fa7c7aebc519be"><div class="ttname"><a href="namespace_j_p_h.html#af9f1989d0d24a054d4fa7c7aebc519be">JPH::CompoundVisitor</a></div><div class="ttdeci">function&lt; void(const void *, const RTTI *)&gt; CompoundVisitor</div><div class="ttdef"><b>Definition:</b> SerializableAttribute.h:11</div></div>
+<b>Value:</b><div class="fragment"><div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="_object_stream_in_8h.html#a4c213dea838989e7f2a02068ad360a73">OSReadData</a>(<a class="code hl_class" href="class_object_stream_in.html">ObjectStreamIn</a> &amp;ioStream, class_name &amp;inInstance);                               \</div>
+<div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="_object_stream_in_8h.html#a4c213dea838989e7f2a02068ad360a73">OSReadData</a>(<a class="code hl_class" href="class_object_stream_in.html">ObjectStreamIn</a> &amp;ioStream, class_name *&amp;inPointer);                               \</div>
+<div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="_object_stream_8h.html#a8564f6b1d70bc520758e4a5e34eb573c">OSIsType</a>(class_name *inNull, <span class="keywordtype">int</span> inArrayDepth, <a class="code hl_enumeration" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, <span class="keyword">const</span> <span class="keywordtype">char</span> *inClassName); \</div>
+<div class="line">    prefix <span class="keywordtype">bool</span>         <a class="code hl_function" href="_object_stream_8h.html#a8564f6b1d70bc520758e4a5e34eb573c">OSIsType</a>(class_name **inNull, <span class="keywordtype">int</span> inArrayDepth, <a class="code hl_enumeration" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, <span class="keyword">const</span> <span class="keywordtype">char</span> *inClassName); \</div>
+<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="_object_stream_out_8h.html#a5c1849fe159cc8995532ce5f7fa2cd7b">OSWriteData</a>(<a class="code hl_class" href="class_object_stream_out.html">ObjectStreamOut</a> &amp;ioStream, <span class="keyword">const</span> class_name &amp;inInstance);                       \</div>
+<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="_object_stream_out_8h.html#a5c1849fe159cc8995532ce5f7fa2cd7b">OSWriteData</a>(<a class="code hl_class" href="class_object_stream_out.html">ObjectStreamOut</a> &amp;ioStream, class_name *<span class="keyword">const</span> &amp;inPointer);                       \</div>
+<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="_object_stream_out_8h.html#a07015e7fe8334cff9351dda7cfc3f0fc">OSWriteDataType</a>(<a class="code hl_class" href="class_object_stream_out.html">ObjectStreamOut</a> &amp;ioStream, class_name *inNull);                             \</div>
+<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="_object_stream_out_8h.html#a07015e7fe8334cff9351dda7cfc3f0fc">OSWriteDataType</a>(<a class="code hl_class" href="class_object_stream_out.html">ObjectStreamOut</a> &amp;ioStream, class_name **inNull);                            \</div>
+<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="_serializable_object_8h.html#a87b2d7eae26e4744985e4d77a942ebbc">OSVisitCompounds</a>(<span class="keyword">const</span> class_name &amp;inObject, <span class="keyword">const</span> <a class="code hl_typedef" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor);             \</div>
+<div class="line">    prefix <span class="keywordtype">void</span>         <a class="code hl_function" href="_serializable_object_8h.html#a87b2d7eae26e4744985e4d77a942ebbc">OSVisitCompounds</a>(<span class="keyword">const</span> class_name *inObject, <span class="keyword">const</span> <a class="code hl_typedef" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;inVisitor);</div>
+<div class="ttc" id="a_object_stream_8h_html_a8564f6b1d70bc520758e4a5e34eb573c"><div class="ttname"><a href="_object_stream_8h.html#a8564f6b1d70bc520758e4a5e34eb573c">OSIsType</a></div><div class="ttdeci">bool OSIsType(vector&lt; T &gt; *inArray, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</div><div class="ttdef"><b>Definition:</b> ObjectStream.h:63</div></div>
+<div class="ttc" id="a_object_stream_in_8h_html_a4c213dea838989e7f2a02068ad360a73"><div class="ttname"><a href="_object_stream_in_8h.html#a4c213dea838989e7f2a02068ad360a73">OSReadData</a></div><div class="ttdeci">bool OSReadData(ObjectStreamIn &amp;ioStream, vector&lt; T &gt; &amp;inArray)</div><div class="ttdoc">Define serialization templates for dynamic arrays.</div><div class="ttdef"><b>Definition:</b> ObjectStreamIn.h:173</div></div>
+<div class="ttc" id="a_object_stream_out_8h_html_a07015e7fe8334cff9351dda7cfc3f0fc"><div class="ttname"><a href="_object_stream_out_8h.html#a07015e7fe8334cff9351dda7cfc3f0fc">OSWriteDataType</a></div><div class="ttdeci">void OSWriteDataType(ObjectStreamOut &amp;ioStream, vector&lt; T &gt; *inNull)</div><div class="ttdef"><b>Definition:</b> ObjectStreamOut.h:132</div></div>
+<div class="ttc" id="a_object_stream_out_8h_html_a5c1849fe159cc8995532ce5f7fa2cd7b"><div class="ttname"><a href="_object_stream_out_8h.html#a5c1849fe159cc8995532ce5f7fa2cd7b">OSWriteData</a></div><div class="ttdeci">void OSWriteData(ObjectStreamOut &amp;ioStream, const vector&lt; T &gt; &amp;inArray)</div><div class="ttdef"><b>Definition:</b> ObjectStreamOut.h:139</div></div>
+<div class="ttc" id="a_serializable_attribute_8h_html_a5bcdd0a98c3178ae92ba990a42a05844"><div class="ttname"><a href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a></div><div class="ttdeci">function&lt; void(const void *, const RTTI *)&gt; CompoundVisitor</div><div class="ttdef"><b>Definition:</b> SerializableAttribute.h:11</div></div>
+<div class="ttc" id="a_serializable_object_8h_html_a87b2d7eae26e4744985e4d77a942ebbc"><div class="ttname"><a href="_serializable_object_8h.html#a87b2d7eae26e4744985e4d77a942ebbc">OSVisitCompounds</a></div><div class="ttdeci">void OSVisitCompounds(const void *inObject, const RTTI *inRTTI, const CompoundVisitor &amp;inVisitor)</div><div class="ttdoc">Basic visitor that recurses to all attributes.</div><div class="ttdef"><b>Definition:</b> SerializableObject.cpp:14</div></div>
+<div class="ttc" id="aclass_object_stream_html_a9803711616c926dd41418f5fa7002b08"><div class="ttname"><a href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a></div><div class="ttdeci">EDataType</div><div class="ttdoc">Data type.</div><div class="ttdef"><b>Definition:</b> ObjectStream.h:24</div></div>
+<div class="ttc" id="aclass_object_stream_in_html"><div class="ttname"><a href="class_object_stream_in.html">ObjectStreamIn</a></div><div class="ttdef"><b>Definition:</b> ObjectStreamIn.h:20</div></div>
+<div class="ttc" id="aclass_object_stream_out_html"><div class="ttname"><a href="class_object_stream_out.html">ObjectStreamOut</a></div><div class="ttdef"><b>Definition:</b> ObjectStreamOut.h:21</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -455,6 +452,195 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0042be0a8507367441fb7514d6cf06a0" name="a0042be0a8507367441fb7514d6cf06a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0042be0a8507367441fb7514d6cf06a0">&#9670;&nbsp;</a></span>OSVisitCompounds() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSVisitCompounds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ref.html">Ref</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVisitor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define visitor templates. </p>
+
+</div>
+</div>
+<a id="a0ec564e3cba18f386f7af2660b86017d" name="a0ec564e3cba18f386f7af2660b86017d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec564e3cba18f386f7af2660b86017d">&#9670;&nbsp;</a></span>OSVisitCompounds() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSVisitCompounds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ref_const.html">RefConst</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVisitor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe08583e9d38019009e9d1de5df0f821" name="afe08583e9d38019009e9d1de5df0f821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe08583e9d38019009e9d1de5df0f821">&#9670;&nbsp;</a></span>OSVisitCompounds() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSVisitCompounds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_static_array.html">StaticArray</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVisitor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d0d1d325bba959b2c451e01a5f6af3a" name="a6d0d1d325bba959b2c451e01a5f6af3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0d1d325bba959b2c451e01a5f6af3a">&#9670;&nbsp;</a></span>OSVisitCompounds() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSVisitCompounds </td>
+          <td>(</td>
+          <td class="paramtype">const T(&amp;)&#160;</td>
+          <td class="paramname"><em>inObject</em>[N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVisitor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86dc290e24bc315107970dfb3b79437e" name="a86dc290e24bc315107970dfb3b79437e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86dc290e24bc315107970dfb3b79437e">&#9670;&nbsp;</a></span>OSVisitCompounds() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSVisitCompounds </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVisitor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87b2d7eae26e4744985e4d77a942ebbc" name="a87b2d7eae26e4744985e4d77a942ebbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b2d7eae26e4744985e4d77a942ebbc">&#9670;&nbsp;</a></span>OSVisitCompounds() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OSVisitCompounds </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_serializable_attribute_8h.html#a5bcdd0a98c3178ae92ba990a42a05844">CompoundVisitor</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVisitor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Basic visitor that recurses to all attributes. </p>
 
 </div>
 </div>

@@ -54,31 +54,25 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">RTTI.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_reference_8h_source.html">Core/Reference.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_static_array_8h_source.html">Core/StaticArray.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_reference_8h_source.html">Jolt/Core/Reference.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_static_array_8h_source.html">Jolt/Core/StaticArray.h</a>&gt;</code><br />
 </div>
 <p><a href="_r_t_t_i_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_r_t_t_i.html">JPH::RTTI</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_t_i.html">RTTI</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_p_h_1_1_r_t_t_i_1_1_base_class.html">JPH::RTTI::BaseClass</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class information.  <a href="struct_j_p_h_1_1_r_t_t_i_1_1_base_class.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_t_t_i_1_1_base_class.html">RTTI::BaseClass</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class information.  <a href="struct_r_t_t_i_1_1_base_class.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_r_t_t_i_attribute.html">JPH::RTTIAttribute</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a member of a class.  <a href="class_j_p_h_1_1_r_t_t_i_attribute.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_t_t_i_attribute.html">RTTIAttribute</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a member of a class.  <a href="class_r_t_t_i_attribute.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -109,7 +103,7 @@ Macros</h2></td></tr>
 <tr class="separator:a5df76e5c0179d315d94cb25e62405f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac209c74f11bc4a8893baa3abe9839139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#ac209c74f11bc4a8893baa3abe9839139">JPH_IMPLEMENT_RTTI_ABSTRACT_BASE</a>(class_name)&#160;&#160;&#160;	<a class="el" href="_r_t_t_i_8h.html#ad1ef48680348ecc0d318544e49e59efb">JPH_IMPLEMENT_RTTI_ABSTRACT</a>(class_name)</td></tr>
 <tr class="separator:ac209c74f11bc4a8893baa3abe9839139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad148ede3e70cd4e4f5aea1513fb2cecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#ad148ede3e70cd4e4f5aea1513fb2cecc">JPH_DECLARE_RTTI_FOR_FACTORY</a>(class_name)&#160;&#160;&#160;	RTTI *						GetRTTIOfType(class class_name *);</td></tr>
+<tr class="memitem:ad148ede3e70cd4e4f5aea1513fb2cecc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#ad148ede3e70cd4e4f5aea1513fb2cecc">JPH_DECLARE_RTTI_FOR_FACTORY</a>(class_name)&#160;&#160;&#160;	<a class="el" href="class_r_t_t_i.html">RTTI</a> *						GetRTTIOfType(class class_name *);</td></tr>
 <tr class="separator:ad148ede3e70cd4e4f5aea1513fb2cecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3226971ff5ded8f3fba1a6772b849477"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a3226971ff5ded8f3fba1a6772b849477">JPH_DECLARE_RTTI_WITH_NAMESPACE_FOR_FACTORY</a>(name_space,  class_name)</td></tr>
 <tr class="separator:a3226971ff5ded8f3fba1a6772b849477"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,7 +111,7 @@ Macros</h2></td></tr>
 <tr class="separator:a96bfac00708a5a1649b5581b3d082d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec1da7ef8dc2aa9668cd7cb65e543941"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#aec1da7ef8dc2aa9668cd7cb65e543941">JPH_RENAME_CLASS</a>(class_name,  new_name)&#160;&#160;&#160;								inRTTI.SetName(#new_name);</td></tr>
 <tr class="separator:aec1da7ef8dc2aa9668cd7cb65e543941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a668438b38455c6832cd177af4462cdec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a668438b38455c6832cd177af4462cdec">JPH_BASE_CLASS_OFFSET</a>(inClass,  inBaseClass)&#160;&#160;&#160;((int(uint64((inBaseClass *)((inClass *)0x10000))))-0x10000)</td></tr>
+<tr class="memitem:a668438b38455c6832cd177af4462cdec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a668438b38455c6832cd177af4462cdec">JPH_BASE_CLASS_OFFSET</a>(inClass,  inBaseClass)&#160;&#160;&#160;((int(<a class="el" href="_core_8h.html#aca0ba831b19773ec091e57f5cf76a1fb">uint64</a>((inBaseClass *)((inClass *)0x10000))))-0x10000)</td></tr>
 <tr class="memdesc:a668438b38455c6832cd177af4462cdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define very dirty macro to get the offset of a baseclass into a class.  <a href="_r_t_t_i_8h.html#a668438b38455c6832cd177af4462cdec">More...</a><br /></td></tr>
 <tr class="separator:a668438b38455c6832cd177af4462cdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6dec4b6f44b7b759575042b90f1e0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a6b6dec4b6f44b7b759575042b90f1e0e">JPH_ADD_BASE_CLASS</a>(class_name,  base_class_name)&#160;&#160;&#160;								inRTTI.AddBaseClass(<a class="el" href="_r_t_t_i_8h.html#a96bfac00708a5a1649b5581b3d082d12">JPH_RTTI</a>(base_class_name), <a class="el" href="_r_t_t_i_8h.html#a668438b38455c6832cd177af4462cdec">JPH_BASE_CLASS_OFFSET</a>(class_name, base_class_name));</td></tr>
@@ -125,52 +119,52 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2be78f608ff9a15e321681e849f9d3c4"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a2be78f608ff9a15e321681e849f9d3c4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a2be78f608ff9a15e321681e849f9d3c4">JPH::IsType</a> (const Type *inObject, const RTTI *inRTTI)</td></tr>
-<tr class="memdesc:a2be78f608ff9a15e321681e849f9d3c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if inObject is of DstType.  <a href="namespace_j_p_h.html#a2be78f608ff9a15e321681e849f9d3c4">More...</a><br /></td></tr>
-<tr class="separator:a2be78f608ff9a15e321681e849f9d3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f9ebdbffae1d23fef840699eec21ebc"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a2f9ebdbffae1d23fef840699eec21ebc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a2f9ebdbffae1d23fef840699eec21ebc">JPH::IsType</a> (const RefConst&lt; Type &gt; &amp;inObject, const RTTI *inRTTI)</td></tr>
-<tr class="separator:a2f9ebdbffae1d23fef840699eec21ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3687e730ae0f1bbb1912d1b13fd3ec24"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a3687e730ae0f1bbb1912d1b13fd3ec24"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a3687e730ae0f1bbb1912d1b13fd3ec24">JPH::IsType</a> (const Ref&lt; Type &gt; &amp;inObject, const RTTI *inRTTI)</td></tr>
-<tr class="separator:a3687e730ae0f1bbb1912d1b13fd3ec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b72191385d5d814754b30babfff86b"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a16b72191385d5d814754b30babfff86b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a16b72191385d5d814754b30babfff86b">JPH::IsKindOf</a> (const Type *inObject, const RTTI *inRTTI)</td></tr>
-<tr class="memdesc:a16b72191385d5d814754b30babfff86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if inObject is or is derived from DstType.  <a href="namespace_j_p_h.html#a16b72191385d5d814754b30babfff86b">More...</a><br /></td></tr>
-<tr class="separator:a16b72191385d5d814754b30babfff86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf4a0114b0b2c885a9734a8d739e7c3"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:a1bf4a0114b0b2c885a9734a8d739e7c3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a1bf4a0114b0b2c885a9734a8d739e7c3">JPH::IsKindOf</a> (const RefConst&lt; Type &gt; &amp;inObject, const RTTI *inRTTI)</td></tr>
-<tr class="separator:a1bf4a0114b0b2c885a9734a8d739e7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb996ffc09cca8a963c3e022d9d5925"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
-<tr class="memitem:aafb996ffc09cca8a963c3e022d9d5925"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aafb996ffc09cca8a963c3e022d9d5925">JPH::IsKindOf</a> (const Ref&lt; Type &gt; &amp;inObject, const RTTI *inRTTI)</td></tr>
-<tr class="separator:aafb996ffc09cca8a963c3e022d9d5925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84858b022fefa5d8509799739abbbb30"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a84858b022fefa5d8509799739abbbb30"><td class="memTemplItemLeft" align="right" valign="top">const DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a84858b022fefa5d8509799739abbbb30">JPH::StaticCast</a> (const SrcType *inObject)</td></tr>
-<tr class="memdesc:a84858b022fefa5d8509799739abbbb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast inObject to DstType, asserts on failure.  <a href="namespace_j_p_h.html#a84858b022fefa5d8509799739abbbb30">More...</a><br /></td></tr>
-<tr class="separator:a84858b022fefa5d8509799739abbbb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b037d6bcbac678f39ec7add7f1ceecb"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a0b037d6bcbac678f39ec7add7f1ceecb"><td class="memTemplItemLeft" align="right" valign="top">DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a0b037d6bcbac678f39ec7add7f1ceecb">JPH::StaticCast</a> (SrcType *inObject)</td></tr>
-<tr class="separator:a0b037d6bcbac678f39ec7add7f1ceecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adfb1d863551f49ab270f3e8f6b4d11"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a6adfb1d863551f49ab270f3e8f6b4d11"><td class="memTemplItemLeft" align="right" valign="top">RefConst&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a6adfb1d863551f49ab270f3e8f6b4d11">JPH::StaticCast</a> (RefConst&lt; SrcType &gt; &amp;inObject)</td></tr>
-<tr class="separator:a6adfb1d863551f49ab270f3e8f6b4d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6896fe2f949c4cf1dc8d17a014d429b"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:ac6896fe2f949c4cf1dc8d17a014d429b"><td class="memTemplItemLeft" align="right" valign="top">Ref&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ac6896fe2f949c4cf1dc8d17a014d429b">JPH::StaticCast</a> (Ref&lt; SrcType &gt; &amp;inObject)</td></tr>
-<tr class="separator:ac6896fe2f949c4cf1dc8d17a014d429b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f8177a53d989cd08c0994cd5796bfd"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a70f8177a53d989cd08c0994cd5796bfd"><td class="memTemplItemLeft" align="right" valign="top">const DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a70f8177a53d989cd08c0994cd5796bfd">JPH::DynamicCast</a> (const SrcType *inObject)</td></tr>
-<tr class="memdesc:a70f8177a53d989cd08c0994cd5796bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast inObject to DstType, returns nullptr on failure.  <a href="namespace_j_p_h.html#a70f8177a53d989cd08c0994cd5796bfd">More...</a><br /></td></tr>
-<tr class="separator:a70f8177a53d989cd08c0994cd5796bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a081cda6bf86640c06d4d5fb69bcec72b"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a081cda6bf86640c06d4d5fb69bcec72b"><td class="memTemplItemLeft" align="right" valign="top">DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a081cda6bf86640c06d4d5fb69bcec72b">JPH::DynamicCast</a> (SrcType *inObject)</td></tr>
-<tr class="separator:a081cda6bf86640c06d4d5fb69bcec72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12c64ab2deac464ebc56ec68255e3c4c"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a12c64ab2deac464ebc56ec68255e3c4c"><td class="memTemplItemLeft" align="right" valign="top">RefConst&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a12c64ab2deac464ebc56ec68255e3c4c">JPH::DynamicCast</a> (RefConst&lt; SrcType &gt; &amp;inObject)</td></tr>
-<tr class="separator:a12c64ab2deac464ebc56ec68255e3c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a334da5b8b71838bde36d2d8cb8537f7a"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
-<tr class="memitem:a334da5b8b71838bde36d2d8cb8537f7a"><td class="memTemplItemLeft" align="right" valign="top">Ref&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a334da5b8b71838bde36d2d8cb8537f7a">JPH::DynamicCast</a> (Ref&lt; SrcType &gt; &amp;inObject)</td></tr>
-<tr class="separator:a334da5b8b71838bde36d2d8cb8537f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5bbd60ebd3ba5f69f0afccf05a4d08"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a7a5bbd60ebd3ba5f69f0afccf05a4d08"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a7a5bbd60ebd3ba5f69f0afccf05a4d08">IsType</a> (const Type *inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI)</td></tr>
+<tr class="memdesc:a7a5bbd60ebd3ba5f69f0afccf05a4d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if inObject is of DstType.  <a href="_r_t_t_i_8h.html#a7a5bbd60ebd3ba5f69f0afccf05a4d08">More...</a><br /></td></tr>
+<tr class="separator:a7a5bbd60ebd3ba5f69f0afccf05a4d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4426a9694f255b1b6151e97186512a8"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:ae4426a9694f255b1b6151e97186512a8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#ae4426a9694f255b1b6151e97186512a8">IsType</a> (const <a class="el" href="class_ref_const.html">RefConst</a>&lt; Type &gt; &amp;inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI)</td></tr>
+<tr class="separator:ae4426a9694f255b1b6151e97186512a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2ba2fa904f27bafd5046ffa01a370d"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a4f2ba2fa904f27bafd5046ffa01a370d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a4f2ba2fa904f27bafd5046ffa01a370d">IsType</a> (const <a class="el" href="class_ref.html">Ref</a>&lt; Type &gt; &amp;inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI)</td></tr>
+<tr class="separator:a4f2ba2fa904f27bafd5046ffa01a370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c84a67a84c5fd402ed48a5e8301e1d1"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a7c84a67a84c5fd402ed48a5e8301e1d1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a7c84a67a84c5fd402ed48a5e8301e1d1">IsKindOf</a> (const Type *inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI)</td></tr>
+<tr class="memdesc:a7c84a67a84c5fd402ed48a5e8301e1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if inObject is or is derived from DstType.  <a href="_r_t_t_i_8h.html#a7c84a67a84c5fd402ed48a5e8301e1d1">More...</a><br /></td></tr>
+<tr class="separator:a7c84a67a84c5fd402ed48a5e8301e1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa76c579cc82e306b9bdcf2bfea470c"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a6fa76c579cc82e306b9bdcf2bfea470c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a6fa76c579cc82e306b9bdcf2bfea470c">IsKindOf</a> (const <a class="el" href="class_ref_const.html">RefConst</a>&lt; Type &gt; &amp;inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI)</td></tr>
+<tr class="separator:a6fa76c579cc82e306b9bdcf2bfea470c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5776b9c127f537d17eb0fe3c859dec5d"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a5776b9c127f537d17eb0fe3c859dec5d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a5776b9c127f537d17eb0fe3c859dec5d">IsKindOf</a> (const <a class="el" href="class_ref.html">Ref</a>&lt; Type &gt; &amp;inObject, const <a class="el" href="class_r_t_t_i.html">RTTI</a> *inRTTI)</td></tr>
+<tr class="separator:a5776b9c127f537d17eb0fe3c859dec5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5023a49b748ee85ab29d0d188b4d611a"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:a5023a49b748ee85ab29d0d188b4d611a"><td class="memTemplItemLeft" align="right" valign="top">const DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a5023a49b748ee85ab29d0d188b4d611a">StaticCast</a> (const SrcType *inObject)</td></tr>
+<tr class="memdesc:a5023a49b748ee85ab29d0d188b4d611a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast inObject to DstType, asserts on failure.  <a href="_r_t_t_i_8h.html#a5023a49b748ee85ab29d0d188b4d611a">More...</a><br /></td></tr>
+<tr class="separator:a5023a49b748ee85ab29d0d188b4d611a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ba7385b7b41913ec350ced7f98c863"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:a77ba7385b7b41913ec350ced7f98c863"><td class="memTemplItemLeft" align="right" valign="top">DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a77ba7385b7b41913ec350ced7f98c863">StaticCast</a> (SrcType *inObject)</td></tr>
+<tr class="separator:a77ba7385b7b41913ec350ced7f98c863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9aec7571bd9e1b4478e316502f40ddc"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:ab9aec7571bd9e1b4478e316502f40ddc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_ref_const.html">RefConst</a>&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#ab9aec7571bd9e1b4478e316502f40ddc">StaticCast</a> (<a class="el" href="class_ref_const.html">RefConst</a>&lt; SrcType &gt; &amp;inObject)</td></tr>
+<tr class="separator:ab9aec7571bd9e1b4478e316502f40ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1758a0d147f658513eb7c0ed20ef80"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:a8b1758a0d147f658513eb7c0ed20ef80"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_ref.html">Ref</a>&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a8b1758a0d147f658513eb7c0ed20ef80">StaticCast</a> (<a class="el" href="class_ref.html">Ref</a>&lt; SrcType &gt; &amp;inObject)</td></tr>
+<tr class="separator:a8b1758a0d147f658513eb7c0ed20ef80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90cb64879c34484002e2b1dffa6cfe3"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:ae90cb64879c34484002e2b1dffa6cfe3"><td class="memTemplItemLeft" align="right" valign="top">const DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#ae90cb64879c34484002e2b1dffa6cfe3">DynamicCast</a> (const SrcType *inObject)</td></tr>
+<tr class="memdesc:ae90cb64879c34484002e2b1dffa6cfe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast inObject to DstType, returns nullptr on failure.  <a href="_r_t_t_i_8h.html#ae90cb64879c34484002e2b1dffa6cfe3">More...</a><br /></td></tr>
+<tr class="separator:ae90cb64879c34484002e2b1dffa6cfe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71969ae61cdfe78b730ae80bfde295b3"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:a71969ae61cdfe78b730ae80bfde295b3"><td class="memTemplItemLeft" align="right" valign="top">DstType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a71969ae61cdfe78b730ae80bfde295b3">DynamicCast</a> (SrcType *inObject)</td></tr>
+<tr class="separator:a71969ae61cdfe78b730ae80bfde295b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67aebf8422f8ec99bc1e3d0a0edb5c53"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:a67aebf8422f8ec99bc1e3d0a0edb5c53"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_ref_const.html">RefConst</a>&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a67aebf8422f8ec99bc1e3d0a0edb5c53">DynamicCast</a> (<a class="el" href="class_ref_const.html">RefConst</a>&lt; SrcType &gt; &amp;inObject)</td></tr>
+<tr class="separator:a67aebf8422f8ec99bc1e3d0a0edb5c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dca740b395bccb7706721d7b20342f"><td class="memTemplParams" colspan="2">template&lt;class DstType , class SrcType &gt; </td></tr>
+<tr class="memitem:a01dca740b395bccb7706721d7b20342f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_ref.html">Ref</a>&lt; DstType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_r_t_t_i_8h.html#a01dca740b395bccb7706721d7b20342f">DynamicCast</a> (<a class="el" href="class_ref.html">Ref</a>&lt; SrcType &gt; &amp;inObject)</td></tr>
+<tr class="separator:a01dca740b395bccb7706721d7b20342f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6b6dec4b6f44b7b759575042b90f1e0e" name="a6b6dec4b6f44b7b759575042b90f1e0e"></a>
@@ -222,7 +216,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((int(uint64((inBaseClass *)((inClass *)0x10000))))-0x10000)</td>
+          <td></td><td>&#160;&#160;&#160;((int(<a class="el" href="_core_8h.html#aca0ba831b19773ec091e57f5cf76a1fb">uint64</a>((inBaseClass *)((inClass *)0x10000))))-0x10000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -278,7 +272,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">class_name</td><td>)</td>
-          <td>&#160;&#160;&#160;	RTTI *						GetRTTIOfType(class class_name *);</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="class_r_t_t_i.html">RTTI</a> *						GetRTTIOfType(class class_name *);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,11 +305,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>:                                                                                                             \</div>
-<div class="line">    friend RTTI *               GetRTTIOfType(class_name *);                                                        \</div>
-<div class="line">    friend <span class="keyword">inline</span> <span class="keyword">const</span> RTTI *  GetRTTI(<span class="keyword">const</span> class_name *inObject) { <span class="keywordflow">return</span> inObject-&gt;GetRTTI(); }                 \</div>
-<div class="line">    virtual <span class="keyword">const</span> RTTI *        GetRTTI() const modifier;                                                           \</div>
-<div class="line">    virtual const <span class="keywordtype">void</span> *        CastTo(const RTTI *inRTTI) const modifier;                                          \</div>
-<div class="line">    static <span class="keywordtype">void</span>                 sCreateRTTI(RTTI &amp;inRTTI);                                                          \</div>
+<div class="line">    friend <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *               GetRTTIOfType(class_name *);                                                        \</div>
+<div class="line">    friend <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *  GetRTTI(<span class="keyword">const</span> class_name *inObject) { <span class="keywordflow">return</span> inObject-&gt;GetRTTI(); }                 \</div>
+<div class="line">    virtual <span class="keyword">const</span> <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *        GetRTTI() const modifier;                                                           \</div>
+<div class="line">    virtual const <span class="keywordtype">void</span> *        CastTo(const <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *inRTTI) const modifier;                                          \</div>
+<div class="line">    static <span class="keywordtype">void</span>                 sCreateRTTI(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI);                                                          \</div>
+<div class="ttc" id="aclass_r_t_t_i_html"><div class="ttname"><a href="class_r_t_t_i.html">RTTI</a></div><div class="ttdef"><b>Definition:</b> RTTI.h:123</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -335,9 +330,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">public</span>:                                                                                                             \</div>
-<div class="line">    friend RTTI *               GetRTTIOfType(class_name *);                                                        \</div>
-<div class="line">    friend <span class="keyword">inline</span> <span class="keyword">const</span> RTTI *  GetRTTI(<span class="keyword">const</span> class_name *inObject) { <span class="keywordflow">return</span> GetRTTIOfType((class_name *)<span class="keyword">nullptr</span>); }\</div>
-<div class="line">    static <span class="keywordtype">void</span>                 sCreateRTTI(RTTI &amp;inRTTI);                                                          \</div>
+<div class="line">    friend <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *               GetRTTIOfType(class_name *);                                                        \</div>
+<div class="line">    friend <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *  GetRTTI(<span class="keyword">const</span> class_name *inObject) { <span class="keywordflow">return</span> GetRTTIOfType((class_name *)<span class="keyword">nullptr</span>); }\</div>
+<div class="line">    static <span class="keywordtype">void</span>                 sCreateRTTI(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI);                                                          \</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -356,9 +351,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    RTTI *                      GetRTTIOfType(class_name *);                                                        \</div>
-<div class="line">    inline <span class="keyword">const</span> RTTI *         GetRTTI(<span class="keyword">const</span> class_name *inObject) { <span class="keywordflow">return</span> GetRTTIOfType((class_name *)<span class="keyword">nullptr</span>); }\</div>
-<div class="line">    void                        CreateRTTI##class_name(RTTI &amp;inRTTI);                                               \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                      GetRTTIOfType(class_name *);                                                        \</div>
+<div class="line">    inline <span class="keyword">const</span> <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *         GetRTTI(<span class="keyword">const</span> class_name *inObject) { <span class="keywordflow">return</span> GetRTTIOfType((class_name *)<span class="keyword">nullptr</span>); }\</div>
+<div class="line">    void                        CreateRTTI##class_name(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI);                                               \</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -445,20 +440,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    RTTI *                      GetRTTIOfType(class_name *)                                                         \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                      GetRTTIOfType(class_name *)                                                         \</div>
 <div class="line">    {                                                                                                               \</div>
-<div class="line">        static RTTI rtti(#class_name, <span class="keyword">sizeof</span>(class_name), <span class="keyword">nullptr</span>, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;class_name::sCreateRTTI); \</div>
+<div class="line">        static <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> rtti(#class_name, <span class="keyword">sizeof</span>(class_name), <span class="keyword">nullptr</span>, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;class_name::sCreateRTTI); \</div>
 <div class="line">        return &amp;rtti;                                                                                               \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    const RTTI *                class_name::GetRTTI() const                                                         \</div>
+<div class="line">    const <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                class_name::GetRTTI() const                                                         \</div>
 <div class="line">    {                                                                                                               \</div>
 <div class="line">        return <a class="code hl_define" href="_r_t_t_i_8h.html#a96bfac00708a5a1649b5581b3d082d12">JPH_RTTI</a>(class_name);                                                                                \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    const <span class="keywordtype">void</span> *                class_name::CastTo(<span class="keyword">const</span> RTTI *inRTTI) <span class="keyword">const</span>                                        \</div>
+<div class="line">    const <span class="keywordtype">void</span> *                class_name::CastTo(<span class="keyword">const</span> <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *inRTTI) <span class="keyword">const</span>                                        \</div>
 <div class="line">    {                                                                                                               \</div>
 <div class="line">        return <a class="code hl_define" href="_r_t_t_i_8h.html#a96bfac00708a5a1649b5581b3d082d12">JPH_RTTI</a>(class_name)-&gt;CastTo((<span class="keyword">const</span> <span class="keywordtype">void</span> *)<span class="keyword">this</span>, inRTTI);                                            \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    void                        class_name::sCreateRTTI(RTTI &amp;inRTTI)                                               \</div>
+<div class="line">    void                        class_name::sCreateRTTI(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI)                                               \</div>
 <div class="ttc" id="a_r_t_t_i_8h_html_a96bfac00708a5a1649b5581b3d082d12"><div class="ttname"><a href="_r_t_t_i_8h.html#a96bfac00708a5a1649b5581b3d082d12">JPH_RTTI</a></div><div class="ttdeci">#define JPH_RTTI(class_name)</div><div class="ttdef"><b>Definition:</b> RTTI.h:317</div></div>
 </div><!-- fragment -->
 </div>
@@ -496,12 +491,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    RTTI *                      GetRTTIOfType(class_name *)                                                         \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                      GetRTTIOfType(class_name *)                                                         \</div>
 <div class="line">    {                                                                                                               \</div>
-<div class="line">        static RTTI rtti(#class_name, <span class="keyword">sizeof</span>(class_name), []() -&gt; <span class="keywordtype">void</span> * { <span class="keywordflow">return</span> <span class="keyword">new</span> class_name; }, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;class_name::sCreateRTTI); \</div>
+<div class="line">        static <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> rtti(#class_name, <span class="keyword">sizeof</span>(class_name), []() -&gt; <span class="keywordtype">void</span> * { <span class="keywordflow">return</span> <span class="keyword">new</span> class_name; }, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;class_name::sCreateRTTI); \</div>
 <div class="line">        return &amp;rtti;                                                                                               \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    void                        class_name::sCreateRTTI(RTTI &amp;inRTTI)                                               \</div>
+<div class="line">    void                        class_name::sCreateRTTI(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI)                                               \</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,12 +515,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    RTTI *                      GetRTTIOfType(class_name *)                                                         \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                      GetRTTIOfType(class_name *)                                                         \</div>
 <div class="line">    {                                                                                                               \</div>
-<div class="line">        static RTTI rtti((<span class="keyword">const</span> <span class="keywordtype">char</span> *)#class_name, <span class="keyword">sizeof</span>(class_name), []() -&gt; <span class="keywordtype">void</span> * { <span class="keywordflow">return</span> <span class="keyword">new</span> class_name; }, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;CreateRTTI##class_name); \</div>
+<div class="line">        static <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> rtti((<span class="keyword">const</span> <span class="keywordtype">char</span> *)#class_name, <span class="keyword">sizeof</span>(class_name), []() -&gt; <span class="keywordtype">void</span> * { <span class="keywordflow">return</span> <span class="keyword">new</span> class_name; }, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;CreateRTTI##class_name); \</div>
 <div class="line">        return &amp;rtti;                                                                                               \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    void                        CreateRTTI##class_name(RTTI &amp;inRTTI)</div>
+<div class="line">    void                        CreateRTTI##class_name(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI)</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -544,20 +539,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    RTTI *                      GetRTTIOfType(class_name *)                                                         \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                      GetRTTIOfType(class_name *)                                                         \</div>
 <div class="line">    {                                                                                                               \</div>
-<div class="line">        static RTTI rtti(#class_name, <span class="keyword">sizeof</span>(class_name), []() -&gt; <span class="keywordtype">void</span> * { <span class="keywordflow">return</span> <span class="keyword">new</span> class_name; }, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;class_name::sCreateRTTI); \</div>
+<div class="line">        static <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> rtti(#class_name, <span class="keyword">sizeof</span>(class_name), []() -&gt; <span class="keywordtype">void</span> * { <span class="keywordflow">return</span> <span class="keyword">new</span> class_name; }, [](<span class="keywordtype">void</span> *inObject) { <span class="keyword">delete</span> (class_name *)inObject; }, &amp;class_name::sCreateRTTI); \</div>
 <div class="line">        return &amp;rtti;                                                                                               \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    const RTTI *                class_name::GetRTTI() const                                                         \</div>
+<div class="line">    const <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *                class_name::GetRTTI() const                                                         \</div>
 <div class="line">    {                                                                                                               \</div>
 <div class="line">        return <a class="code hl_define" href="_r_t_t_i_8h.html#a96bfac00708a5a1649b5581b3d082d12">JPH_RTTI</a>(class_name);                                                                                \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    const <span class="keywordtype">void</span> *                class_name::CastTo(<span class="keyword">const</span> RTTI *inRTTI) <span class="keyword">const</span>                                        \</div>
+<div class="line">    const <span class="keywordtype">void</span> *                class_name::CastTo(<span class="keyword">const</span> <a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> *inRTTI) <span class="keyword">const</span>                                        \</div>
 <div class="line">    {                                                                                                               \</div>
 <div class="line">        return <a class="code hl_define" href="_r_t_t_i_8h.html#a96bfac00708a5a1649b5581b3d082d12">JPH_RTTI</a>(class_name)-&gt;CastTo((<span class="keyword">const</span> <span class="keywordtype">void</span> *)<span class="keyword">this</span>, inRTTI);                                            \</div>
 <div class="line">    }                                                                                                               \</div>
-<div class="line">    void                        class_name::sCreateRTTI(RTTI &amp;inRTTI)                                               \</div>
+<div class="line">    void                        class_name::sCreateRTTI(<a class="code hl_class" href="class_r_t_t_i.html">RTTI</a> &amp;inRTTI)                                               \</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -621,6 +616,467 @@ Functions</h2></td></tr>
           <td>&#160;&#160;&#160;GetRTTIOfType((class_name *)nullptr)</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae90cb64879c34484002e2b1dffa6cfe3" name="ae90cb64879c34484002e2b1dffa6cfe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90cb64879c34484002e2b1dffa6cfe3">&#9670;&nbsp;</a></span>DynamicCast() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DstType * DynamicCast </td>
+          <td>(</td>
+          <td class="paramtype">const SrcType *&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast inObject to DstType, returns nullptr on failure. </p>
+
+</div>
+</div>
+<a id="a01dca740b395bccb7706721d7b20342f" name="a01dca740b395bccb7706721d7b20342f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01dca740b395bccb7706721d7b20342f">&#9670;&nbsp;</a></span>DynamicCast() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ref.html">Ref</a>&lt; DstType &gt; DynamicCast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ref.html">Ref</a>&lt; SrcType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67aebf8422f8ec99bc1e3d0a0edb5c53" name="a67aebf8422f8ec99bc1e3d0a0edb5c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67aebf8422f8ec99bc1e3d0a0edb5c53">&#9670;&nbsp;</a></span>DynamicCast() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ref_const.html">RefConst</a>&lt; DstType &gt; DynamicCast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ref_const.html">RefConst</a>&lt; SrcType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71969ae61cdfe78b730ae80bfde295b3" name="a71969ae61cdfe78b730ae80bfde295b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71969ae61cdfe78b730ae80bfde295b3">&#9670;&nbsp;</a></span>DynamicCast() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DstType * DynamicCast </td>
+          <td>(</td>
+          <td class="paramtype">SrcType *&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5776b9c127f537d17eb0fe3c859dec5d" name="a5776b9c127f537d17eb0fe3c859dec5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5776b9c127f537d17eb0fe3c859dec5d">&#9670;&nbsp;</a></span>IsKindOf() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsKindOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ref.html">Ref</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fa76c579cc82e306b9bdcf2bfea470c" name="a6fa76c579cc82e306b9bdcf2bfea470c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa76c579cc82e306b9bdcf2bfea470c">&#9670;&nbsp;</a></span>IsKindOf() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsKindOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ref_const.html">RefConst</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c84a67a84c5fd402ed48a5e8301e1d1" name="a7c84a67a84c5fd402ed48a5e8301e1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c84a67a84c5fd402ed48a5e8301e1d1">&#9670;&nbsp;</a></span>IsKindOf() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsKindOf </td>
+          <td>(</td>
+          <td class="paramtype">const Type *&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if inObject is or is derived from DstType. </p>
+
+</div>
+</div>
+<a id="a4f2ba2fa904f27bafd5046ffa01a370d" name="a4f2ba2fa904f27bafd5046ffa01a370d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2ba2fa904f27bafd5046ffa01a370d">&#9670;&nbsp;</a></span>IsType() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ref.html">Ref</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4426a9694f255b1b6151e97186512a8" name="ae4426a9694f255b1b6151e97186512a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4426a9694f255b1b6151e97186512a8">&#9670;&nbsp;</a></span>IsType() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_ref_const.html">RefConst</a>&lt; Type &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a5bbd60ebd3ba5f69f0afccf05a4d08" name="a7a5bbd60ebd3ba5f69f0afccf05a4d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5bbd60ebd3ba5f69f0afccf05a4d08">&#9670;&nbsp;</a></span>IsType() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IsType </td>
+          <td>(</td>
+          <td class="paramtype">const Type *&#160;</td>
+          <td class="paramname"><em>inObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_r_t_t_i.html">RTTI</a> *&#160;</td>
+          <td class="paramname"><em>inRTTI</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if inObject is of DstType. </p>
+
+</div>
+</div>
+<a id="a5023a49b748ee85ab29d0d188b4d611a" name="a5023a49b748ee85ab29d0d188b4d611a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5023a49b748ee85ab29d0d188b4d611a">&#9670;&nbsp;</a></span>StaticCast() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const DstType * StaticCast </td>
+          <td>(</td>
+          <td class="paramtype">const SrcType *&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast inObject to DstType, asserts on failure. </p>
+
+</div>
+</div>
+<a id="a8b1758a0d147f658513eb7c0ed20ef80" name="a8b1758a0d147f658513eb7c0ed20ef80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1758a0d147f658513eb7c0ed20ef80">&#9670;&nbsp;</a></span>StaticCast() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ref.html">Ref</a>&lt; DstType &gt; StaticCast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ref.html">Ref</a>&lt; SrcType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9aec7571bd9e1b4478e316502f40ddc" name="ab9aec7571bd9e1b4478e316502f40ddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9aec7571bd9e1b4478e316502f40ddc">&#9670;&nbsp;</a></span>StaticCast() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ref_const.html">RefConst</a>&lt; DstType &gt; StaticCast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ref_const.html">RefConst</a>&lt; SrcType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77ba7385b7b41913ec350ced7f98c863" name="a77ba7385b7b41913ec350ced7f98c863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ba7385b7b41913ec350ced7f98c863">&#9670;&nbsp;</a></span>StaticCast() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DstType , class SrcType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DstType * StaticCast </td>
+          <td>(</td>
+          <td class="paramtype">SrcType *&#160;</td>
+          <td class="paramname"><em>inObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

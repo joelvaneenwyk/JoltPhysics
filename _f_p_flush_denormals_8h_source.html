@@ -60,9 +60,9 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="_f_p_control_word_8h.html">Core/FPControlWord.h</a>&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="_f_p_control_word_8h.html">Jolt/Core/FPControlWord.h</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_j_p_h.html">JPH</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_define" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#if defined(JPH_USE_SSE)</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -70,7 +70,7 @@ $(function() {
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#elif defined(JPH_USE_NEON)</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_j_p_h.html#a58d2b9f9521ae5f8b0646c2fb2034e4b">uint64</a> FP_FZ = 1 &lt;&lt; 24;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="_core_8h.html#aca0ba831b19773ec091e57f5cf76a1fb">uint64</a> FP_FZ = 1 &lt;&lt; 24;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span>FPFlushDenormals : <span class="keyword">public</span> FPControlWord&lt;FP_FZ, FP_FZ&gt; { };</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -80,10 +80,11 @@ $(function() {
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// JPH</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><a class="code hl_define" href="_core_8h.html#a73da8725998b00321a9db341202d650d">JPH_NAMESPACE_END</a></div>
+<div class="ttc" id="a_core_8h_html_a73da8725998b00321a9db341202d650d"><div class="ttname"><a href="_core_8h.html#a73da8725998b00321a9db341202d650d">JPH_NAMESPACE_END</a></div><div class="ttdeci">#define JPH_NAMESPACE_END</div><div class="ttdef"><b>Definition:</b> Core.h:192</div></div>
+<div class="ttc" id="a_core_8h_html_aca0ba831b19773ec091e57f5cf76a1fb"><div class="ttname"><a href="_core_8h.html#aca0ba831b19773ec091e57f5cf76a1fb">uint64</a></div><div class="ttdeci">uint64_t uint64</div><div class="ttdef"><b>Definition:</b> Core.h:229</div></div>
+<div class="ttc" id="a_core_8h_html_ad14098b68b8c44ea6112601031268405"><div class="ttname"><a href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a></div><div class="ttdeci">#define JPH_NAMESPACE_BEGIN</div><div class="ttdef"><b>Definition:</b> Core.h:186</div></div>
 <div class="ttc" id="a_f_p_control_word_8h_html"><div class="ttname"><a href="_f_p_control_word_8h.html">FPControlWord.h</a></div></div>
-<div class="ttc" id="anamespace_j_p_h_html"><div class="ttname"><a href="namespace_j_p_h.html">JPH</a></div><div class="ttdef"><b>Definition:</b> AABBTreeBuilder.cpp:8</div></div>
-<div class="ttc" id="anamespace_j_p_h_html_a58d2b9f9521ae5f8b0646c2fb2034e4b"><div class="ttname"><a href="namespace_j_p_h.html#a58d2b9f9521ae5f8b0646c2fb2034e4b">JPH::uint64</a></div><div class="ttdeci">uint64_t uint64</div><div class="ttdef"><b>Definition:</b> Core.h:172</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

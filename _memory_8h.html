@@ -53,7 +53,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Memory.h File Reference</div></div>
 </div><!--header-->
@@ -61,20 +60,66 @@ $(function() {
 
 <p><a href="_memory_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a08dfb144f28736d4e8b09bfaaa16f72e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a08dfb144f28736d4e8b09bfaaa16f72e">JPH::AlignedAlloc</a> (size_t inSize, size_t inAlignment)</td></tr>
-<tr class="memdesc:a08dfb144f28736d4e8b09bfaaa16f72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a block of memory aligned to inAlignment bytes of size inSize.  <a href="namespace_j_p_h.html#a08dfb144f28736d4e8b09bfaaa16f72e">More...</a><br /></td></tr>
-<tr class="separator:a08dfb144f28736d4e8b09bfaaa16f72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ea9b2290b23cd58bdd5b4313fb6945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ae9ea9b2290b23cd58bdd5b4313fb6945">JPH::AlignedFree</a> (void *inBlock)</td></tr>
-<tr class="memdesc:ae9ea9b2290b23cd58bdd5b4313fb6945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory block allocated with AlignedAlloc.  <a href="namespace_j_p_h.html#ae9ea9b2290b23cd58bdd5b4313fb6945">More...</a><br /></td></tr>
-<tr class="separator:ae9ea9b2290b23cd58bdd5b4313fb6945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0b680da59763864e9bbd6ba0cfda1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_memory_8h.html#a0e0b680da59763864e9bbd6ba0cfda1c">AlignedAlloc</a> (size_t inSize, size_t inAlignment)</td></tr>
+<tr class="memdesc:a0e0b680da59763864e9bbd6ba0cfda1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a block of memory aligned to inAlignment bytes of size inSize.  <a href="_memory_8h.html#a0e0b680da59763864e9bbd6ba0cfda1c">More...</a><br /></td></tr>
+<tr class="separator:a0e0b680da59763864e9bbd6ba0cfda1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64b4be42b93e4be685ebced343b7f78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_memory_8h.html#af64b4be42b93e4be685ebced343b7f78">AlignedFree</a> (void *inBlock)</td></tr>
+<tr class="memdesc:af64b4be42b93e4be685ebced343b7f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory block allocated with AlignedAlloc.  <a href="_memory_8h.html#af64b4be42b93e4be685ebced343b7f78">More...</a><br /></td></tr>
+<tr class="separator:af64b4be42b93e4be685ebced343b7f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0e0b680da59763864e9bbd6ba0cfda1c" name="a0e0b680da59763864e9bbd6ba0cfda1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0b680da59763864e9bbd6ba0cfda1c">&#9670;&nbsp;</a></span>AlignedAlloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void * AlignedAlloc </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>inSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>inAlignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate a block of memory aligned to inAlignment bytes of size inSize. </p>
+
+</div>
+</div>
+<a id="af64b4be42b93e4be685ebced343b7f78" name="af64b4be42b93e4be685ebced343b7f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64b4be42b93e4be685ebced343b7f78">&#9670;&nbsp;</a></span>AlignedFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlignedFree </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>inBlock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free memory block allocated with AlignedAlloc. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -54,29 +54,23 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">BroadPhase.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_broad_phase_query_8h_source.html">Physics/Collision/BroadPhase/BroadPhaseQuery.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_broad_phase_layer_8h_source.html">Physics/Collision/BroadPhase/BroadPhaseLayer.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_broad_phase_query_8h_source.html">Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_broad_phase_layer_8h_source.html">Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h</a>&gt;</code><br />
 </div>
 <p><a href="_broad_phase_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_broad_phase.html">JPH::BroadPhase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to do coarse collision detection operations to quickly prune out bodies that will not collide.  <a href="class_j_p_h_1_1_broad_phase.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broad_phase.html">BroadPhase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to do coarse collision detection operations to quickly prune out bodies that will not collide.  <a href="class_broad_phase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_p_h_1_1_broad_phase_1_1_update_state.html">JPH::BroadPhase::UpdateState</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context used during broadphase update.  <a href="struct_j_p_h_1_1_broad_phase_1_1_update_state.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_broad_phase_1_1_update_state.html">BroadPhase::UpdateState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context used during broadphase update.  <a href="struct_broad_phase_1_1_update_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -86,8 +80,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3c783655f601a30959e4ea39d25522bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a3c783655f601a30959e4ea39d25522bf">JPH::BodyPairCollector</a> = CollisionCollector&lt; BodyPair, CollisionCollectorTraitsCollideShape &gt;</td></tr>
-<tr class="separator:a3c783655f601a30959e4ea39d25522bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c28d9ca80b345aca4b3ab03ab8f82a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_broad_phase_8h.html#a79c28d9ca80b345aca4b3ab03ab8f82a">BodyPairCollector</a> = <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="struct_body_pair.html">BodyPair</a>, <a class="el" href="class_collision_collector_traits_collide_shape.html">CollisionCollectorTraitsCollideShape</a> &gt;</td></tr>
+<tr class="separator:a79c28d9ca80b345aca4b3ab03ab8f82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a1fd93e96654ff2092f35485924d94df9" name="a1fd93e96654ff2092f35485924d94df9"></a>
@@ -102,6 +96,21 @@ Typedefs</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a79c28d9ca80b345aca4b3ab03ab8f82a" name="a79c28d9ca80b345aca4b3ab03ab8f82a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c28d9ca80b345aca4b3ab03ab8f82a">&#9670;&nbsp;</a></span>BodyPairCollector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_broad_phase_8h.html#a79c28d9ca80b345aca4b3ab03ab8f82a">BodyPairCollector</a> =  <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt;<a class="el" href="struct_body_pair.html">BodyPair</a>, <a class="el" href="class_collision_collector_traits_collide_shape.html">CollisionCollectorTraitsCollideShape</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">

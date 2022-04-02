@@ -54,40 +54,34 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ConvexShape.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_jolt_8h_source.html">Jolt.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_convex_shape_8h_source.html">Physics/Collision/Shape/ConvexShape.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_ray_cast_8h_source.html">Physics/Collision/RayCast.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_shape_cast_8h_source.html">Physics/Collision/ShapeCast.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_collide_shape_8h_source.html">Physics/Collision/CollideShape.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_cast_result_8h_source.html">Physics/Collision/CastResult.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_collide_point_result_8h_source.html">Physics/Collision/CollidePointResult.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_scale_helpers_8h_source.html">Physics/Collision/Shape/ScaleHelpers.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_get_triangles_context_8h_source.html">Physics/Collision/Shape/GetTrianglesContext.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_polyhedron_submerged_volume_calculator_8h_source.html">Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_transformed_shape_8h_source.html">Physics/Collision/TransformedShape.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_collision_dispatch_8h_source.html">Physics/Collision/CollisionDispatch.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_narrow_phase_stats_8h_source.html">Physics/Collision/NarrowPhaseStats.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_physics_settings_8h_source.html">Physics/PhysicsSettings.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Core/StreamIn.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Core/StreamOut.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_e_p_a_penetration_depth_8h_source.html">Geometry/EPAPenetrationDepth.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_oriented_box_8h_source.html">Geometry/OrientedBox.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_type_declarations_8h_source.html">ObjectStream/TypeDeclarations.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_jolt_8h_source.html">Jolt/Jolt.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_convex_shape_8h_source.html">Jolt/Physics/Collision/Shape/ConvexShape.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_ray_cast_8h_source.html">Jolt/Physics/Collision/RayCast.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_shape_cast_8h_source.html">Jolt/Physics/Collision/ShapeCast.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_collide_shape_8h_source.html">Jolt/Physics/Collision/CollideShape.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_cast_result_8h_source.html">Jolt/Physics/Collision/CastResult.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_collide_point_result_8h_source.html">Jolt/Physics/Collision/CollidePointResult.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_scale_helpers_8h_source.html">Jolt/Physics/Collision/Shape/ScaleHelpers.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_get_triangles_context_8h_source.html">Jolt/Physics/Collision/Shape/GetTrianglesContext.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_polyhedron_submerged_volume_calculator_8h_source.html">Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_transformed_shape_8h_source.html">Jolt/Physics/Collision/TransformedShape.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_collision_dispatch_8h_source.html">Jolt/Physics/Collision/CollisionDispatch.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_narrow_phase_stats_8h_source.html">Jolt/Physics/Collision/NarrowPhaseStats.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_physics_settings_8h_source.html">Jolt/Physics/PhysicsSettings.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Jolt/Core/StreamIn.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Jolt/Core/StreamOut.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_e_p_a_penetration_depth_8h_source.html">Jolt/Geometry/EPAPenetrationDepth.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_oriented_box_8h_source.html">Jolt/Geometry/OrientedBox.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_type_declarations_8h_source.html">Jolt/ObjectStream/TypeDeclarations.h</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_convex_shape_1_1_c_s_get_triangles_context.html">JPH::ConvexShape::CSGetTrianglesContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_convex_shape_1_1_c_s_get_triangles_context.html">ConvexShape::CSGetTrianglesContext</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -97,8 +91,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab2b4ff65d7f9b9ecc94d1e48c5c0c9bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ab2b4ff65d7f9b9ecc94d1e48c5c0c9bc">JPH::JPH_IMPLEMENT_SERIALIZABLE_ABSTRACT</a> (ConvexShapeSettings)</td></tr>
-<tr class="separator:ab2b4ff65d7f9b9ecc94d1e48c5c0c9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf42585bb42addd8eabed35352f18bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_convex_shape_8cpp.html#a9cf42585bb42addd8eabed35352f18bc">JPH_IMPLEMENT_SERIALIZABLE_ABSTRACT</a> (<a class="el" href="class_convex_shape_settings.html">ConvexShapeSettings</a>)</td></tr>
+<tr class="separator:a9cf42585bb42addd8eabed35352f18bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a96549debc24a06a6c11ca18a1e11d35f" name="a96549debc24a06a6c11ca18a1e11d35f"></a>
@@ -135,6 +129,25 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;{ a, b, c, d, ((1 &lt;&lt; a) | (1 &lt;&lt; b) | (1 &lt;&lt; c) | (1 &lt;&lt; d)) }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9cf42585bb42addd8eabed35352f18bc" name="a9cf42585bb42addd8eabed35352f18bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf42585bb42addd8eabed35352f18bc">&#9670;&nbsp;</a></span>JPH_IMPLEMENT_SERIALIZABLE_ABSTRACT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> JPH_IMPLEMENT_SERIALIZABLE_ABSTRACT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_convex_shape_settings.html">ConvexShapeSettings</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

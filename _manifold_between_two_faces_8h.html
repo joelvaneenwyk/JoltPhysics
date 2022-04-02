@@ -53,28 +53,149 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ManifoldBetweenTwoFaces.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_convex_shape_8h_source.html">Physics/Collision/Shape/ConvexShape.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_contact_listener_8h_source.html">Physics/Collision/ContactListener.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_convex_shape_8h_source.html">Jolt/Physics/Collision/Shape/ConvexShape.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_contact_listener_8h_source.html">Jolt/Physics/Collision/ContactListener.h</a>&gt;</code><br />
 </div>
 <p><a href="_manifold_between_two_faces_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a315d5b347addd9e66660bd7d9e7b4c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a315d5b347addd9e66660bd7d9e7b4c3f">JPH::PruneContactPoints</a> (Vec3Arg inCenterOfMass, Vec3Arg inPenetrationAxis, ContactPoints &amp;ioContactPointsOn1, ContactPoints &amp;ioContactPointsOn2)</td></tr>
-<tr class="separator:a315d5b347addd9e66660bd7d9e7b4c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab658274b19d2eb847ed725c3424ed67d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ab658274b19d2eb847ed725c3424ed67d">JPH::ManifoldBetweenTwoFaces</a> (Vec3Arg inContactPoint1, Vec3Arg inContactPoint2, Vec3Arg inPenetrationAxis, float inSpeculativeContactDistanceSq, const ConvexShape::SupportingFace &amp;inShape1Face, const ConvexShape::SupportingFace &amp;inShape2Face, ContactPoints &amp;outContactPoints1, ContactPoints &amp;outContactPoints2)</td></tr>
-<tr class="separator:ab658274b19d2eb847ed725c3424ed67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4cb5259994c096e409cf9b5ffd4437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_manifold_between_two_faces_8h.html#a8c4cb5259994c096e409cf9b5ffd4437">PruneContactPoints</a> (<a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inCenterOfMass, <a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inPenetrationAxis, <a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;ioContactPointsOn1, <a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;ioContactPointsOn2)</td></tr>
+<tr class="separator:a8c4cb5259994c096e409cf9b5ffd4437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af0c69f57dd148bda0c405f5e5d44a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_manifold_between_two_faces_8h.html#a2af0c69f57dd148bda0c405f5e5d44a4">ManifoldBetweenTwoFaces</a> (<a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inContactPoint1, <a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inContactPoint2, <a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inPenetrationAxis, float inSpeculativeContactDistanceSq, const <a class="el" href="class_convex_shape.html#a238f8599d34f5eb8cfd43c6c847fdacc">ConvexShape::SupportingFace</a> &amp;inShape1Face, const <a class="el" href="class_convex_shape.html#a238f8599d34f5eb8cfd43c6c847fdacc">ConvexShape::SupportingFace</a> &amp;inShape2Face, <a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;outContactPoints1, <a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;outContactPoints2)</td></tr>
+<tr class="separator:a2af0c69f57dd148bda0c405f5e5d44a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2af0c69f57dd148bda0c405f5e5d44a4" name="a2af0c69f57dd148bda0c405f5e5d44a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af0c69f57dd148bda0c405f5e5d44a4">&#9670;&nbsp;</a></span>ManifoldBetweenTwoFaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ManifoldBetweenTwoFaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inContactPoint1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inContactPoint2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inPenetrationAxis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inSpeculativeContactDistanceSq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_convex_shape.html#a238f8599d34f5eb8cfd43c6c847fdacc">ConvexShape::SupportingFace</a> &amp;&#160;</td>
+          <td class="paramname"><em>inShape1Face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_convex_shape.html#a238f8599d34f5eb8cfd43c6c847fdacc">ConvexShape::SupportingFace</a> &amp;&#160;</td>
+          <td class="paramname"><em>inShape2Face</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;&#160;</td>
+          <td class="paramname"><em>outContactPoints1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;&#160;</td>
+          <td class="paramname"><em>outContactPoints2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Determine contact points between 2 faces of 2 shapes and return them in outContactPoints 1 &amp; 2 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inContactPoint1</td><td>The contact point on shape 1 in world space </td></tr>
+    <tr><td class="paramname">inContactPoint2</td><td>The contact point on shape 2 in world space </td></tr>
+    <tr><td class="paramname">inPenetrationAxis</td><td>The local space penetration axis in world space </td></tr>
+    <tr><td class="paramname">inSpeculativeContactDistanceSq</td><td>Squared speculative contact distance, any contact further apart than this distance will be discarded </td></tr>
+    <tr><td class="paramname">inShape1Face</td><td>The supporting faces on shape 1 in world space </td></tr>
+    <tr><td class="paramname">inShape2Face</td><td>The supporting faces on shape 2 in world space </td></tr>
+    <tr><td class="paramname">outContactPoints1</td><td>Returns the contact points between the two shapes for shape 1 in world space (any existing points in the output array are left as is) </td></tr>
+    <tr><td class="paramname">outContactPoints2</td><td>Returns the contact points between the two shapes for shape 2 in world space (any existing points in the output array are left as is) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c4cb5259994c096e409cf9b5ffd4437" name="a8c4cb5259994c096e409cf9b5ffd4437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4cb5259994c096e409cf9b5ffd4437">&#9670;&nbsp;</a></span>PruneContactPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void PruneContactPoints </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inCenterOfMass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a>&#160;</td>
+          <td class="paramname"><em>inPenetrationAxis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;&#160;</td>
+          <td class="paramname"><em>ioContactPointsOn1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> &amp;&#160;</td>
+          <td class="paramname"><em>ioContactPointsOn2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Remove contact points if there are &gt; 4 (no more than 4 are needed for a stable solution) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inCenterOfMass</td><td>is the world space center of mass for body 1 </td></tr>
+    <tr><td class="paramname">inPenetrationAxis</td><td>is the world space penetration axis (must be normalized) </td></tr>
+    <tr><td class="paramname">ioContactPointsOn1</td><td>The world space contact points on shape 1 </td></tr>
+    <tr><td class="paramname">ioContactPointsOn2</td><td>The world space contact points on shape 2 On output ioContactPointsOn1/2 are reduced to 4 or less points </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -53,7 +53,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Atomics.h File Reference</div></div>
 </div><!--header-->
@@ -62,22 +61,94 @@ $(function() {
 </div>
 <p><a href="_atomics_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a231290ff86ab94080c68b12fc4c2315e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a231290ff86ab94080c68b12fc4c2315e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a231290ff86ab94080c68b12fc4c2315e">JPH::AtomicMin</a> (atomic&lt; T &gt; &amp;ioAtomic, const T inValue, const memory_order inMemoryOrder=memory_order_seq_cst)</td></tr>
-<tr class="memdesc:a231290ff86ab94080c68b12fc4c2315e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically compute the min(ioAtomic, inValue) and store it in ioAtomic, returns true if value was updated.  <a href="namespace_j_p_h.html#a231290ff86ab94080c68b12fc4c2315e">More...</a><br /></td></tr>
-<tr class="separator:a231290ff86ab94080c68b12fc4c2315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5b2326f76f202ff18ccca8a9268b8f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a3f5b2326f76f202ff18ccca8a9268b8f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a3f5b2326f76f202ff18ccca8a9268b8f">JPH::AtomicMax</a> (atomic&lt; T &gt; &amp;ioAtomic, const T inValue, const memory_order inMemoryOrder=memory_order_seq_cst)</td></tr>
-<tr class="memdesc:a3f5b2326f76f202ff18ccca8a9268b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically compute the max(ioAtomic, inValue) and store it in ioAtomic, returns true if value was updated.  <a href="namespace_j_p_h.html#a3f5b2326f76f202ff18ccca8a9268b8f">More...</a><br /></td></tr>
-<tr class="separator:a3f5b2326f76f202ff18ccca8a9268b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131e80fd765e7529fa7525bb321280d2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a131e80fd765e7529fa7525bb321280d2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#a4ac413403e9ca00d24a3e2f244cf5456">JPH_SUPPRESS_WARNINGS_STD_BEGIN</a> <a class="el" href="_core_8h.html#a5f6b64537a538d9204b253532b799467">JPH_SUPPRESS_WARNINGS_STD_END</a> <a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_atomics_8h.html#a131e80fd765e7529fa7525bb321280d2">AtomicMin</a> (atomic&lt; T &gt; &amp;ioAtomic, const T inValue, const memory_order inMemoryOrder=memory_order_seq_cst)</td></tr>
+<tr class="memdesc:a131e80fd765e7529fa7525bb321280d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically compute the min(ioAtomic, inValue) and store it in ioAtomic, returns true if value was updated.  <a href="_atomics_8h.html#a131e80fd765e7529fa7525bb321280d2">More...</a><br /></td></tr>
+<tr class="separator:a131e80fd765e7529fa7525bb321280d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adda37c39156e9dc280788421bf35f7bf"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:adda37c39156e9dc280788421bf35f7bf"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_atomics_8h.html#adda37c39156e9dc280788421bf35f7bf">AtomicMax</a> (atomic&lt; T &gt; &amp;ioAtomic, const T inValue, const memory_order inMemoryOrder=memory_order_seq_cst)</td></tr>
+<tr class="memdesc:adda37c39156e9dc280788421bf35f7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically compute the max(ioAtomic, inValue) and store it in ioAtomic, returns true if value was updated.  <a href="_atomics_8h.html#adda37c39156e9dc280788421bf35f7bf">More...</a><br /></td></tr>
+<tr class="separator:adda37c39156e9dc280788421bf35f7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="adda37c39156e9dc280788421bf35f7bf" name="adda37c39156e9dc280788421bf35f7bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda37c39156e9dc280788421bf35f7bf">&#9670;&nbsp;</a></span>AtomicMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AtomicMax </td>
+          <td>(</td>
+          <td class="paramtype">atomic&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ioAtomic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>inValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const memory_order&#160;</td>
+          <td class="paramname"><em>inMemoryOrder</em> = <code>memory_order_seq_cst</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically compute the max(ioAtomic, inValue) and store it in ioAtomic, returns true if value was updated. </p>
+
+</div>
+</div>
+<a id="a131e80fd765e7529fa7525bb321280d2" name="a131e80fd765e7529fa7525bb321280d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131e80fd765e7529fa7525bb321280d2">&#9670;&nbsp;</a></span>AtomicMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#a4ac413403e9ca00d24a3e2f244cf5456">JPH_SUPPRESS_WARNINGS_STD_BEGIN</a> <a class="el" href="_core_8h.html#a5f6b64537a538d9204b253532b799467">JPH_SUPPRESS_WARNINGS_STD_END</a> <a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> bool AtomicMin </td>
+          <td>(</td>
+          <td class="paramtype">atomic&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ioAtomic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>inValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const memory_order&#160;</td>
+          <td class="paramname"><em>inMemoryOrder</em> = <code>memory_order_seq_cst</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Atomically compute the min(ioAtomic, inValue) and store it in ioAtomic, returns true if value was updated. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

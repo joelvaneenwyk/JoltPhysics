@@ -53,29 +53,101 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Indexify.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_triangle_8h_source.html">Geometry/Triangle.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_indexed_triangle_8h_source.html">Geometry/IndexedTriangle.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_triangle_8h_source.html">Jolt/Geometry/Triangle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_indexed_triangle_8h_source.html">Jolt/Geometry/IndexedTriangle.h</a>&gt;</code><br />
 </div>
 <p><a href="_indexify_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2d47e4100a4766fcbd5488e2aa61edea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a2d47e4100a4766fcbd5488e2aa61edea">JPH::Indexify</a> (const TriangleList &amp;inTriangles, VertexList &amp;outVertices, IndexedTriangleList &amp;outTriangles, float inVertexWeldDistance)</td></tr>
-<tr class="separator:a2d47e4100a4766fcbd5488e2aa61edea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50205c5bfc4d8dad7cb027a12d3a7562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a50205c5bfc4d8dad7cb027a12d3a7562">JPH::Deindexify</a> (const VertexList &amp;inVertices, const IndexedTriangleList &amp;inTriangles, TriangleList &amp;outTriangles)</td></tr>
-<tr class="memdesc:a50205c5bfc4d8dad7cb027a12d3a7562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a list of indexed triangles and unpack them.  <a href="namespace_j_p_h.html#a50205c5bfc4d8dad7cb027a12d3a7562">More...</a><br /></td></tr>
-<tr class="separator:a50205c5bfc4d8dad7cb027a12d3a7562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02604a3b2268d5b2049b81255ea03cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_indexify_8h.html#ad02604a3b2268d5b2049b81255ea03cc">Indexify</a> (const <a class="el" href="_triangle_8h.html#a4f6f2525cc0f2c85fcb345a50bee01f4">TriangleList</a> &amp;inTriangles, <a class="el" href="_float3_8h.html#a6ee8949524ccdd223d8d7a8cab105e09">VertexList</a> &amp;outVertices, <a class="el" href="_indexed_triangle_8h.html#ab39aee565a7fb2e5dbb15246dc102dcb">IndexedTriangleList</a> &amp;outTriangles, float inVertexWeldDistance=1.0e-4f)</td></tr>
+<tr class="separator:ad02604a3b2268d5b2049b81255ea03cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61c7f9c3b965f9cbff3cc10733988ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_indexify_8h.html#ac61c7f9c3b965f9cbff3cc10733988ec">Deindexify</a> (const <a class="el" href="_float3_8h.html#a6ee8949524ccdd223d8d7a8cab105e09">VertexList</a> &amp;inVertices, const <a class="el" href="_indexed_triangle_8h.html#ab39aee565a7fb2e5dbb15246dc102dcb">IndexedTriangleList</a> &amp;inTriangles, <a class="el" href="_triangle_8h.html#a4f6f2525cc0f2c85fcb345a50bee01f4">TriangleList</a> &amp;outTriangles)</td></tr>
+<tr class="memdesc:ac61c7f9c3b965f9cbff3cc10733988ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a list of indexed triangles and unpack them.  <a href="_indexify_8h.html#ac61c7f9c3b965f9cbff3cc10733988ec">More...</a><br /></td></tr>
+<tr class="separator:ac61c7f9c3b965f9cbff3cc10733988ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac61c7f9c3b965f9cbff3cc10733988ec" name="ac61c7f9c3b965f9cbff3cc10733988ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61c7f9c3b965f9cbff3cc10733988ec">&#9670;&nbsp;</a></span>Deindexify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Deindexify </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_float3_8h.html#a6ee8949524ccdd223d8d7a8cab105e09">VertexList</a> &amp;&#160;</td>
+          <td class="paramname"><em>inVertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_indexed_triangle_8h.html#ab39aee565a7fb2e5dbb15246dc102dcb">IndexedTriangleList</a> &amp;&#160;</td>
+          <td class="paramname"><em>inTriangles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_triangle_8h.html#a4f6f2525cc0f2c85fcb345a50bee01f4">TriangleList</a> &amp;&#160;</td>
+          <td class="paramname"><em>outTriangles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Take a list of indexed triangles and unpack them. </p>
+
+</div>
+</div>
+<a id="ad02604a3b2268d5b2049b81255ea03cc" name="ad02604a3b2268d5b2049b81255ea03cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02604a3b2268d5b2049b81255ea03cc">&#9670;&nbsp;</a></span>Indexify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void Indexify </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_triangle_8h.html#a4f6f2525cc0f2c85fcb345a50bee01f4">TriangleList</a> &amp;&#160;</td>
+          <td class="paramname"><em>inTriangles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_float3_8h.html#a6ee8949524ccdd223d8d7a8cab105e09">VertexList</a> &amp;&#160;</td>
+          <td class="paramname"><em>outVertices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_indexed_triangle_8h.html#ab39aee565a7fb2e5dbb15246dc102dcb">IndexedTriangleList</a> &amp;&#160;</td>
+          <td class="paramname"><em>outTriangles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inVertexWeldDistance</em> = <code>1.0e-4f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Take a list of triangles and get the unique set of vertices and use them to create indexed triangles. Vertices that are less than inVertexWeldDistance apart will be combined to a single vertex. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

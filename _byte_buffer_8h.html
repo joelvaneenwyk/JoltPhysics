@@ -54,32 +54,43 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">ByteBuffer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_aligned_allocator_8h_source.html">Core/AlignedAllocator.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_aligned_allocator_8h_source.html">Jolt/Core/AlignedAllocator.h</a>&gt;</code><br />
 </div>
 <p><a href="_byte_buffer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_byte_buffer.html">JPH::ByteBuffer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple byte buffer, aligned to a cache line.  <a href="class_j_p_h_1_1_byte_buffer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_byte_buffer.html">ByteBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple byte buffer, aligned to a cache line.  <a href="class_byte_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a37bb734a2bc0373bb8ab8152775fd03f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a37bb734a2bc0373bb8ab8152775fd03f">JPH::ByteBufferVector</a> = vector&lt; uint8, AlignedAllocator&lt; uint8, <a class="el" href="_core_8h.html#a2eca4e00d11d8fdbbd04c4a23a244278">JPH_CACHE_LINE_SIZE</a> &gt; &gt;</td></tr>
-<tr class="memdesc:a37bb734a2bc0373bb8ab8152775fd03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying data type for <a class="el" href="class_j_p_h_1_1_byte_buffer.html" title="Simple byte buffer, aligned to a cache line.">ByteBuffer</a>.  <a href="namespace_j_p_h.html#a37bb734a2bc0373bb8ab8152775fd03f">More...</a><br /></td></tr>
-<tr class="separator:a37bb734a2bc0373bb8ab8152775fd03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9149f60811d2a559f671489cd1d334"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_byte_buffer_8h.html#a6b9149f60811d2a559f671489cd1d334">ByteBufferVector</a> = vector&lt; <a class="el" href="_core_8h.html#aa17fc6cc2c9a4ad80e9fcdd3f64320e1">uint8</a>, <a class="el" href="class_aligned_allocator.html">AlignedAllocator</a>&lt; <a class="el" href="_core_8h.html#aa17fc6cc2c9a4ad80e9fcdd3f64320e1">uint8</a>, <a class="el" href="_core_8h.html#a2eca4e00d11d8fdbbd04c4a23a244278">JPH_CACHE_LINE_SIZE</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a6b9149f60811d2a559f671489cd1d334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Underlying data type for <a class="el" href="class_byte_buffer.html" title="Simple byte buffer, aligned to a cache line.">ByteBuffer</a>.  <a href="_byte_buffer_8h.html#a6b9149f60811d2a559f671489cd1d334">More...</a><br /></td></tr>
+<tr class="separator:a6b9149f60811d2a559f671489cd1d334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a6b9149f60811d2a559f671489cd1d334" name="a6b9149f60811d2a559f671489cd1d334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9149f60811d2a559f671489cd1d334">&#9670;&nbsp;</a></span>ByteBufferVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_byte_buffer_8h.html#a6b9149f60811d2a559f671489cd1d334">ByteBufferVector</a> =  vector&lt;<a class="el" href="_core_8h.html#aa17fc6cc2c9a4ad80e9fcdd3f64320e1">uint8</a>, <a class="el" href="class_aligned_allocator.html">AlignedAllocator</a>&lt;<a class="el" href="_core_8h.html#aa17fc6cc2c9a4ad80e9fcdd3f64320e1">uint8</a>, <a class="el" href="_core_8h.html#a2eca4e00d11d8fdbbd04c4a23a244278">JPH_CACHE_LINE_SIZE</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Underlying data type for <a class="el" href="class_byte_buffer.html" title="Simple byte buffer, aligned to a cache line.">ByteBuffer</a>. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

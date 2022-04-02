@@ -54,49 +54,107 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">AABBTreeToBuffer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_a_a_b_b_tree_builder_8h_source.html">AABBTree/AABBTreeBuilder.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_byte_buffer_8h_source.html">Core/ByteBuffer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_indexed_triangle_8h_source.html">Geometry/IndexedTriangle.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_a_a_b_b_tree_builder_8h_source.html">Jolt/AABBTree/AABBTreeBuilder.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_byte_buffer_8h_source.html">Jolt/Core/ByteBuffer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_indexed_triangle_8h_source.html">Jolt/Geometry/IndexedTriangle.h</a>&gt;</code><br />
 <code>#include &lt;deque&gt;</code><br />
 </div>
 <p><a href="_a_a_b_b_tree_to_buffer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_p_h_1_1_a_a_b_b_tree_to_buffer_stats.html">JPH::AABBTreeToBufferStats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that holds statistics about the AABB tree that was built.  <a href="struct_j_p_h_1_1_a_a_b_b_tree_to_buffer_stats.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_a_b_b_tree_to_buffer_stats.html">AABBTreeToBufferStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that holds statistics about the AABB tree that was built.  <a href="struct_a_a_b_b_tree_to_buffer_stats.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_a_a_b_b_tree_to_buffer.html">JPH::AABBTreeToBuffer&lt; TriangleCodec, NodeCodec &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion algorithm that converts an AABB tree to an optimized binary buffer.  <a href="class_j_p_h_1_1_a_a_b_b_tree_to_buffer.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b_tree_to_buffer.html">AABBTreeToBuffer&lt; TriangleCodec, NodeCodec &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion algorithm that converts an AABB tree to an optimized binary buffer.  <a href="class_a_a_b_b_tree_to_buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ab30dff497702ebf1dcd4f8f82e194ea8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ab30dff497702ebf1dcd4f8f82e194ea8">JPH::EAABBTreeToBufferConvertMode</a> { <a class="el" href="namespace_j_p_h.html#ab30dff497702ebf1dcd4f8f82e194ea8aef14bbc82271ba8488c94a6dd351ade3">JPH::DepthFirst</a>
-, <a class="el" href="namespace_j_p_h.html#ab30dff497702ebf1dcd4f8f82e194ea8a120d0319a798a0bae1f18b51859009d1">JPH::DepthFirstTrianglesLast</a>
-, <a class="el" href="namespace_j_p_h.html#ab30dff497702ebf1dcd4f8f82e194ea8a42b647c4fc0abd66c203a137a529d312">JPH::BreadthFirst</a>
-, <a class="el" href="namespace_j_p_h.html#ab30dff497702ebf1dcd4f8f82e194ea8ae4676efe34ed5406ac35a97502d5b949">JPH::BreadthFirstTrianglesLast</a>
+<tr class="memitem:afea559fff05dcc1095a2c872c89490be"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490be">EAABBTreeToBufferConvertMode</a> { <a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490beaef14bbc82271ba8488c94a6dd351ade3">DepthFirst</a>
+, <a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490bea120d0319a798a0bae1f18b51859009d1">DepthFirstTrianglesLast</a>
+, <a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490bea42b647c4fc0abd66c203a137a529d312">BreadthFirst</a>
+, <a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490beae4676efe34ed5406ac35a97502d5b949">BreadthFirstTrianglesLast</a>
  }</td></tr>
-<tr class="memdesc:ab30dff497702ebf1dcd4f8f82e194ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the tree should be converted.  <a href="namespace_j_p_h.html#ab30dff497702ebf1dcd4f8f82e194ea8">More...</a><br /></td></tr>
-<tr class="separator:ab30dff497702ebf1dcd4f8f82e194ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:afea559fff05dcc1095a2c872c89490be"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the tree should be converted.  <a href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490be">More...</a><br /></td></tr>
+<tr class="separator:afea559fff05dcc1095a2c872c89490be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adc24f47b60490f4da4ba7322dddcd150"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#adc24f47b60490f4da4ba7322dddcd150">JPH::ConvertToString</a> (EAABBTreeToBufferConvertMode inConvertMode)</td></tr>
-<tr class="memdesc:adc24f47b60490f4da4ba7322dddcd150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert mode to string.  <a href="namespace_j_p_h.html#adc24f47b60490f4da4ba7322dddcd150">More...</a><br /></td></tr>
-<tr class="separator:adc24f47b60490f4da4ba7322dddcd150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6492eef3973b5746fa14b0518d1fda0f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#a6492eef3973b5746fa14b0518d1fda0f">ConvertToString</a> (<a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490be">EAABBTreeToBufferConvertMode</a> inConvertMode)</td></tr>
+<tr class="memdesc:a6492eef3973b5746fa14b0518d1fda0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert mode to string.  <a href="_a_a_b_b_tree_to_buffer_8h.html#a6492eef3973b5746fa14b0518d1fda0f">More...</a><br /></td></tr>
+<tr class="separator:a6492eef3973b5746fa14b0518d1fda0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="afea559fff05dcc1095a2c872c89490be" name="afea559fff05dcc1095a2c872c89490be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea559fff05dcc1095a2c872c89490be">&#9670;&nbsp;</a></span>EAABBTreeToBufferConvertMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490be">EAABBTreeToBufferConvertMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How the tree should be converted. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afea559fff05dcc1095a2c872c89490beaef14bbc82271ba8488c94a6dd351ade3" name="afea559fff05dcc1095a2c872c89490beaef14bbc82271ba8488c94a6dd351ade3"></a>DepthFirst&#160;</td><td class="fielddoc"><p >Arrange the nodes depth first, put the triangles right after the leaf nodes (so interleaving them with nodes) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afea559fff05dcc1095a2c872c89490bea120d0319a798a0bae1f18b51859009d1" name="afea559fff05dcc1095a2c872c89490bea120d0319a798a0bae1f18b51859009d1"></a>DepthFirstTrianglesLast&#160;</td><td class="fielddoc"><p >Arrange the nodes depth first and put all triangles blocks after the last node block. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afea559fff05dcc1095a2c872c89490bea42b647c4fc0abd66c203a137a529d312" name="afea559fff05dcc1095a2c872c89490bea42b647c4fc0abd66c203a137a529d312"></a>BreadthFirst&#160;</td><td class="fielddoc"><p >Arrange the nodes breadth first, put the triangles right after the leaf nodes (so interleaving them with nodes) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="afea559fff05dcc1095a2c872c89490beae4676efe34ed5406ac35a97502d5b949" name="afea559fff05dcc1095a2c872c89490beae4676efe34ed5406ac35a97502d5b949"></a>BreadthFirstTrianglesLast&#160;</td><td class="fielddoc"><p >Arrange the nodes breadth first and put all triangles blocks after the last node block. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a6492eef3973b5746fa14b0518d1fda0f" name="a6492eef3973b5746fa14b0518d1fda0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6492eef3973b5746fa14b0518d1fda0f">&#9670;&nbsp;</a></span>ConvertToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ConvertToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_a_a_b_b_tree_to_buffer_8h.html#afea559fff05dcc1095a2c872c89490be">EAABBTreeToBufferConvertMode</a>&#160;</td>
+          <td class="paramname"><em>inConvertMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert mode to string. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

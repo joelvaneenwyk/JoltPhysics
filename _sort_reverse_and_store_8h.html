@@ -53,7 +53,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">SortReverseAndStore.h File Reference</div></div>
 </div><!--header-->
@@ -61,18 +60,100 @@ $(function() {
 
 <p><a href="_sort_reverse_and_store_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4dc927eafbf6f4a44c5e5dcdb9ef7d10"><td class="memItemLeft" align="right" valign="top">JPH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a4dc927eafbf6f4a44c5e5dcdb9ef7d10">JPH::SortReverseAndStore</a> (Vec4Arg inValues, float inMaxValue, UVec4 &amp;ioIdentifiers, float *outValues)</td></tr>
-<tr class="separator:a4dc927eafbf6f4a44c5e5dcdb9ef7d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb60aca50408c9042ab62f60acae08b"><td class="memItemLeft" align="right" valign="top">JPH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a7cb60aca50408c9042ab62f60acae08b">JPH::CountAndSortTrues</a> (UVec4Arg inValue, UVec4 &amp;ioIdentifiers)</td></tr>
-<tr class="separator:a7cb60aca50408c9042ab62f60acae08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b5bed860245d59f9b986771e3a1a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> JPH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sort_reverse_and_store_8h.html#ad8b5bed860245d59f9b986771e3a1a13">SortReverseAndStore</a> (<a class="el" href="_math_types_8h.html#a65d26967b0fb36c525cedad5022e5ebe">Vec4Arg</a> inValues, float inMaxValue, <a class="el" href="class_u_vec4.html">UVec4</a> &amp;ioIdentifiers, float *outValues)</td></tr>
+<tr class="separator:ad8b5bed860245d59f9b986771e3a1a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cd431ab99bf4ad6169c0583c65675d"><td class="memItemLeft" align="right" valign="top">JPH_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sort_reverse_and_store_8h.html#ac0cd431ab99bf4ad6169c0583c65675d">CountAndSortTrues</a> (<a class="el" href="_math_types_8h.html#a5744e8e2697ac6bd85edb8d2e4321416">UVec4Arg</a> inValue, <a class="el" href="class_u_vec4.html">UVec4</a> &amp;ioIdentifiers)</td></tr>
+<tr class="separator:ac0cd431ab99bf4ad6169c0583c65675d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac0cd431ab99bf4ad6169c0583c65675d" name="ac0cd431ab99bf4ad6169c0583c65675d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cd431ab99bf4ad6169c0583c65675d">&#9670;&nbsp;</a></span>CountAndSortTrues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JPH_INLINE int CountAndSortTrues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a5744e8e2697ac6bd85edb8d2e4321416">UVec4Arg</a>&#160;</td>
+          <td class="paramname"><em>inValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_u_vec4.html">UVec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>ioIdentifiers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Shift the elements so that the identifiers that correspond with the trues in inValue come first </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inValue</td><td>Values to test for true or false </td></tr>
+    <tr><td class="paramname">ioIdentifiers</td><td>the identifiers that are shifted, on return they are shifted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of trues </dd></dl>
+
+</div>
+</div>
+<a id="ad8b5bed860245d59f9b986771e3a1a13" name="ad8b5bed860245d59f9b986771e3a1a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b5bed860245d59f9b986771e3a1a13">&#9670;&nbsp;</a></span>SortReverseAndStore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> JPH_INLINE int SortReverseAndStore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_math_types_8h.html#a65d26967b0fb36c525cedad5022e5ebe">Vec4Arg</a>&#160;</td>
+          <td class="paramname"><em>inValues</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inMaxValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_u_vec4.html">UVec4</a> &amp;&#160;</td>
+          <td class="paramname"><em>ioIdentifiers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>outValues</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This function will sort values from high to low and only keep the ones that are less than inMaxValue </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inValues</td><td>Values to be sorted </td></tr>
+    <tr><td class="paramname">inMaxValue</td><td>Values need to be less than this to keep them </td></tr>
+    <tr><td class="paramname">ioIdentifiers</td><td>4 identifiers that will be sorted in the same way as the values </td></tr>
+    <tr><td class="paramname">outValues</td><td>The values are stored here from high to low </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of values that were kept </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

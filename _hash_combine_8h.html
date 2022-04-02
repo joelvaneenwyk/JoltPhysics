@@ -53,7 +53,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">HashCombine.h File Reference</div></div>
@@ -62,11 +61,6 @@ $(function() {
 
 <p><a href="_hash_combine_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aedd0cd83dae14bf34f99338587ab043d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hash_combine_8h.html#aedd0cd83dae14bf34f99338587ab043d">JPH_MAKE_HASH_STRUCT</a>(type,  name, ...)</td></tr>
@@ -76,11 +70,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4c581b645d65c829bf435ad4392aff7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a4c581b645d65c829bf435ad4392aff7c">JPH::hash_combine</a> (std::size_t &amp;ioSeed)</td></tr>
-<tr class="separator:a4c581b645d65c829bf435ad4392aff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b8d2684df97d092b42f3e1ad66f35f6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Rest&gt; </td></tr>
-<tr class="memitem:a8b8d2684df97d092b42f3e1ad66f35f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a8b8d2684df97d092b42f3e1ad66f35f6">JPH::hash_combine</a> (std::size_t &amp;ioSeed, const T &amp;inValue, Rest... inRest)</td></tr>
-<tr class="separator:a8b8d2684df97d092b42f3e1ad66f35f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f52e080e3d54c72bd2f6040c05eb94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hash_combine_8h.html#aa8f52e080e3d54c72bd2f6040c05eb94">hash_combine</a> (std::size_t &amp;ioSeed)</td></tr>
+<tr class="separator:aa8f52e080e3d54c72bd2f6040c05eb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850a66da047ffbed2d459833cde45088"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Rest&gt; </td></tr>
+<tr class="memitem:a850a66da047ffbed2d459833cde45088"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_hash_combine_8h.html#a850a66da047ffbed2d459833cde45088">hash_combine</a> (std::size_t &amp;ioSeed, const T &amp;inValue, Rest... inRest)</td></tr>
+<tr class="separator:a850a66da047ffbed2d459833cde45088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aedd0cd83dae14bf34f99338587ab043d" name="aedd0cd83dae14bf34f99338587ab043d"></a>
@@ -118,12 +112,12 @@ Functions</h2></td></tr>
 <div class="line">    {                                                       \</div>
 <div class="line">        std::size_t operator()(<span class="keyword">const</span> type &amp;t) <span class="keyword">const</span>         \</div>
 <div class="line">        {                                                   \</div>
-<div class="line">            std::size_t ret = 0;                            <a class="code hl_function" href="namespace_j_p_h.html#a8b8d2684df97d092b42f3e1ad66f35f6">\</a></div>
-<div class="line"><a class="code hl_function" href="namespace_j_p_h.html#a8b8d2684df97d092b42f3e1ad66f35f6">            ::JPH::hash_combine</a>(ret, __VA_ARGS__);          \</div>
+<div class="line">            std::size_t ret = 0;                            <a class="code hl_function" href="_hash_combine_8h.html#aa8f52e080e3d54c72bd2f6040c05eb94">\</a></div>
+<div class="line"><a class="code hl_function" href="_hash_combine_8h.html#aa8f52e080e3d54c72bd2f6040c05eb94">            ::JPH::hash_combine</a>(ret, __VA_ARGS__);          \</div>
 <div class="line">            return ret;                                     \</div>
 <div class="line">        }                                                   \</div>
 <div class="line">    };</div>
-<div class="ttc" id="anamespace_j_p_h_html_a8b8d2684df97d092b42f3e1ad66f35f6"><div class="ttname"><a href="namespace_j_p_h.html#a8b8d2684df97d092b42f3e1ad66f35f6">JPH::hash_combine</a></div><div class="ttdeci">void hash_combine(std::size_t &amp;ioSeed, const T &amp;inValue, Rest... inRest)</div><div class="ttdef"><b>Definition:</b> HashCombine.h:26</div></div>
+<div class="ttc" id="a_hash_combine_8h_html_aa8f52e080e3d54c72bd2f6040c05eb94"><div class="ttname"><a href="_hash_combine_8h.html#aa8f52e080e3d54c72bd2f6040c05eb94">hash_combine</a></div><div class="ttdeci">JPH_NAMESPACE_BEGIN void hash_combine(std::size_t &amp;ioSeed)</div><div class="ttdef"><b>Definition:</b> HashCombine.h:8</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -152,14 +146,97 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacestd.html">std</a>                                           \</div>
+<b>Value:</b><div class="fragment"><div class="line">    JPH_SUPPRESS_WARNING_PUSH                               \</div>
+<div class="line">    JPH_SUPPRESS_WARNINGS                                   \</div>
+<div class="line">    namespace <a class="code hl_namespace" href="namespacestd.html">std</a>                                           \</div>
 <div class="line">    {                                                       <a class="code hl_define" href="_hash_combine_8h.html#aedd0cd83dae14bf34f99338587ab043d">\</a></div>
 <div class="line"><a class="code hl_define" href="_hash_combine_8h.html#aedd0cd83dae14bf34f99338587ab043d">        template&lt;&gt;											\</a></div>
 <div class="line"><a class="code hl_define" href="_hash_combine_8h.html#aedd0cd83dae14bf34f99338587ab043d">		JPH_MAKE_HASH_STRUCT</a>(type, hash&lt;type&gt;, __VA_ARGS__)   \</div>
-<div class="line">    }</div>
-<div class="ttc" id="a_hash_combine_8h_html_aedd0cd83dae14bf34f99338587ab043d"><div class="ttname"><a href="_hash_combine_8h.html#aedd0cd83dae14bf34f99338587ab043d">JPH_MAKE_HASH_STRUCT</a></div><div class="ttdeci">#define JPH_MAKE_HASH_STRUCT(type, name,...)</div><div class="ttdef"><b>Definition:</b> HashCombine.h:35</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Reference.h:192</div></div>
+<div class="line">    }                                                       \</div>
+<div class="line">    JPH_SUPPRESS_WARNING_POP</div>
+<div class="ttc" id="a_hash_combine_8h_html_aedd0cd83dae14bf34f99338587ab043d"><div class="ttname"><a href="_hash_combine_8h.html#aedd0cd83dae14bf34f99338587ab043d">JPH_MAKE_HASH_STRUCT</a></div><div class="ttdeci">#define JPH_MAKE_HASH_STRUCT(type, name,...)</div><div class="ttdef"><b>Definition:</b> HashCombine.h:38</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Reference.h:197</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa8f52e080e3d54c72bd2f6040c05eb94" name="aa8f52e080e3d54c72bd2f6040c05eb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f52e080e3d54c72bd2f6040c05eb94">&#9670;&nbsp;</a></span>hash_combine() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> void hash_combine </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>ioSeed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a850a66da047ffbed2d459833cde45088" name="a850a66da047ffbed2d459833cde45088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850a66da047ffbed2d459833cde45088">&#9670;&nbsp;</a></span>hash_combine() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Rest&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hash_combine </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>ioSeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>inValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rest...&#160;</td>
+          <td class="paramname"><em>inRest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Hash combiner to use a custom struct in an unordered map or set Taken from: <a href="https://stackoverflow.com/questions/2590677/how-do-i-combine-hash-values-in-c0x">https://stackoverflow.com/questions/2590677/how-do-i-combine-hash-values-in-c0x</a></p>
+<p >Usage: </p><pre class="fragment">struct SomeHashKey 
+{
+    std::string key1;
+    std::string key2;
+    bool key3;
+};
+
+JPH_MAKE_HASHABLE(SomeHashKey, t.key1, t.key2, t.key3) 
+</pre> 
 </div>
 </div>
 </div><!-- contents -->

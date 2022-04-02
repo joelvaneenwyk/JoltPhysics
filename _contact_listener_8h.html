@@ -54,47 +54,92 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">ContactListener.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_sub_shape_i_d_pair_8h_source.html">Physics/Collision/Shape/SubShapeIDPair.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_static_array_8h_source.html">Core/StaticArray.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_sub_shape_i_d_pair_8h_source.html">Jolt/Physics/Collision/Shape/SubShapeIDPair.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_static_array_8h_source.html">Jolt/Core/StaticArray.h</a>&gt;</code><br />
 </div>
 <p><a href="_contact_listener_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_contact_manifold.html">JPH::ContactManifold</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manifold class, describes the contact surface between two bodies.  <a href="class_j_p_h_1_1_contact_manifold.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_manifold.html">ContactManifold</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manifold class, describes the contact surface between two bodies.  <a href="class_contact_manifold.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_contact_settings.html">JPH::ContactSettings</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_settings.html">ContactSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_contact_listener.html">JPH::ContactListener</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_listener.html">ContactListener</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ab68b63691aa350787844a38615a06837"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ab68b63691aa350787844a38615a06837">JPH::ContactPoints</a> = StaticArray&lt; Vec3, 64 &gt;</td></tr>
-<tr class="memdesc:ab68b63691aa350787844a38615a06837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of contact points.  <a href="namespace_j_p_h.html#ab68b63691aa350787844a38615a06837">More...</a><br /></td></tr>
-<tr class="separator:ab68b63691aa350787844a38615a06837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f5f34116f161cc13203803010c37c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> = <a class="el" href="class_static_array.html">StaticArray</a>&lt; <a class="el" href="class_vec3.html">Vec3</a>, 64 &gt;</td></tr>
+<tr class="memdesc:ac6f5f34116f161cc13203803010c37c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of contact points.  <a href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">More...</a><br /></td></tr>
+<tr class="separator:ac6f5f34116f161cc13203803010c37c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a14577baa6473c622f448a93c63f4f9ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a14577baa6473c622f448a93c63f4f9ea">JPH::ValidateResult</a> { <a class="el" href="namespace_j_p_h.html#a14577baa6473c622f448a93c63f4f9eaa8796185ae90c58f159c3940f24112507">JPH::AcceptAllContactsForThisBodyPair</a>
-, <a class="el" href="namespace_j_p_h.html#a14577baa6473c622f448a93c63f4f9eaac965aae814c53bfa33f418d5187d4cdc">JPH::AcceptContact</a>
-, <a class="el" href="namespace_j_p_h.html#a14577baa6473c622f448a93c63f4f9eaa4c312fb94f5fa9ebabb3968b56ed0221">JPH::RejectContact</a>
-, <a class="el" href="namespace_j_p_h.html#a14577baa6473c622f448a93c63f4f9eaa0e08391f08898fa9bd658afcbd26e2c0">JPH::RejectAllContactsForThisBodyPair</a>
+<tr class="memitem:a996dd20903cf7428fc11a70e8676b93c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_contact_listener_8h.html#a996dd20903cf7428fc11a70e8676b93c">ValidateResult</a> { <a class="el" href="_contact_listener_8h.html#a996dd20903cf7428fc11a70e8676b93ca8796185ae90c58f159c3940f24112507">AcceptAllContactsForThisBodyPair</a>
+, <a class="el" href="_contact_listener_8h.html#a996dd20903cf7428fc11a70e8676b93cac965aae814c53bfa33f418d5187d4cdc">AcceptContact</a>
+, <a class="el" href="_contact_listener_8h.html#a996dd20903cf7428fc11a70e8676b93ca4c312fb94f5fa9ebabb3968b56ed0221">RejectContact</a>
+, <a class="el" href="_contact_listener_8h.html#a996dd20903cf7428fc11a70e8676b93ca0e08391f08898fa9bd658afcbd26e2c0">RejectAllContactsForThisBodyPair</a>
  }</td></tr>
-<tr class="separator:a14577baa6473c622f448a93c63f4f9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a996dd20903cf7428fc11a70e8676b93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ac6f5f34116f161cc13203803010c37c1" name="ac6f5f34116f161cc13203803010c37c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f5f34116f161cc13203803010c37c1">&#9670;&nbsp;</a></span>ContactPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_contact_listener_8h.html#ac6f5f34116f161cc13203803010c37c1">ContactPoints</a> =  <a class="el" href="class_static_array.html">StaticArray</a>&lt;<a class="el" href="class_vec3.html">Vec3</a>, 64&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array of contact points. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a996dd20903cf7428fc11a70e8676b93c" name="a996dd20903cf7428fc11a70e8676b93c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996dd20903cf7428fc11a70e8676b93c">&#9670;&nbsp;</a></span>ValidateResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="_contact_listener_8h.html#a996dd20903cf7428fc11a70e8676b93c">ValidateResult</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Return value for the OnContactValidate callback. Determines if the contact is being processed or not. Results are ordered so that the strongest accept has the lowest number and the strongest reject the highest number (which allows for easy combining of results) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a996dd20903cf7428fc11a70e8676b93ca8796185ae90c58f159c3940f24112507" name="a996dd20903cf7428fc11a70e8676b93ca8796185ae90c58f159c3940f24112507"></a>AcceptAllContactsForThisBodyPair&#160;</td><td class="fielddoc"><p >Accept this and any further contact points for this body pair. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a996dd20903cf7428fc11a70e8676b93cac965aae814c53bfa33f418d5187d4cdc" name="a996dd20903cf7428fc11a70e8676b93cac965aae814c53bfa33f418d5187d4cdc"></a>AcceptContact&#160;</td><td class="fielddoc"><p >Accept this contact only (and continue calling this callback for every contact manifold for the same body pair) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a996dd20903cf7428fc11a70e8676b93ca4c312fb94f5fa9ebabb3968b56ed0221" name="a996dd20903cf7428fc11a70e8676b93ca4c312fb94f5fa9ebabb3968b56ed0221"></a>RejectContact&#160;</td><td class="fielddoc"><p >Reject this contact only (but process any other contact manifolds for the same body pair) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a996dd20903cf7428fc11a70e8676b93ca0e08391f08898fa9bd658afcbd26e2c0" name="a996dd20903cf7428fc11a70e8676b93ca0e08391f08898fa9bd658afcbd26e2c0"></a>RejectAllContactsForThisBodyPair&#160;</td><td class="fielddoc"><p >Rejects this and any further contact points for this body pair. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

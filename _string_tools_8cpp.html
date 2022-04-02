@@ -53,41 +53,220 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">StringTools.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_jolt_8h_source.html">Jolt.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_string_tools_8h_source.html">Core/StringTools.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_jolt_8h_source.html">Jolt/Jolt.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_string_tools_8h_source.html">Jolt/Core/StringTools.h</a>&gt;</code><br />
 <code>#include &lt;cstdarg&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afa8de4e0e9dcb26b196dc27687968d76"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#afa8de4e0e9dcb26b196dc27687968d76">JPH::StringFormat</a> (const char *inFMT,...)</td></tr>
-<tr class="memdesc:afa8de4e0e9dcb26b196dc27687968d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a formatted text string.  <a href="namespace_j_p_h.html#afa8de4e0e9dcb26b196dc27687968d76">More...</a><br /></td></tr>
-<tr class="separator:afa8de4e0e9dcb26b196dc27687968d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc14347b7624df8becff0cf5bf847ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aadc14347b7624df8becff0cf5bf847ea">JPH::StringReplace</a> (string &amp;ioString, string inSearch, string inReplace)</td></tr>
-<tr class="memdesc:aadc14347b7624df8becff0cf5bf847ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace substring with other string.  <a href="namespace_j_p_h.html#aadc14347b7624df8becff0cf5bf847ea">More...</a><br /></td></tr>
-<tr class="separator:aadc14347b7624df8becff0cf5bf847ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a3c682daf437c507627f9fc08c95b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a3a3c682daf437c507627f9fc08c95b93">JPH::StringToVector</a> (const string &amp;inString, vector&lt; string &gt; &amp;outVector, const string &amp;inDelimiter=&quot;,&quot;, bool inClearVector=true)</td></tr>
-<tr class="memdesc:a3a3c682daf437c507627f9fc08c95b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a delimited string to an array of strings.  <a href="namespace_j_p_h.html#a3a3c682daf437c507627f9fc08c95b93">More...</a><br /></td></tr>
-<tr class="separator:a3a3c682daf437c507627f9fc08c95b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650b5d799588abb3c1ea8003d9369d2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a650b5d799588abb3c1ea8003d9369d2c">JPH::VectorToString</a> (const vector&lt; string &gt; &amp;inVector, string &amp;outString, const string &amp;inDelimiter=&quot;,&quot;)</td></tr>
-<tr class="memdesc:a650b5d799588abb3c1ea8003d9369d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array strings to a delimited string.  <a href="namespace_j_p_h.html#a650b5d799588abb3c1ea8003d9369d2c">More...</a><br /></td></tr>
-<tr class="separator:a650b5d799588abb3c1ea8003d9369d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad387232cfaf2b94bf75879d8f8a2ecf0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ad387232cfaf2b94bf75879d8f8a2ecf0">JPH::ToLower</a> (const string &amp;inString)</td></tr>
-<tr class="memdesc:ad387232cfaf2b94bf75879d8f8a2ecf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to lower case.  <a href="namespace_j_p_h.html#ad387232cfaf2b94bf75879d8f8a2ecf0">More...</a><br /></td></tr>
-<tr class="separator:ad387232cfaf2b94bf75879d8f8a2ecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63fea65fa9d12b95f4ce5759bb4c74fd"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a63fea65fa9d12b95f4ce5759bb4c74fd">JPH::NibbleToBinary</a> (uint32 inNibble)</td></tr>
-<tr class="memdesc:a63fea65fa9d12b95f4ce5759bb4c74fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the lower 4 bits of inNibble to a string that represents the number in binary format.  <a href="namespace_j_p_h.html#a63fea65fa9d12b95f4ce5759bb4c74fd">More...</a><br /></td></tr>
-<tr class="separator:a63fea65fa9d12b95f4ce5759bb4c74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7af668641560a430a1bf46446dc9a4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_core_8h.html#a4ac413403e9ca00d24a3e2f244cf5456">JPH_SUPPRESS_WARNINGS_STD_BEGIN</a> <a class="el" href="_core_8h.html#a5f6b64537a538d9204b253532b799467">JPH_SUPPRESS_WARNINGS_STD_END</a> <a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_tools_8cpp.html#ab7af668641560a430a1bf46446dc9a4d">StringFormat</a> (const char *inFMT,...)</td></tr>
+<tr class="memdesc:ab7af668641560a430a1bf46446dc9a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a formatted text string.  <a href="_string_tools_8cpp.html#ab7af668641560a430a1bf46446dc9a4d">More...</a><br /></td></tr>
+<tr class="separator:ab7af668641560a430a1bf46446dc9a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac79cfd29a69f18964dd54393ae98a8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_tools_8cpp.html#aac79cfd29a69f18964dd54393ae98a8a">StringReplace</a> (string &amp;ioString, string inSearch, string inReplace)</td></tr>
+<tr class="memdesc:aac79cfd29a69f18964dd54393ae98a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace substring with other string.  <a href="_string_tools_8cpp.html#aac79cfd29a69f18964dd54393ae98a8a">More...</a><br /></td></tr>
+<tr class="separator:aac79cfd29a69f18964dd54393ae98a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1149bd0b7a0f9e774219fbd356f6b995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_tools_8cpp.html#a1149bd0b7a0f9e774219fbd356f6b995">StringToVector</a> (const string &amp;inString, vector&lt; string &gt; &amp;outVector, const string &amp;inDelimiter, bool inClearVector)</td></tr>
+<tr class="memdesc:a1149bd0b7a0f9e774219fbd356f6b995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a delimited string to an array of strings.  <a href="_string_tools_8cpp.html#a1149bd0b7a0f9e774219fbd356f6b995">More...</a><br /></td></tr>
+<tr class="separator:a1149bd0b7a0f9e774219fbd356f6b995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8189461544e6fc6541e6af735090be91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_tools_8cpp.html#a8189461544e6fc6541e6af735090be91">VectorToString</a> (const vector&lt; string &gt; &amp;inVector, string &amp;outString, const string &amp;inDelimiter)</td></tr>
+<tr class="memdesc:a8189461544e6fc6541e6af735090be91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array strings to a delimited string.  <a href="_string_tools_8cpp.html#a8189461544e6fc6541e6af735090be91">More...</a><br /></td></tr>
+<tr class="separator:a8189461544e6fc6541e6af735090be91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15926f67e8c158f1fb640debccb9337b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_tools_8cpp.html#a15926f67e8c158f1fb640debccb9337b">ToLower</a> (const string &amp;inString)</td></tr>
+<tr class="memdesc:a15926f67e8c158f1fb640debccb9337b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string to lower case.  <a href="_string_tools_8cpp.html#a15926f67e8c158f1fb640debccb9337b">More...</a><br /></td></tr>
+<tr class="separator:a15926f67e8c158f1fb640debccb9337b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479eac2df35b47887f8dbfa014f6923d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_string_tools_8cpp.html#a479eac2df35b47887f8dbfa014f6923d">NibbleToBinary</a> (<a class="el" href="_core_8h.html#a5522c54735d837fae7d6ba026b858441">uint32</a> inNibble)</td></tr>
+<tr class="memdesc:a479eac2df35b47887f8dbfa014f6923d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the lower 4 bits of inNibble to a string that represents the number in binary format.  <a href="_string_tools_8cpp.html#a479eac2df35b47887f8dbfa014f6923d">More...</a><br /></td></tr>
+<tr class="separator:a479eac2df35b47887f8dbfa014f6923d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a479eac2df35b47887f8dbfa014f6923d" name="a479eac2df35b47887f8dbfa014f6923d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479eac2df35b47887f8dbfa014f6923d">&#9670;&nbsp;</a></span>NibbleToBinary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * NibbleToBinary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_core_8h.html#a5522c54735d837fae7d6ba026b858441">uint32</a>&#160;</td>
+          <td class="paramname"><em>inNibble</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the lower 4 bits of inNibble to a string that represents the number in binary format. </p>
+
+</div>
+</div>
+<a id="ab7af668641560a430a1bf46446dc9a4d" name="ab7af668641560a430a1bf46446dc9a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7af668641560a430a1bf46446dc9a4d">&#9670;&nbsp;</a></span>StringFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_core_8h.html#a4ac413403e9ca00d24a3e2f244cf5456">JPH_SUPPRESS_WARNINGS_STD_BEGIN</a> <a class="el" href="_core_8h.html#a5f6b64537a538d9204b253532b799467">JPH_SUPPRESS_WARNINGS_STD_END</a> <a class="el" href="_core_8h.html#ad14098b68b8c44ea6112601031268405">JPH_NAMESPACE_BEGIN</a> string StringFormat </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inFMT</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a formatted text string. </p>
+
+</div>
+</div>
+<a id="aac79cfd29a69f18964dd54393ae98a8a" name="aac79cfd29a69f18964dd54393ae98a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac79cfd29a69f18964dd54393ae98a8a">&#9670;&nbsp;</a></span>StringReplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StringReplace </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>ioString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>inSearch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>inReplace</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace substring with other string. </p>
+
+</div>
+</div>
+<a id="a1149bd0b7a0f9e774219fbd356f6b995" name="a1149bd0b7a0f9e774219fbd356f6b995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1149bd0b7a0f9e774219fbd356f6b995">&#9670;&nbsp;</a></span>StringToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StringToVector </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>inString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>inDelimiter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inClearVector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a delimited string to an array of strings. </p>
+
+</div>
+</div>
+<a id="a15926f67e8c158f1fb640debccb9337b" name="a15926f67e8c158f1fb640debccb9337b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15926f67e8c158f1fb640debccb9337b">&#9670;&nbsp;</a></span>ToLower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ToLower </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>inString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a string to lower case. </p>
+
+</div>
+</div>
+<a id="a8189461544e6fc6541e6af735090be91" name="a8189461544e6fc6541e6af735090be91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8189461544e6fc6541e6af735090be91">&#9670;&nbsp;</a></span>VectorToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VectorToString </td>
+          <td>(</td>
+          <td class="paramtype">const vector&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>outString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>inDelimiter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert an array strings to a delimited string. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

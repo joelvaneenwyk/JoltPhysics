@@ -54,53 +54,47 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ObjectStream.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_static_array_8h_source.html">Core/StaticArray.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_reference_8h_source.html">Core/Reference.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_object_stream_types_8h_source.html">ObjectStream/ObjectStreamTypes.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_static_array_8h_source.html">Jolt/Core/StaticArray.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_reference_8h_source.html">Jolt/Core/Reference.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_object_stream_types_8h_source.html">Jolt/ObjectStream/ObjectStreamTypes.h</a>&gt;</code><br />
 </div>
 <p><a href="_object_stream_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_object_stream.html">JPH::ObjectStream</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for object stream input and output streams.  <a href="class_j_p_h_1_1_object_stream.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object_stream.html">ObjectStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for object stream input and output streams.  <a href="class_object_stream.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#a7d32f5239cd276fd0012072a2a4ccd23">JPH_DECLARE_PRIMITIVE</a>(name)&#160;&#160;&#160;T_##name,</td></tr>
 <tr class="separator:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#a7d32f5239cd276fd0012072a2a4ccd23">JPH_DECLARE_PRIMITIVE</a>(name)&#160;&#160;&#160;	bool						OSIsType(name *inNull, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName);</td></tr>
+<tr class="memitem:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#a7d32f5239cd276fd0012072a2a4ccd23">JPH_DECLARE_PRIMITIVE</a>(name)&#160;&#160;&#160;	bool						<a class="el" href="_object_stream_8h.html#a6693b1762ebffcea8464798a9e6eaeee">OSIsType</a>(name *inNull, int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName);</td></tr>
 <tr class="separator:a7d32f5239cd276fd0012072a2a4ccd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abc7b71b89b96428809703024195e8f58"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:abc7b71b89b96428809703024195e8f58"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#abc7b71b89b96428809703024195e8f58">JPH::OSIsType</a> (vector&lt; T &gt; *inArray, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</td></tr>
-<tr class="separator:abc7b71b89b96428809703024195e8f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14c373c5adfa5b8258d516aaff2f6f37"><td class="memTemplParams" colspan="2">template&lt;class T , uint N&gt; </td></tr>
-<tr class="memitem:a14c373c5adfa5b8258d516aaff2f6f37"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a14c373c5adfa5b8258d516aaff2f6f37">JPH::OSIsType</a> (StaticArray&lt; T, N &gt; *inArray, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</td></tr>
-<tr class="separator:a14c373c5adfa5b8258d516aaff2f6f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a917679d485f2277867c76a2ab506f36e"><td class="memTemplParams" colspan="2">template&lt;class T , uint N&gt; </td></tr>
-<tr class="memitem:a917679d485f2277867c76a2ab506f36e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a917679d485f2277867c76a2ab506f36e">JPH::OSIsType</a> (T(*inArray)[N], int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</td></tr>
-<tr class="separator:a917679d485f2277867c76a2ab506f36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1fd65b7b7f18e0e537df511d1707728"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad1fd65b7b7f18e0e537df511d1707728"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ad1fd65b7b7f18e0e537df511d1707728">JPH::OSIsType</a> (Ref&lt; T &gt; *inNull, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</td></tr>
-<tr class="separator:ad1fd65b7b7f18e0e537df511d1707728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbc6e397c53a7bb914ba7b8dd7c05c27"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:abbc6e397c53a7bb914ba7b8dd7c05c27"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#abbc6e397c53a7bb914ba7b8dd7c05c27">JPH::OSIsType</a> (RefConst&lt; T &gt; *inNull, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName)</td></tr>
-<tr class="separator:abbc6e397c53a7bb914ba7b8dd7c05c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8564f6b1d70bc520758e4a5e34eb573c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a8564f6b1d70bc520758e4a5e34eb573c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#a8564f6b1d70bc520758e4a5e34eb573c">OSIsType</a> (vector&lt; T &gt; *inArray, int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName)</td></tr>
+<tr class="separator:a8564f6b1d70bc520758e4a5e34eb573c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd6c74e222b68d38930cbc63495759d"><td class="memTemplParams" colspan="2">template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </td></tr>
+<tr class="memitem:a9bd6c74e222b68d38930cbc63495759d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#a9bd6c74e222b68d38930cbc63495759d">OSIsType</a> (<a class="el" href="class_static_array.html">StaticArray</a>&lt; T, N &gt; *inArray, int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName)</td></tr>
+<tr class="separator:a9bd6c74e222b68d38930cbc63495759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afde931855539f8db06fef3091a2dd197"><td class="memTemplParams" colspan="2">template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </td></tr>
+<tr class="memitem:afde931855539f8db06fef3091a2dd197"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#afde931855539f8db06fef3091a2dd197">OSIsType</a> (T(*inArray)[N], int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName)</td></tr>
+<tr class="separator:afde931855539f8db06fef3091a2dd197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa620526586ea81bc8342f96e670e1b27"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aa620526586ea81bc8342f96e670e1b27"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#aa620526586ea81bc8342f96e670e1b27">OSIsType</a> (<a class="el" href="class_ref.html">Ref</a>&lt; T &gt; *inNull, int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName)</td></tr>
+<tr class="separator:aa620526586ea81bc8342f96e670e1b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6693b1762ebffcea8464798a9e6eaeee"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a6693b1762ebffcea8464798a9e6eaeee"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_object_stream_8h.html#a6693b1762ebffcea8464798a9e6eaeee">OSIsType</a> (<a class="el" href="class_ref_const.html">RefConst</a>&lt; T &gt; *inNull, int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName)</td></tr>
+<tr class="separator:a6693b1762ebffcea8464798a9e6eaeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a7d32f5239cd276fd0012072a2a4ccd23" name="a7d32f5239cd276fd0012072a2a4ccd23"></a>
@@ -132,7 +126,218 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">name</td><td>)</td>
-          <td>&#160;&#160;&#160;	bool						OSIsType(name *inNull, int inArrayDepth, ObjectStream::EDataType inDataType, const char *inClassName);</td>
+          <td>&#160;&#160;&#160;	bool						<a class="el" href="_object_stream_8h.html#a6693b1762ebffcea8464798a9e6eaeee">OSIsType</a>(name *inNull, int inArrayDepth, <a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a> inDataType, const char *inClassName);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa620526586ea81bc8342f96e670e1b27" name="aa620526586ea81bc8342f96e670e1b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa620526586ea81bc8342f96e670e1b27">&#9670;&nbsp;</a></span>OSIsType() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSIsType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ref.html">Ref</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>inNull</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inArrayDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a>&#160;</td>
+          <td class="paramname"><em>inDataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6693b1762ebffcea8464798a9e6eaeee" name="a6693b1762ebffcea8464798a9e6eaeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6693b1762ebffcea8464798a9e6eaeee">&#9670;&nbsp;</a></span>OSIsType() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSIsType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_ref_const.html">RefConst</a>&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>inNull</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inArrayDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a>&#160;</td>
+          <td class="paramname"><em>inDataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bd6c74e222b68d38930cbc63495759d" name="a9bd6c74e222b68d38930cbc63495759d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd6c74e222b68d38930cbc63495759d">&#9670;&nbsp;</a></span>OSIsType() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSIsType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_static_array.html">StaticArray</a>&lt; T, N &gt; *&#160;</td>
+          <td class="paramname"><em>inArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inArrayDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a>&#160;</td>
+          <td class="paramname"><em>inDataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afde931855539f8db06fef3091a2dd197" name="afde931855539f8db06fef3091a2dd197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde931855539f8db06fef3091a2dd197">&#9670;&nbsp;</a></span>OSIsType() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSIsType </td>
+          <td>(</td>
+          <td class="paramtype">T(*)&#160;</td>
+          <td class="paramname"><em>inArray</em>[N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inArrayDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a>&#160;</td>
+          <td class="paramname"><em>inDataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8564f6b1d70bc520758e4a5e34eb573c" name="a8564f6b1d70bc520758e4a5e34eb573c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8564f6b1d70bc520758e4a5e34eb573c">&#9670;&nbsp;</a></span>OSIsType() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OSIsType </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; T &gt; *&#160;</td>
+          <td class="paramname"><em>inArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inArrayDepth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object_stream.html#a9803711616c926dd41418f5fa7002b08">ObjectStream::EDataType</a>&#160;</td>
+          <td class="paramname"><em>inDataType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>inClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

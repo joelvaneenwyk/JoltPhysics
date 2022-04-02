@@ -54,48 +54,87 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">VehicleTrack.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_serializable_object_8h_source.html">ObjectStream/SerializableObject.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_linear_curve_8h_source.html">Core/LinearCurve.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Core/StreamIn.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Core/StreamOut.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_state_recorder_8h_source.html">Physics/StateRecorder.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_serializable_object_8h_source.html">Jolt/ObjectStream/SerializableObject.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_linear_curve_8h_source.html">Jolt/Core/LinearCurve.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_in_8h_source.html">Jolt/Core/StreamIn.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_stream_out_8h_source.html">Jolt/Core/StreamOut.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_state_recorder_8h_source.html">Jolt/Physics/StateRecorder.h</a>&gt;</code><br />
 </div>
 <p><a href="_vehicle_track_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_vehicle_track_settings.html">JPH::VehicleTrackSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic properties for tank tracks.  <a href="class_j_p_h_1_1_vehicle_track_settings.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_track_settings.html">VehicleTrackSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic properties for tank tracks.  <a href="class_vehicle_track_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_vehicle_track.html">JPH::VehicleTrack</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime data for tank tracks.  <a href="class_j_p_h_1_1_vehicle_track.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_track.html">VehicleTrack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime data for tank tracks.  <a href="class_vehicle_track.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:afa0095fe345bd42946538d0c1920f13c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#afa0095fe345bd42946538d0c1920f13c">JPH::VehicleTracks</a> = VehicleTrack[(int) ETrackSide::Num]</td></tr>
-<tr class="separator:afa0095fe345bd42946538d0c1920f13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48aa2b382da4e4d33f022c79f598719"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vehicle_track_8h.html#ac48aa2b382da4e4d33f022c79f598719">VehicleTracks</a> = <a class="el" href="class_vehicle_track.html">VehicleTrack</a>[(int) <a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2ab3e3076d9b3c53bede50d468b647b109">ETrackSide::Num</a>]</td></tr>
+<tr class="separator:ac48aa2b382da4e4d33f022c79f598719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a37d65d795a3098933b41923976b66a8d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a37d65d795a3098933b41923976b66a8d">JPH::ETrackSide</a> : uint { <a class="el" href="namespace_j_p_h.html#a37d65d795a3098933b41923976b66a8da945d5e233cf7d6240f6b783b36a374ff">JPH::Left</a> = 0
-, <a class="el" href="namespace_j_p_h.html#a37d65d795a3098933b41923976b66a8da92b09c7c48c520c3c55e497875da437c">JPH::Right</a> = 1
-, <a class="el" href="namespace_j_p_h.html#a37d65d795a3098933b41923976b66a8dab3e3076d9b3c53bede50d468b647b109">JPH::Num</a> = 2
+<tr class="memitem:a8008ce273c0da3c40bc613d9495818d2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2">ETrackSide</a> : uint { <a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2a945d5e233cf7d6240f6b783b36a374ff">Left</a> = 0
+, <a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2a92b09c7c48c520c3c55e497875da437c">Right</a> = 1
+, <a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2ab3e3076d9b3c53bede50d468b647b109">Num</a> = 2
  }</td></tr>
-<tr class="memdesc:a37d65d795a3098933b41923976b66a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">On which side of the vehicle the track is located (for steering)  <a href="namespace_j_p_h.html#a37d65d795a3098933b41923976b66a8d">More...</a><br /></td></tr>
-<tr class="separator:a37d65d795a3098933b41923976b66a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a8008ce273c0da3c40bc613d9495818d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">On which side of the vehicle the track is located (for steering)  <a href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2">More...</a><br /></td></tr>
+<tr class="separator:a8008ce273c0da3c40bc613d9495818d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ac48aa2b382da4e4d33f022c79f598719" name="ac48aa2b382da4e4d33f022c79f598719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48aa2b382da4e4d33f022c79f598719">&#9670;&nbsp;</a></span>VehicleTracks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_vehicle_track_8h.html#ac48aa2b382da4e4d33f022c79f598719">VehicleTracks</a> =  <a class="el" href="class_vehicle_track.html">VehicleTrack</a>[(int)<a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2ab3e3076d9b3c53bede50d468b647b109">ETrackSide::Num</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a8008ce273c0da3c40bc613d9495818d2" name="a8008ce273c0da3c40bc613d9495818d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8008ce273c0da3c40bc613d9495818d2">&#9670;&nbsp;</a></span>ETrackSide</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="_vehicle_track_8h.html#a8008ce273c0da3c40bc613d9495818d2">ETrackSide</a> : <a class="el" href="_core_8h.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>On which side of the vehicle the track is located (for steering) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8008ce273c0da3c40bc613d9495818d2a945d5e233cf7d6240f6b783b36a374ff" name="a8008ce273c0da3c40bc613d9495818d2a945d5e233cf7d6240f6b783b36a374ff"></a>Left&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8008ce273c0da3c40bc613d9495818d2a92b09c7c48c520c3c55e497875da437c" name="a8008ce273c0da3c40bc613d9495818d2a92b09c7c48c520c3c55e497875da437c"></a>Right&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8008ce273c0da3c40bc613d9495818d2ab3e3076d9b3c53bede50d468b647b109" name="a8008ce273c0da3c40bc613d9495818d2ab3e3076d9b3c53bede50d468b647b109"></a>Num&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

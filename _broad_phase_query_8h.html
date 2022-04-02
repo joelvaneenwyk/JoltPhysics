@@ -54,39 +54,76 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">BroadPhaseQuery.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_broad_phase_layer_8h_source.html">Physics/Collision/BroadPhase/BroadPhaseLayer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_object_layer_8h_source.html">Physics/Collision/ObjectLayer.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_collision_collector_8h_source.html">Physics/Collision/CollisionCollector.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_body_i_d_8h_source.html">Physics/Body/BodyID.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_non_copyable_8h_source.html">Core/NonCopyable.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_broad_phase_layer_8h_source.html">Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_object_layer_8h_source.html">Jolt/Physics/Collision/ObjectLayer.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_collision_collector_8h_source.html">Jolt/Physics/Collision/CollisionCollector.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_body_i_d_8h_source.html">Jolt/Physics/Body/BodyID.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_non_copyable_8h_source.html">Jolt/Core/NonCopyable.h</a>&gt;</code><br />
 </div>
 <p><a href="_broad_phase_query_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_broad_phase_query.html">JPH::BroadPhaseQuery</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to the broadphase that can perform collision queries. These queries will only test the bounding box of the body to quickly determine a potential set of colliding bodies.  <a href="class_j_p_h_1_1_broad_phase_query.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broad_phase_query.html">BroadPhaseQuery</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to the broadphase that can perform collision queries. These queries will only test the bounding box of the body to quickly determine a potential set of colliding bodies.  <a href="class_broad_phase_query.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a88c00bead2751e37bd3624136e1c12e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a88c00bead2751e37bd3624136e1c12e9">JPH::RayCastBodyCollector</a> = CollisionCollector&lt; BroadPhaseCastResult, CollisionCollectorTraitsCastRay &gt;</td></tr>
-<tr class="separator:a88c00bead2751e37bd3624136e1c12e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad33f833b871b5cd1016e1f48a4ed9f07"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#ad33f833b871b5cd1016e1f48a4ed9f07">JPH::CastShapeBodyCollector</a> = CollisionCollector&lt; BroadPhaseCastResult, CollisionCollectorTraitsCastShape &gt;</td></tr>
-<tr class="separator:ad33f833b871b5cd1016e1f48a4ed9f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dafe489c4066b89bd28ff45ddea4098"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#a8dafe489c4066b89bd28ff45ddea4098">JPH::CollideShapeBodyCollector</a> = CollisionCollector&lt; BodyID, CollisionCollectorTraitsCollideShape &gt;</td></tr>
-<tr class="separator:a8dafe489c4066b89bd28ff45ddea4098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398068f8b89e507b29d1a3d89471a5bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_broad_phase_query_8h.html#a398068f8b89e507b29d1a3d89471a5bb">RayCastBodyCollector</a> = <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="class_broad_phase_cast_result.html">BroadPhaseCastResult</a>, <a class="el" href="class_collision_collector_traits_cast_ray.html">CollisionCollectorTraitsCastRay</a> &gt;</td></tr>
+<tr class="separator:a398068f8b89e507b29d1a3d89471a5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec8e742b1ef969e096cfd4e19902353"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_broad_phase_query_8h.html#adec8e742b1ef969e096cfd4e19902353">CastShapeBodyCollector</a> = <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="class_broad_phase_cast_result.html">BroadPhaseCastResult</a>, <a class="el" href="class_collision_collector_traits_cast_shape.html">CollisionCollectorTraitsCastShape</a> &gt;</td></tr>
+<tr class="separator:adec8e742b1ef969e096cfd4e19902353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6931761cab44f04e48cfb6ebc7fa7b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_broad_phase_query_8h.html#acb6931761cab44f04e48cfb6ebc7fa7b">CollideShapeBodyCollector</a> = <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt; <a class="el" href="class_body_i_d.html">BodyID</a>, <a class="el" href="class_collision_collector_traits_collide_shape.html">CollisionCollectorTraitsCollideShape</a> &gt;</td></tr>
+<tr class="separator:acb6931761cab44f04e48cfb6ebc7fa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="adec8e742b1ef969e096cfd4e19902353" name="adec8e742b1ef969e096cfd4e19902353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec8e742b1ef969e096cfd4e19902353">&#9670;&nbsp;</a></span>CastShapeBodyCollector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_broad_phase_query_8h.html#adec8e742b1ef969e096cfd4e19902353">CastShapeBodyCollector</a> =  <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt;<a class="el" href="class_broad_phase_cast_result.html">BroadPhaseCastResult</a>, <a class="el" href="class_collision_collector_traits_cast_shape.html">CollisionCollectorTraitsCastShape</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb6931761cab44f04e48cfb6ebc7fa7b" name="acb6931761cab44f04e48cfb6ebc7fa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6931761cab44f04e48cfb6ebc7fa7b">&#9670;&nbsp;</a></span>CollideShapeBodyCollector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_broad_phase_query_8h.html#acb6931761cab44f04e48cfb6ebc7fa7b">CollideShapeBodyCollector</a> =  <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt;<a class="el" href="class_body_i_d.html">BodyID</a>, <a class="el" href="class_collision_collector_traits_collide_shape.html">CollisionCollectorTraitsCollideShape</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a398068f8b89e507b29d1a3d89471a5bb" name="a398068f8b89e507b29d1a3d89471a5bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398068f8b89e507b29d1a3d89471a5bb">&#9670;&nbsp;</a></span>RayCastBodyCollector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="_broad_phase_query_8h.html#a398068f8b89e507b29d1a3d89471a5bb">RayCastBodyCollector</a> =  <a class="el" href="class_collision_collector.html">CollisionCollector</a>&lt;<a class="el" href="class_broad_phase_cast_result.html">BroadPhaseCastResult</a>, <a class="el" href="class_collision_collector_traits_cast_ray.html">CollisionCollectorTraitsCastRay</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

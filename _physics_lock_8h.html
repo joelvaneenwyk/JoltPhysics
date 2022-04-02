@@ -54,46 +54,73 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">PhysicsLock.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_mutex_8h_source.html">Core/Mutex.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_mutex_8h_source.html">Jolt/Core/Mutex.h</a>&gt;</code><br />
 </div>
 <p><a href="_physics_lock_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_physics_lock.html">JPH::PhysicsLock</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_lock.html">PhysicsLock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_unique_lock.html">JPH::UniqueLock&lt; LockType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that is similar to std::unique_lock.  <a href="class_j_p_h_1_1_unique_lock.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unique_lock.html">UniqueLock&lt; LockType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that is similar to std::unique_lock.  <a href="class_unique_lock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_shared_lock.html">JPH::SharedLock&lt; LockType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that is similar to std::shared_lock.  <a href="class_j_p_h_1_1_shared_lock.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shared_lock.html">SharedLock&lt; LockType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that is similar to std::shared_lock.  <a href="class_shared_lock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aff327632282aed21aba6f8558142fe25"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25">JPH::EPhysicsLockTypes</a> { <br />
-&#160;&#160;<a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25a3f69946d59fd0ad918818b8479a2a4a8">JPH::BroadPhaseQuery</a> = 1 &lt;&lt; 0
-, <a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25afc8df19d44870bd07377cafbee646084">JPH::PerBody</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25afc83eed3c67652633d9158d4aed20b08">JPH::BodiesList</a> = 1 &lt;&lt; 2
-, <a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25a09842f4f22d957538e475f73bac5b540">JPH::BroadPhaseUpdate</a> = 1 &lt;&lt; 3
+<tr class="memitem:af16165182b3cc4951befa91f6a796c25"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25">EPhysicsLockTypes</a> { <br />
+&#160;&#160;<a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25a3f69946d59fd0ad918818b8479a2a4a8">BroadPhaseQuery</a> = 1 &lt;&lt; 0
+, <a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25afc8df19d44870bd07377cafbee646084">PerBody</a> = 1 &lt;&lt; 1
+, <a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25afc83eed3c67652633d9158d4aed20b08">BodiesList</a> = 1 &lt;&lt; 2
+, <a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25a09842f4f22d957538e475f73bac5b540">BroadPhaseUpdate</a> = 1 &lt;&lt; 3
 , <br />
-&#160;&#160;<a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25a90eaeb4e268d28f1b7737233f7ea456d">JPH::ConstraintsList</a> = 1 &lt;&lt; 4
-, <a class="el" href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25a3b59c2b6cce3c222f4526e5d8dcd75e4">JPH::ActiveBodiesList</a> = 1 &lt;&lt; 5
+&#160;&#160;<a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25a90eaeb4e268d28f1b7737233f7ea456d">ConstraintsList</a> = 1 &lt;&lt; 4
+, <a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25a3b59c2b6cce3c222f4526e5d8dcd75e4">ActiveBodiesList</a> = 1 &lt;&lt; 5
 <br />
  }</td></tr>
-<tr class="memdesc:aff327632282aed21aba6f8558142fe25"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the list of locks used by the physics engine, they need to be locked in a particular order (from top of the list to bottom of the list) in order to prevent deadlocks.  <a href="namespace_j_p_h.html#aff327632282aed21aba6f8558142fe25">More...</a><br /></td></tr>
-<tr class="separator:aff327632282aed21aba6f8558142fe25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:af16165182b3cc4951befa91f6a796c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the list of locks used by the physics engine, they need to be locked in a particular order (from top of the list to bottom of the list) in order to prevent deadlocks.  <a href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25">More...</a><br /></td></tr>
+<tr class="separator:af16165182b3cc4951befa91f6a796c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af16165182b3cc4951befa91f6a796c25" name="af16165182b3cc4951befa91f6a796c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16165182b3cc4951befa91f6a796c25">&#9670;&nbsp;</a></span>EPhysicsLockTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="_physics_lock_8h.html#af16165182b3cc4951befa91f6a796c25">EPhysicsLockTypes</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is the list of locks used by the physics engine, they need to be locked in a particular order (from top of the list to bottom of the list) in order to prevent deadlocks. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af16165182b3cc4951befa91f6a796c25a3f69946d59fd0ad918818b8479a2a4a8" name="af16165182b3cc4951befa91f6a796c25a3f69946d59fd0ad918818b8479a2a4a8"></a>BroadPhaseQuery&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af16165182b3cc4951befa91f6a796c25afc8df19d44870bd07377cafbee646084" name="af16165182b3cc4951befa91f6a796c25afc8df19d44870bd07377cafbee646084"></a>PerBody&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af16165182b3cc4951befa91f6a796c25afc83eed3c67652633d9158d4aed20b08" name="af16165182b3cc4951befa91f6a796c25afc83eed3c67652633d9158d4aed20b08"></a>BodiesList&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af16165182b3cc4951befa91f6a796c25a09842f4f22d957538e475f73bac5b540" name="af16165182b3cc4951befa91f6a796c25a09842f4f22d957538e475f73bac5b540"></a>BroadPhaseUpdate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af16165182b3cc4951befa91f6a796c25a90eaeb4e268d28f1b7737233f7ea456d" name="af16165182b3cc4951befa91f6a796c25a90eaeb4e268d28f1b7737233f7ea456d"></a>ConstraintsList&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af16165182b3cc4951befa91f6a796c25a3b59c2b6cce3c222f4526e5d8dcd75e4" name="af16165182b3cc4951befa91f6a796c25a3b59c2b6cce3c222f4526e5d8dcd75e4"></a>ActiveBodiesList&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

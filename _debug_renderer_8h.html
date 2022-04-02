@@ -53,42 +53,36 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">DebugRenderer.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_color_8h_source.html">Core/Color.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_reference_8h_source.html">Core/Reference.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_hash_combine_8h_source.html">Core/HashCombine.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_float2_8h_source.html">Math/Float2.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_indexed_triangle_8h_source.html">Geometry/IndexedTriangle.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="_a_a_box_8h_source.html">Geometry/AABox.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="_color_8h_source.html">Jolt/Core/Color.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_reference_8h_source.html">Jolt/Core/Reference.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_hash_combine_8h_source.html">Jolt/Core/HashCombine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_float2_8h_source.html">Jolt/Math/Float2.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_indexed_triangle_8h_source.html">Jolt/Geometry/IndexedTriangle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_a_a_box_8h_source.html">Jolt/Geometry/AABox.h</a>&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 </div>
 <p><a href="_debug_renderer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_debug_renderer.html">JPH::DebugRenderer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple triangle renderer for debugging purposes.  <a href="class_j_p_h_1_1_debug_renderer.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_renderer.html">DebugRenderer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple triangle renderer for debugging purposes.  <a href="class_debug_renderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_debug_renderer_1_1_vertex.html">JPH::DebugRenderer::Vertex</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_j_p_h_1_1_debug_renderer_1_1_vertex.html" title="Vertex format used by the triangle renderer.">Vertex</a> format used by the triangle renderer.  <a href="class_j_p_h_1_1_debug_renderer_1_1_vertex.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_renderer_1_1_vertex.html">DebugRenderer::Vertex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_debug_renderer_1_1_vertex.html" title="Vertex format used by the triangle renderer.">Vertex</a> format used by the triangle renderer.  <a href="class_debug_renderer_1_1_vertex.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_debug_renderer_1_1_triangle.html">JPH::DebugRenderer::Triangle</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single triangle.  <a href="class_j_p_h_1_1_debug_renderer_1_1_triangle.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_renderer_1_1_triangle.html">DebugRenderer::Triangle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single triangle.  <a href="class_debug_renderer_1_1_triangle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_debug_renderer_1_1_l_o_d.html">JPH::DebugRenderer::LOD</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single level of detail.  <a href="class_j_p_h_1_1_debug_renderer_1_1_l_o_d.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_renderer_1_1_l_o_d.html">DebugRenderer::LOD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A single level of detail.  <a href="class_debug_renderer_1_1_l_o_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_p_h_1_1_debug_renderer_1_1_geometry.html">JPH::DebugRenderer::Geometry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A geometry primitive containing triangle batches for various lods.  <a href="class_j_p_h_1_1_debug_renderer_1_1_geometry.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debug_renderer_1_1_geometry.html">DebugRenderer::Geometry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A geometry primitive containing triangle batches for various lods.  <a href="class_debug_renderer_1_1_geometry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

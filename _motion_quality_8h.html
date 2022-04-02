@@ -53,7 +53,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">MotionQuality.h File Reference</div></div>
 </div><!--header-->
@@ -61,19 +60,46 @@ $(function() {
 
 <p><a href="_motion_quality_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_j_p_h"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html">JPH</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:afdb153e24c50b48cbc3d65c789dbc5b2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_j_p_h.html#afdb153e24c50b48cbc3d65c789dbc5b2">JPH::EMotionQuality</a> : uint8 { <a class="el" href="namespace_j_p_h.html#afdb153e24c50b48cbc3d65c789dbc5b2a4984667940802dedc139aa7a430a6553">JPH::Discrete</a>
-, <a class="el" href="namespace_j_p_h.html#afdb153e24c50b48cbc3d65c789dbc5b2a38f63d197afcc4a4965d98f9401c36e0">JPH::LinearCast</a>
+<tr class="memitem:af43db3453103c2e62526f54dd8542d3a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_motion_quality_8h.html#af43db3453103c2e62526f54dd8542d3a">EMotionQuality</a> : uint8 { <a class="el" href="_motion_quality_8h.html#af43db3453103c2e62526f54dd8542d3aa4984667940802dedc139aa7a430a6553">Discrete</a>
+, <a class="el" href="_motion_quality_8h.html#af43db3453103c2e62526f54dd8542d3aa38f63d197afcc4a4965d98f9401c36e0">LinearCast</a>
  }</td></tr>
-<tr class="memdesc:afdb153e24c50b48cbc3d65c789dbc5b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion quality, or how well it detects collisions when it has a high velocity.  <a href="namespace_j_p_h.html#afdb153e24c50b48cbc3d65c789dbc5b2">More...</a><br /></td></tr>
-<tr class="separator:afdb153e24c50b48cbc3d65c789dbc5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:af43db3453103c2e62526f54dd8542d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion quality, or how well it detects collisions when it has a high velocity.  <a href="_motion_quality_8h.html#af43db3453103c2e62526f54dd8542d3a">More...</a><br /></td></tr>
+<tr class="separator:af43db3453103c2e62526f54dd8542d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af43db3453103c2e62526f54dd8542d3a" name="af43db3453103c2e62526f54dd8542d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43db3453103c2e62526f54dd8542d3a">&#9670;&nbsp;</a></span>EMotionQuality</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="_motion_quality_8h.html#af43db3453103c2e62526f54dd8542d3a">EMotionQuality</a> : <a class="el" href="_core_8h.html#aa17fc6cc2c9a4ad80e9fcdd3f64320e1">uint8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Motion quality, or how well it detects collisions when it has a high velocity. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af43db3453103c2e62526f54dd8542d3aa4984667940802dedc139aa7a430a6553" name="af43db3453103c2e62526f54dd8542d3aa4984667940802dedc139aa7a430a6553"></a>Discrete&#160;</td><td class="fielddoc"><p >Update the body in discrete steps. <a class="el" href="class_body.html">Body</a> will tunnel throuh thin objects if its velocity is high enough. This is the cheapest way of simulating a body. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af43db3453103c2e62526f54dd8542d3aa38f63d197afcc4a4965d98f9401c36e0" name="af43db3453103c2e62526f54dd8542d3aa38f63d197afcc4a4965d98f9401c36e0"></a>LinearCast&#160;</td><td class="fielddoc"><p >Update the body using linear casting. When stepping the body, its collision shape is cast from start to destination using the starting rotation. The body will not be able to tunnel through thin objects at high velocity, but tunneling is still possible if the body is long and thin and has high angular velocity. Time is stolen from the object (which means it will move up to the first collision and will not bounce off the surface until the next integration step). This will make the body appear to go slower when it collides with high velocity. In order to not get stuck, the body is always allowed to move by a fraction of it's inner radius, which may eventually lead it to pass through geometry.</p>
+<p >Note that if you're using a collision listener, you can receive contact added/persisted notifications of contacts that may in the end not happen. This happens between bodies that are using casting: If bodies A and B collide at t1 and B and C collide at t2 where t2 &lt; t1 and A and C don't collide. In this case you may receive an incorrect contact point added callback between A and B (which will be removed the next frame). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
