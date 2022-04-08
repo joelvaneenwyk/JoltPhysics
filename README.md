@@ -1,10 +1,10 @@
-[![CLA assistant](https://cla-assistant.io/readme/badge/joelvaneenwyk/JoltPhysics)](https://cla-assistant.io/jrouwe/JoltPhysics)
-[![Build Status](https://github.com/joelvaneenwyk/JoltPhysics/actions/workflows/build.yml/badge.svg)](https://github.com/jrouwe/JoltPhysics/actions/)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=joelvaneenwyk_JoltPhysics&metric=alert_status)](https://sonarcloud.io/dashboard?id=joelvaneenwyk_JoltPhysics)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=joelvaneenwyk_JoltPhysics&metric=bugs)](https://sonarcloud.io/dashboard?id=joelvaneenwyk_JoltPhysics)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=joelvaneenwyk_JoltPhysics&metric=code_smells)](https://sonarcloud.io/dashboard?id=joelvaneenwyk_JoltPhysics)
 
 # Jolt Physics
+
+[![Build Status](https://github.com/physics-playground/JoltPhysics/actions/workflows/build.yml/badge.svg)](https://github.com/jrouwe/JoltPhysics/actions/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=physics-playground_JoltPhysics&metric=alert_status)](https://sonarcloud.io/dashboard?id=physics-playground_JoltPhysics)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=physics-playground_JoltPhysics&metric=bugs)](https://sonarcloud.io/dashboard?id=physics-playground_JoltPhysics)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=physics-playground_JoltPhysics&metric=code_smells)](https://sonarcloud.io/dashboard?id=physics-playground_JoltPhysics)
 
 A multi-core friendly rigid body physics and collision detection library suitable for games and VR applications, used by Horizon Forbidden West.
 
