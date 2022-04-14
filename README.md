@@ -66,16 +66,18 @@ For more information see the [Architecture and API documentation](https://jrouwe
   * Broadphase only tests for quickly determining which objects may intersect.
 * Sensors (trigger volumes).
 * Animated ragdolls:
-  * Hard keying (kinematic only rigid bodies).
-  * Soft keying (setting velocities on dynamic rigid bodies).
-  * Driving constraint motors to an animated pose.
-* Game character simulation (capsule), although many games may want to implement characters just using collision tests for more control over the simulation.
+	* Hard keying (kinematic only rigid bodies).
+	* Soft keying (setting velocities on dynamic rigid bodies).
+	* Driving constraint motors to an animated pose.
+* Game character simulation (capsule)
+	* Rigid body character. Moves during the physics simulation. Cheapest option and most accurate collision response between character and dynamic bodies.
+	* Virtual character. Does not have a rigid body in the world but simulates one using collision checks. Updated outside of the physics update for more control. Less accurate interaction with dynamic bodies.
 * Vehicle simulation of wheeled and tracked vehicles.
 * Water buoyancy calculations.
 
 ## Supported Platforms
 
-* Windows (VS2019, VS2022) x64
+* Windows (VS2019, VS2022) x64 (Desktop/UWP)
 * Linux (tested on Ubuntu 20.04) x64/ARM64
 * Android (tested on Android 10) x64/ARM64
 * Platform Blue (a popular game console) x64

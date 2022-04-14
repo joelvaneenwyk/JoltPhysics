@@ -940,7 +940,7 @@ Mat44 Mat44::Inversed3x3() const
 #endif
 }
 
-const Quat Mat44::GetQuaternion() const
+Quat Mat44::GetQuaternion() const
 {
 	JPH_ASSERT(mCol[3] == Vec4(0, 0, 0, 1));
 
@@ -1050,6 +1050,16 @@ void Mat44::SetRotation(Mat44Arg inRotation)
 	mCol[0] = inRotation.mCol[0];
 	mCol[1] = inRotation.mCol[1];
 	mCol[2] = inRotation.mCol[2];
+}
+
+Mat44 Mat44::PreTranslated(Vec3Arg inTranslation) const
+{
+	return Mat44(mCol[0], mCol[1], mCol[2], Vec4(GetTranslation() + Multiply3x3(inTranslation), 1));
+}
+
+Mat44 Mat44::PostTranslated(Vec3Arg inTranslation) const
+{
+	return Mat44(mCol[0], mCol[1], mCol[2], Vec4(GetTranslation() + inTranslation, 1));
 }
 
 Mat44 Mat44::PreScaled(Vec3Arg inScale) const

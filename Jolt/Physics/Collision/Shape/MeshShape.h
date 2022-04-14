@@ -74,6 +74,13 @@ public:
 	// See Shape::GetMaterial
 	virtual const PhysicsMaterial *	GetMaterial(const SubShapeID &inSubShapeID) const override;
 
+	/// Get the list of all materials
+	const PhysicsMaterialList &		GetMaterialList() const										{ return mMaterials; }
+
+	/// Determine which material index a particular sub shape uses (note that if there are no materials this function will return 0 so check the array size)
+	/// Note: This could for example be used to create a decorator shape around a mesh shape that overrides the GetMaterial call to replace a material with another material.
+	uint							GetMaterialIndex(const SubShapeID &inSubShapeID) const;
+
 	// See Shape::GetSurfaceNormal
 	virtual Vec3					GetSurfaceNormal(const SubShapeID &inSubShapeID, Vec3Arg inLocalSurfacePosition) const override;
 
@@ -131,7 +138,7 @@ private:
 	static constexpr int			MaxTrianglesPerLeaf = 1 << NumTriangleBits;					///< Number of triangles that are stored max per leaf aabb node 
 
 	/// Find and flag active edges
-	void							FindActiveEdges(const VertexList &inVertices, IndexedTriangleList &ioIndices);
+	static void						sFindActiveEdges(const VertexList &inVertices, IndexedTriangleList &ioIndices);
 
 	/// Visit the entire tree using a visitor pattern
 	template <class Visitor>

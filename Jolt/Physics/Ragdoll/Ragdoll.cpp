@@ -35,7 +35,7 @@ static inline BodyInterface &sGetBodyInterface(PhysicsSystem *inSystem, bool inL
 	return inLockBodies? inSystem->GetBodyInterface() : inSystem->GetBodyInterfaceNoLock();
 }
 
-static inline const BodyLockInterface &sGetBodyLockInterface(PhysicsSystem *inSystem, bool inLockBodies)
+static inline const BodyLockInterface &sGetBodyLockInterface(const PhysicsSystem *inSystem, bool inLockBodies)
 {
 	return inLockBodies? static_cast<const BodyLockInterface &>(inSystem->GetBodyLockInterface()) : static_cast<const BodyLockInterface &>(inSystem->GetBodyLockInterfaceNoLock());
 }
@@ -205,7 +205,7 @@ void RagdollSettings::DisableParentChildCollisions(const Mat44 *inJointMatrices,
 			const Part &part1 = mParts[j1];
 			const Shape *shape1 = part1.GetShape();
 			Vec3 scale1;
-			Mat44 com1 = (inJointMatrices[j1] * Mat44::sTranslation(shape1->GetCenterOfMass())).Decompose(scale1);
+			Mat44 com1 = (inJointMatrices[j1].PreTranslated(shape1->GetCenterOfMass())).Decompose(scale1);
 
 			// Loop over all other joints
 			for (int j2 = j1 + 1; j2 < joint_count; ++j2)
@@ -215,7 +215,7 @@ void RagdollSettings::DisableParentChildCollisions(const Mat44 *inJointMatrices,
 					const Part &part2 = mParts[j2];
 					const Shape *shape2 = part2.GetShape();
 					Vec3 scale2;
-					Mat44 com2 = (inJointMatrices[j2] * Mat44::sTranslation(shape2->GetCenterOfMass())).Decompose(scale2);
+					Mat44 com2 = (inJointMatrices[j2].PreTranslated(shape2->GetCenterOfMass())).Decompose(scale2);
 					
 					// Collision settings
 					CollideShapeSettings settings;
@@ -574,7 +574,7 @@ void Ragdoll::GetRootTransform(Vec3 &outPosition, Quat &outRotation, bool inLock
 	}
 }
 
-const AABox Ragdoll::GetWorldSpaceBounds(bool inLockBodies) const
+AABox Ragdoll::GetWorldSpaceBounds(bool inLockBodies) const
 {
 	// Lock the bodies
 	int body_count = (int)mBodyIDs.size();
