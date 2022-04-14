@@ -7,12 +7,11 @@
 #include <Jolt/Math/Swizzle.h>
 #include <Jolt/Math/MathTypes.h>
 
-#if defined(JPH_CPU_64BIT)
-
 JPH_NAMESPACE_BEGIN
 
 class [[nodiscard]] Vec4
 {
+#if !defined(JPH_CPU_32BIT)
 public:
 	// Underlying vector type
 #if defined(JPH_USE_SSE)
@@ -246,6 +245,7 @@ public:
 		Type					mValue;
 		float					mF32[4];
 	};
+#endif  // !JPH_CPU_32BIT
 };
 
 static_assert(is_trivial<Vec4>(), "Is supposed to be a trivial type!");
@@ -254,4 +254,3 @@ JPH_NAMESPACE_END
 
 #include "Vec4.inl"
 
-#endif  // JPH_CPU_64BIT

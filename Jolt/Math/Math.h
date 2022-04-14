@@ -3,7 +3,7 @@
 
 #pragma once
 
-#if defined(JPH_CPU_64BIT)
+#if !defined(JPH_CPU_32BIT)
 
 JPH_NAMESPACE_BEGIN
 
@@ -167,4 +167,4 @@ inline uint32 GetNextPowerOf2(uint32 inValue)
 
 JPH_NAMESPACE_END
 
-#endif  // JPH_CPU_64BIT
+#endif  // !JPH_CPU_32BIT

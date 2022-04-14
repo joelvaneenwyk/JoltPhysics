@@ -3,15 +3,15 @@
 
 #pragma once
 
+#include <Jolt/Core/Core.h>
 #include <Jolt/Math/MathTypes.h>
-
-#if defined(JPH_CPU_64BIT)
 
 JPH_NAMESPACE_BEGIN
 
 /// Holds a 4x4 matrix of floats, but supports also operations on the 3x3 upper left part of the matrix.
 class [[nodiscard]] Mat44
 {
+#if !defined(JPH_CPU_32BIT)
 public:
 	// Underlying column type
 	using Type = Vec4::Type;
@@ -210,7 +210,8 @@ public:
 	}
 
 private:
-	Vec4						mCol[4];												///< Column
+	Vec4						mCol[4];
+#endif  // !JPH_CPU_32BIT												///< Column
 };
 
 static_assert(is_trivial<Mat44>(), "Is supposed to be a trivial type!");
@@ -218,5 +219,3 @@ static_assert(is_trivial<Mat44>(), "Is supposed to be a trivial type!");
 JPH_NAMESPACE_END
 
 #include "Mat44.inl"
-
-#endif  // JPH_CPU_64BIT
