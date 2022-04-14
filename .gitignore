@@ -6,7 +6,9 @@
 /Docs/JoltPhysics.chm
 /Docs/JoltPhysics.chw
 /*.jor
+.vscode/*.log
 
-/Build/cmake-build-*/
+/Build/cmake-*/
+/Build/intermediate/
 /Build/html/
 /Build/latex/

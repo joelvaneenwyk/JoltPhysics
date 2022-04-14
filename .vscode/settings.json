@@ -1,4 +1,11 @@
 {
+    "cmake.buildDirectory": "${workspaceFolder}/Build/intermediate/vscode",
+    "[cpp]": {
+        "editor.formatOnSave": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
     "cmake.sourceDirectory": "${workspaceFolder}/Build",
     "cSpell.words": [
         "Architecting",

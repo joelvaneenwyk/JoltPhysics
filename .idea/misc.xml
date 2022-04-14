@@ -11,5 +11,8 @@
       <file path="$PROJECT_DIR$/TestFramework" />
       <file path="$PROJECT_DIR$/UnitTests" />
     </sourceRoots>
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/Build/cmake-build-release-1" />
+    </excludeRoots>
   </component>
 </project>
