@@ -7,13 +7,15 @@
     <sourceRoots>
       <file path="$PROJECT_DIR$/HelloWorld" />
       <file path="$PROJECT_DIR$/Jolt" />
+      <file path="$PROJECT_DIR$/JoltViewer" />
       <file path="$PROJECT_DIR$/PerformanceTest" />
       <file path="$PROJECT_DIR$/Samples" />
       <file path="$PROJECT_DIR$/TestFramework" />
       <file path="$PROJECT_DIR$/UnitTests" />
     </sourceRoots>
     <excludeRoots>
-      <file path="$PROJECT_DIR$/Build/cmake-build-release-1" />
+      <file path="$PROJECT_DIR$/Build/Doxygen" />
+      <file path="$PROJECT_DIR$/Build/intermediate" />
     </excludeRoots>
   </component>
 </project>

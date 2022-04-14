@@ -7,6 +7,14 @@
 /Docs/JoltPhysics.chw
 /*.jor
 .vscode/*.log
+/.idea.*/
+
+.gradle/
+/gradle/
+local.properties
+/gradle/
+/gradlew
+/gradlew.bat
 
 /Build/cmake-*/
 /Build/intermediate/
