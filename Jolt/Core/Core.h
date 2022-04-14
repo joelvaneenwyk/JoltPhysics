@@ -101,6 +101,7 @@
 #else
 #define JPH_CLANG_SUPPRESS_WARNING(w)
 #endif
+
 #ifdef JPH_COMPILER_GCC
 #define JPH_PRAGMA(x)					_Pragma(#x)
 #define JPH_SUPPRESS_WARNING_PUSH		JPH_PRAGMA(GCC diagnostic push)
@@ -109,6 +110,7 @@
 #else
 #define JPH_GCC_SUPPRESS_WARNING(w)
 #endif
+
 #ifdef JPH_COMPILER_MSVC
 #define JPH_PRAGMA(x)					__pragma(x)
 #define JPH_SUPPRESS_WARNING_PUSH		JPH_PRAGMA(warning (push))
@@ -116,6 +118,12 @@
 #define JPH_MSVC_SUPPRESS_WARNING(w)	JPH_PRAGMA(warning (disable : w))
 #else
 #define JPH_MSVC_SUPPRESS_WARNING(w)
+#endif
+
+#if _MSC_VER >= 1927
+#define JPH_MSVC_SUPPRESSS_WARNING_V1927(w)	JPH_MSVC_SUPPRESS_WARNING(w)
+#else
+#define JPH_MSVC_SUPPRESSS_WARNING_V1927(w)
 #endif
 
 // Disable common warnings triggered by Jolt when compiling with -Wall
@@ -162,7 +170,7 @@
 	JPH_MSVC_SUPPRESS_WARNING(5045) /* Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified */ \
 	JPH_MSVC_SUPPRESS_WARNING(4583) /* 'X': destructor is not implicitly called */				\
 	JPH_MSVC_SUPPRESS_WARNING(4582) /* 'X': constructor is not implicitly called */				\
-	JPH_MSVC_SUPPRESS_WARNING(5219) /* implicit conversion from 'X' to 'Y', possible loss of data  */
+	JPH_MSVC_SUPPRESSS_WARNING_V1927(5219) /* implicit conversion from 'X' to 'Y', possible loss of data  */
 
 // OS-specific includes
 #if defined(JPH_PLATFORM_WINDOWS)

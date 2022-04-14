@@ -42,8 +42,9 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows" OR "${CMAKE_SYSTEM_NAME}" STREQUAL
 	endif()
 
 	# Set general compiler flags
-	set(CMAKE_CXX_FLAGS "/std:c++17 /Zc:__cplusplus /GR- /Gm- /Wall /EHsc /MP /nologo /diagnostics:classic /FC /fp:except- /Zc:inline /Zi /DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE")
-	
+	#   Disable W4514 e.g. "xxatomic(1172): 'std::atomic_*': unreferenced inline function has been removed
+	set(CMAKE_CXX_FLAGS "/std:c++17 /Zc:__cplusplus /GR- /Gm- /Wall /wd4514 /EHsc /MP /nologo /diagnostics:classic /FC /fp:except- /Zc:inline /Zi /DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE")
+
 	# Set compiler flags for various configurations
 	set(CMAKE_CXX_FLAGS_DEBUG "/GS /Od /Ob0 /RTC1")
 	set(CMAKE_CXX_FLAGS_RELEASE "/GS- /GL /Gy /O2 /Oi /Ot")

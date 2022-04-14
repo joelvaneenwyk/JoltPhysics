@@ -1,4 +1,8 @@
 {
+    "markdownlint.config": {
+        "indentation": true,
+        "spaces": true
+    },
     "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
     "C_Cpp.intelliSenseEngine": "Default",
     "editor.formatOnSave": false,
@@ -24,5 +28,9 @@
         "ragdoll",
         "ragdolls",
         "RTTI"
-    ]
+    ],
+    "yaml.schemas": {
+        "file:///c%3A/Users/joelvaneenwyk/.vscode/extensions/atlassian.atlascode-2.10.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+        "https://json.schemastore.org/github-workflow.json": "file:///d%3A/Projects/PEEL/Externals/JoltPhysics/.github/workflows/build.yml"
+    }
 }
