@@ -5,6 +5,8 @@
 
 #include <Jolt/Math/MathTypes.h>
 
+#if defined(JPH_CPU_64BIT)
+
 JPH_NAMESPACE_BEGIN
 
 /// Holds a 4x4 matrix of floats, but supports also operations on the 3x3 upper left part of the matrix.
@@ -76,7 +78,7 @@ public:
 	/// Get float component by element index
 	JPH_INLINE float			operator () (uint inRow, uint inColumn) const			{ JPH_ASSERT(inRow < 4); JPH_ASSERT(inColumn < 4); return mCol[inColumn].mF32[inRow]; }
 	JPH_INLINE float &			operator () (uint inRow, uint inColumn)					{ JPH_ASSERT(inRow < 4); JPH_ASSERT(inColumn < 4); return mCol[inColumn].mF32[inRow]; }
-	
+
 	/// Comparsion
 	JPH_INLINE bool				operator == (Mat44Arg inM2) const;
 	JPH_INLINE bool				operator != (Mat44Arg inM2) const						{ return !(*this == inM2); }
@@ -210,3 +212,5 @@ static_assert(is_trivial<Mat44>(), "Is supposed to be a trivial type!");
 JPH_NAMESPACE_END
 
 #include "Mat44.inl"
+
+#endif  // JPH_CPU_64BIT

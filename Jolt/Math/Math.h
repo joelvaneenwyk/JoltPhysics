@@ -3,6 +3,8 @@
 
 #pragma once
 
+#if defined(JPH_CPU_64BIT)
+
 JPH_NAMESPACE_BEGIN
 
 /// The constant \f$\pi\f$
@@ -164,3 +166,5 @@ inline uint32 GetNextPowerOf2(uint32 inValue)
 }
 
 JPH_NAMESPACE_END
+
+#endif  // JPH_CPU_64BIT

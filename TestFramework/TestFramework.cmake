@@ -123,6 +123,13 @@ set_source_files_properties(${TEST_FRAMEWORK_PIXEL_SHADERS} PROPERTIES VS_SHADER
 source_group(TREE ${PHYSICS_REPO_ROOT} FILES ${TEST_FRAMEWORK_SRC_FILES_SHADERS})
 
 # Create TestFramework lib
-add_library(TestFramework STATIC ${TEST_FRAMEWORK_SRC_FILES} ${TEST_FRAMEWORK_SRC_FILES_SHADERS})
+if (CMAKE_SIZEOF_VOID_P EQUAL 8)
+	add_library(TestFramework STATIC ${TEST_FRAMEWORK_SRC_FILES} ${TEST_FRAMEWORK_SRC_FILES_SHADERS})
+else()
+	add_library(TestFramework STATIC ${TEST_FRAMEWORK_ROOT}/TestFramework.h)
+	set_property(TARGET TestFramework PROPERTY LINKER_LANGUAGE CXX)
+endif()
+
 target_include_directories(TestFramework PUBLIC ${TEST_FRAMEWORK_ROOT})
 target_link_libraries (TestFramework LINK_PUBLIC Jolt)
+target_precompile_headers(TestFramework PRIVATE ${TEST_FRAMEWORK_ROOT}/TestFramework.h)

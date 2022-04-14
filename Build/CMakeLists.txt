@@ -28,7 +28,7 @@ endif()
 if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 	# Fill in the path to the asan libraries
 	set(CLANG_LIB_PATH "\"$(VSInstallDir)\\VC\\Tools\\Llvm\\x64\\lib\\clang\\${CMAKE_CXX_COMPILER_VERSION}\\lib\\windows\"")
-	
+
 	# 64 bit architecture
 	set(CMAKE_VS_PLATFORM_TOOLSET_HOST_ARCHITECTURE "x64")
 
@@ -36,8 +36,8 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 	set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 	# Set general compiler flags
-	set(CMAKE_CXX_FLAGS "/std:c++17 /Zc:__cplusplus /GR- /Gm- /Wall /WX /EHsc /nologo /diagnostics:classic /FC /fp:except- /Zc:inline /Zi /DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE")
-	
+	set(CMAKE_CXX_FLAGS "/std:c++17 /Zc:__cplusplus /GR- /Gm- /Wall /EHsc /nologo /diagnostics:classic /FC /fp:except- /Zc:inline /Zi /DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE")
+
 	# Set compiler flags for various configurations
 	set(CMAKE_CXX_FLAGS_DEBUG "/GS /Od /Ob0 /RTC1")
 	set(CMAKE_CXX_FLAGS_RELEASE "/GS- /GL /Gy /O2 /Oi /Ot")
@@ -47,14 +47,14 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 	set(CMAKE_CXX_FLAGS_RELEASECOVERAGE "-fprofile-instr-generate -fcoverage-mapping")
 
 	# Set linker flags
-	set(CMAKE_EXE_LINKER_FLAGS "/machine:x64 /SUBSYSTEM:WINDOWS /ignore:4221 /DEBUG:FASTLINK")
+	set(CMAKE_EXE_LINKER_FLAGS "/SUBSYSTEM:WINDOWS /ignore:4221 /DEBUG:FASTLINK")
 	if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
 		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP /fp:fast") # Clang doesn't use fast math because it cannot be turned off inside a single compilation unit
 		if (USE_AVX2)
 			set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /arch:AVX2")
 		elseif (USE_AVX)
 			set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /arch:AVX")
-		endif()	
+		endif()
 		if (USE_SSE4_1)
 			add_compile_definitions(JPH_USE_SSE4_1)
 		endif()
@@ -168,10 +168,10 @@ set(PHYSICS_REPO_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../)
 include(${PHYSICS_REPO_ROOT}/Jolt/Jolt.cmake)
 if (IOS)
 	# Ensure that we enable SSE4.2 for the x86_64 build, CMAKE_SYSTEM_PROCESSOR is not set for iOS
-	set_property(TARGET Jolt PROPERTY XCODE_ATTRIBUTE_OTHER_CPLUSPLUSFLAGS[arch=x86_64] "$(inherited) -msse4.2 -mpopcnt") 
+	set_property(TARGET Jolt PROPERTY XCODE_ATTRIBUTE_OTHER_CPLUSPLUSFLAGS[arch=x86_64] "$(inherited) -msse4.2 -mpopcnt")
 endif()
 
-if (TARGET_UNIT_TESTS)
+if (TARGET_UNIT_TESTS AND (CMAKE_SIZEOF_VOID_P EQUAL 8))
     # Create UnitTests executable
     include(${PHYSICS_REPO_ROOT}/UnitTests/UnitTests.cmake)
     add_executable(UnitTests ${UNIT_TESTS_SRC_FILES})
@@ -195,7 +195,7 @@ if (TARGET_UNIT_TESTS)
     add_test(UnitTests UnitTests)
 endif()
 
-if (TARGET_HELLO_WORLD)
+if (TARGET_HELLO_WORLD AND (CMAKE_SIZEOF_VOID_P EQUAL 8))
 	# Example 'Hello World' application
 	include(${PHYSICS_REPO_ROOT}/HelloWorld/HelloWorld.cmake)
 	add_executable(HelloWorld ${HELLO_WORLD_SRC_FILES})
@@ -206,7 +206,7 @@ if (TARGET_HELLO_WORLD)
 	endif()
 endif()
 
-if (TARGET_PERFORMANCE_TEST)
+if (TARGET_PERFORMANCE_TEST AND (CMAKE_SIZEOF_VOID_P EQUAL 8))
 	# Performance Test application
 	include(${PHYSICS_REPO_ROOT}/PerformanceTest/PerformanceTest.cmake)
 	add_executable(PerformanceTest ${PERFORMANCE_TEST_SRC_FILES})
@@ -218,7 +218,7 @@ if (TARGET_PERFORMANCE_TEST)
 	set_property(TARGET PerformanceTest PROPERTY VS_DEBUGGER_WORKING_DIRECTORY "${PHYSICS_REPO_ROOT}")
 endif()
 
-if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
+if (("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows") AND (CMAKE_SIZEOF_VOID_P EQUAL 8))
 	# Windows only targets
 	if (TARGET_SAMPLES OR TARGET_VIEWER)
 		include(${PHYSICS_REPO_ROOT}/TestFramework/TestFramework.cmake)

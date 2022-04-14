@@ -381,7 +381,12 @@ if ("${CMAKE_SYSTEM_NAME}" STREQUAL "Windows")
 endif()
 
 # Create Jolt lib
-add_library(Jolt STATIC ${JOLT_PHYSICS_SRC_FILES})
+if (CMAKE_SIZEOF_VOID_P EQUAL 8)
+	add_library(Jolt STATIC ${JOLT_PHYSICS_SRC_FILES})
+else()
+	add_library(Jolt STATIC ${JOLT_PHYSICS_ROOT}/Jolt.h)
+	set_property(TARGET Jolt PROPERTY LINKER_LANGUAGE CXX)
+endif()
 
 target_precompile_headers(Jolt PRIVATE ${JOLT_PHYSICS_ROOT}/Jolt.h)
 

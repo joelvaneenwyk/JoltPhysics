@@ -41,6 +41,8 @@
 #if defined(__x86_64__) || defined(_M_X64)
 	// X86 CPU architecture
 	#define JPH_CPU_X64
+	#define JPH_CPU_64BIT
+
 	#define JPH_USE_SSE
 
 	// Detect enabled instruction sets
@@ -80,8 +82,10 @@
 	// ARM64 CPU architecture
 	#define JPH_CPU_ARM64
 	#define JPH_USE_NEON
+	#define JPH_CPU_64BIT
 #else
-	#error Unsupported CPU architecture
+	#define JPH_CPU_X86
+	#define JPH_CPU_32BIT
 #endif
 
 // Pragmas to store / restore the warning state and to disable individual warnings
@@ -159,12 +163,12 @@
 // OS-specific includes
 #if defined(JPH_PLATFORM_WINDOWS)
 	#define JPH_BREAKPOINT		__debugbreak()
-#elif defined(JPH_PLATFORM_BLUE) 
+#elif defined(JPH_PLATFORM_BLUE)
 	// Configuration for a popular game console.
-	// This file is not distributed because it would violate an NDA. 
-	// Creating one should only be a couple of minutes of work if you have the documentation for the platform 
+	// This file is not distributed because it would violate an NDA.
+	// Creating one should only be a couple of minutes of work if you have the documentation for the platform
 	// (you only need to define JPH_BREAKPOINT, JPH_PLATFORM_BLUE_GET_TICKS and JPH_PLATFORM_BLUE_GET_TICK_FREQUENCY and include the right header).
-	#include <Jolt/Core/PlatformBlue.h> 
+	#include <Jolt/Core/PlatformBlue.h>
 #elif defined(JPH_PLATFORM_LINUX) || defined(JPH_PLATFORM_ANDROID) || defined(JPH_PLATFORM_MACOS) || defined(JPH_PLATFORM_IOS)
 	#include <float.h>
 	#include <limits.h>
@@ -234,7 +238,12 @@ static_assert(sizeof(uint8) == 1, "Invalid size of uint8");
 static_assert(sizeof(uint16) == 2, "Invalid size of uint16");
 static_assert(sizeof(uint32) == 4, "Invalid size of uint32");
 static_assert(sizeof(uint64) == 8, "Invalid size of uint64");
+
+#if defined(JPH_CPU_X64) || defined(JPH_CPU_ARM64)
 static_assert(sizeof(void *) == 8, "Invalid size of pointer");
+#else
+static_assert(sizeof(void *) == 4, "Invalid size of pointer");
+#endif
 
 // Define inline macro
 #if defined(JPH_COMPILER_CLANG) || defined(JPH_COMPILER_GCC)
@@ -261,7 +270,7 @@ static_assert(sizeof(void *) == 8, "Invalid size of pointer");
 
 // Stack allocation
 #define JPH_STACK_ALLOC(n)		alloca(n)
-	
+
 // Shorthand for #ifdef _DEBUG / #endif
 #ifdef _DEBUG
 	#define JPH_IF_DEBUG(...)	__VA_ARGS__
