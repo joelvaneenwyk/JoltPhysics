@@ -128,13 +128,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a509aafb031d301cbef7e2efdd16ee3dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#a509aafb031d301cbef7e2efdd16ee3dd">SetInverseInertia</a> (<a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inDiagonal, <a class="el" href="_math_types_8h.html#a63bb148630fd505cb6f2bd0d69182a34">QuatArg</a> inRot)</td></tr>
 <tr class="memdesc:a509aafb031d301cbef7e2efdd16ee3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inverse inertia tensor in local space by setting the diagonal and the rotation: \(I_{body}^{-1} = R \: D \: R^{-1}\).  <a href="class_motion_properties.html#a509aafb031d301cbef7e2efdd16ee3dd">More...</a><br /></td></tr>
 <tr class="separator:a509aafb031d301cbef7e2efdd16ee3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad52e9ac8d614918a8dc9c80f22b4847e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#ad52e9ac8d614918a8dc9c80f22b4847e">GetLocalSpaceInverseInertia</a> () const</td></tr>
+<tr class="memitem:ad52e9ac8d614918a8dc9c80f22b4847e"><td class="memItemLeft" align="right" valign="top">Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#ad52e9ac8d614918a8dc9c80f22b4847e">GetLocalSpaceInverseInertia</a> () const</td></tr>
 <tr class="memdesc:ad52e9ac8d614918a8dc9c80f22b4847e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inverse inertia matrix ( \(I_{body}^{-1}\)). Will be a matrix of zeros for a static or kinematic object.  <a href="class_motion_properties.html#ad52e9ac8d614918a8dc9c80f22b4847e">More...</a><br /></td></tr>
 <tr class="separator:ad52e9ac8d614918a8dc9c80f22b4847e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a994dad1b2bf71b0f0394bec77fcb9b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#a994dad1b2bf71b0f0394bec77fcb9b8e">GetLocalSpaceInverseInertiaUnchecked</a> () const</td></tr>
+<tr class="memitem:a994dad1b2bf71b0f0394bec77fcb9b8e"><td class="memItemLeft" align="right" valign="top">Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#a994dad1b2bf71b0f0394bec77fcb9b8e">GetLocalSpaceInverseInertiaUnchecked</a> () const</td></tr>
 <tr class="memdesc:a994dad1b2bf71b0f0394bec77fcb9b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="class_motion_properties.html#ad52e9ac8d614918a8dc9c80f22b4847e" title="Get inverse inertia matrix ( ). Will be a matrix of zeros for a static or kinematic object.">GetLocalSpaceInverseInertia()</a> but doesn't check if the body is dynamic.  <a href="class_motion_properties.html#a994dad1b2bf71b0f0394bec77fcb9b8e">More...</a><br /></td></tr>
 <tr class="separator:a994dad1b2bf71b0f0394bec77fcb9b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab95f2b1c9b6bd9b6082f8cee8a7e1858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#ab95f2b1c9b6bd9b6082f8cee8a7e1858">GetInverseInertiaForRotation</a> (<a class="el" href="_math_types_8h.html#af10dd31c5ad4acb62aba8025732597e6">Mat44Arg</a> inRotation) const</td></tr>
+<tr class="memitem:ab95f2b1c9b6bd9b6082f8cee8a7e1858"><td class="memItemLeft" align="right" valign="top">Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#ab95f2b1c9b6bd9b6082f8cee8a7e1858">GetInverseInertiaForRotation</a> (<a class="el" href="_math_types_8h.html#af10dd31c5ad4acb62aba8025732597e6">Mat44Arg</a> inRotation) const</td></tr>
 <tr class="memdesc:ab95f2b1c9b6bd9b6082f8cee8a7e1858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get inverse inertia matrix ( \(I^{-1}\)) for a given object rotation (translation will be ignored). Zero if object is static or kinematic.  <a href="class_motion_properties.html#ab95f2b1c9b6bd9b6082f8cee8a7e1858">More...</a><br /></td></tr>
 <tr class="separator:ab95f2b1c9b6bd9b6082f8cee8a7e1858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a73ea7940a316151262ed9a28c4fbb"><td class="memItemLeft" align="right" valign="top">JPH_INLINE <a class="el" href="class_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motion_properties.html#aa8a73ea7940a316151262ed9a28c4fbb">MultiplyWorldSpaceInverseInertiaByVector</a> (<a class="el" href="_math_types_8h.html#a63bb148630fd505cb6f2bd0d69182a34">QuatArg</a> inBodyRotation, <a class="el" href="_math_types_8h.html#a649dd5cac54d4587b34e8ed889b69cef">Vec3Arg</a> inV) const</td></tr>
@@ -517,7 +517,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_mat44.html">Mat44</a> MotionProperties::GetInverseInertiaForRotation </td>
+          <td class="memname">Mat44 MotionProperties::GetInverseInertiaForRotation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_math_types_8h.html#af10dd31c5ad4acb62aba8025732597e6">Mat44Arg</a>&#160;</td>
           <td class="paramname"><em>inRotation</em></td><td>)</td>
@@ -678,7 +678,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_mat44.html">Mat44</a> MotionProperties::GetLocalSpaceInverseInertia </td>
+          <td class="memname">Mat44 MotionProperties::GetLocalSpaceInverseInertia </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -705,7 +705,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_mat44.html">Mat44</a> MotionProperties::GetLocalSpaceInverseInertiaUnchecked </td>
+          <td class="memname">Mat44 MotionProperties::GetLocalSpaceInverseInertiaUnchecked </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

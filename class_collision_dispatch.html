@@ -194,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Cast a shape againt this shape, passes any hits found to ioCollector. Note that the shape cast should be relative to the center of mass of this shape (i.e. inShapeCast.mCenterOfMassStart = Start * <a class="el" href="class_mat44.html#a8cc7184902ce670d0822a28a8906df52" title="Get matrix that translates.">Mat44::sTranslation</a>(mShape-&gt;GetCenterOfMass()) if you want to cast the shape in the space it was created). </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Cast a shape againt this shape, passes any hits found to ioCollector. Note that the shape cast should be relative to the center of mass of this shape (i.e. inShapeCast.mCenterOfMassStart = Start * Mat44::sTranslation(mShape-&gt;GetCenterOfMass()) if you want to cast the shape in the space it was created). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inShapeCast</td><td>The shape to cast against the other shape and its start and direction </td></tr>
     <tr><td class="paramname">inShapeCastSettings</td><td>Settings for performing the cast </td></tr>

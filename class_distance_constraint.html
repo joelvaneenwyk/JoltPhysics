@@ -93,10 +93,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a748c652cfab4475e85d97ed4caf42c79"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_distance_constraint.html#a748c652cfab4475e85d97ed4caf42c79">RestoreState</a> (<a class="el" href="class_state_recorder.html">StateRecorder</a> &amp;inStream) override</td></tr>
 <tr class="memdesc:a748c652cfab4475e85d97ed4caf42c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restoring state for replay.  <a href="class_distance_constraint.html#a748c652cfab4475e85d97ed4caf42c79">More...</a><br /></td></tr>
 <tr class="separator:a748c652cfab4475e85d97ed4caf42c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc0247d5a56e7448372aea456e0bd04"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_distance_constraint.html#affc0247d5a56e7448372aea456e0bd04">GetConstraintToBody1Matrix</a> () const override</td></tr>
+<tr class="memitem:affc0247d5a56e7448372aea456e0bd04"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_distance_constraint.html#affc0247d5a56e7448372aea456e0bd04">GetConstraintToBody1Matrix</a> () const override</td></tr>
 <tr class="memdesc:affc0247d5a56e7448372aea456e0bd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 1 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_distance_constraint.html#affc0247d5a56e7448372aea456e0bd04">More...</a><br /></td></tr>
 <tr class="separator:affc0247d5a56e7448372aea456e0bd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c46e7b4a137df6a68f9bd7752ee0cc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_distance_constraint.html#a32c46e7b4a137df6a68f9bd7752ee0cc">GetConstraintToBody2Matrix</a> () const override</td></tr>
+<tr class="memitem:a32c46e7b4a137df6a68f9bd7752ee0cc"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_distance_constraint.html#a32c46e7b4a137df6a68f9bd7752ee0cc">GetConstraintToBody2Matrix</a> () const override</td></tr>
 <tr class="memdesc:a32c46e7b4a137df6a68f9bd7752ee0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 2 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_distance_constraint.html#a32c46e7b4a137df6a68f9bd7752ee0cc">More...</a><br /></td></tr>
 <tr class="separator:a32c46e7b4a137df6a68f9bd7752ee0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acac4686ff8fd7d2e412af5cfcaea8d2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_distance_constraint.html#acac4686ff8fd7d2e412af5cfcaea8d2c">SetDistance</a> (float inMinDistance, float inMaxDistance)</td></tr>
@@ -128,10 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae09dc01720e01f71e480f2ce3da32918 inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ede1df27455ff0177a7a4501bf3342a inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_body.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a9ede1df27455ff0177a7a4501bf3342a">GetBody2</a> () const</td></tr>
 <tr class="separator:a9ede1df27455ff0177a7a4501bf3342a inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0edd748869643b1c904a7bc1314dad7a">GetConstraintToBody1Matrix</a> () const =0</td></tr>
+<tr class="memitem:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0edd748869643b1c904a7bc1314dad7a">GetConstraintToBody1Matrix</a> () const =0</td></tr>
 <tr class="memdesc:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 1 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_two_body_constraint.html#a0edd748869643b1c904a7bc1314dad7a">More...</a><br /></td></tr>
 <tr class="separator:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0966503073a315b6087f10208e8a61ff">GetConstraintToBody2Matrix</a> () const =0</td></tr>
+<tr class="memitem:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0966503073a315b6087f10208e8a61ff">GetConstraintToBody2Matrix</a> () const =0</td></tr>
 <tr class="memdesc:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 2 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_two_body_constraint.html#a0966503073a315b6087f10208e8a61ff">More...</a><br /></td></tr>
 <tr class="separator:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b2ede88a6180a8bff9fe873ff38619 inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#ae5b2ede88a6180a8bff9fe873ff38619">BuildIslands</a> (<a class="el" href="_core_8h.html#a5522c54735d837fae7d6ba026b858441">uint32</a> inConstraintIndex, <a class="el" href="class_island_builder.html">IslandBuilder</a> &amp;ioBuilder, <a class="el" href="class_body_manager.html">BodyManager</a> &amp;inBodyManager) override</td></tr>
@@ -262,7 +262,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_mat44.html">Mat44</a> DistanceConstraint::GetConstraintToBody1Matrix </td>
+          <td class="memname">virtual Mat44 DistanceConstraint::GetConstraintToBody1Matrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -291,7 +291,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_mat44.html">Mat44</a> DistanceConstraint::GetConstraintToBody2Matrix </td>
+          <td class="memname">virtual Mat44 DistanceConstraint::GetConstraintToBody2Matrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

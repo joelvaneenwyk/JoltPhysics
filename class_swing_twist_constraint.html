@@ -91,10 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8a66fa8ace006007551e20f26859e60"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swing_twist_constraint.html#ab8a66fa8ace006007551e20f26859e60">RestoreState</a> (<a class="el" href="class_state_recorder.html">StateRecorder</a> &amp;inStream) override</td></tr>
 <tr class="memdesc:ab8a66fa8ace006007551e20f26859e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restoring state for replay.  <a href="class_swing_twist_constraint.html#ab8a66fa8ace006007551e20f26859e60">More...</a><br /></td></tr>
 <tr class="separator:ab8a66fa8ace006007551e20f26859e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab89ec6165c3789f22964700f21695c32"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swing_twist_constraint.html#ab89ec6165c3789f22964700f21695c32">GetConstraintToBody1Matrix</a> () const override</td></tr>
+<tr class="memitem:ab89ec6165c3789f22964700f21695c32"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swing_twist_constraint.html#ab89ec6165c3789f22964700f21695c32">GetConstraintToBody1Matrix</a> () const override</td></tr>
 <tr class="memdesc:ab89ec6165c3789f22964700f21695c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 1 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_swing_twist_constraint.html#ab89ec6165c3789f22964700f21695c32">More...</a><br /></td></tr>
 <tr class="separator:ab89ec6165c3789f22964700f21695c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ada7d7eadcc3f9d235cb1d8c75f3e4a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swing_twist_constraint.html#a2ada7d7eadcc3f9d235cb1d8c75f3e4a">GetConstraintToBody2Matrix</a> () const override</td></tr>
+<tr class="memitem:a2ada7d7eadcc3f9d235cb1d8c75f3e4a"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_swing_twist_constraint.html#a2ada7d7eadcc3f9d235cb1d8c75f3e4a">GetConstraintToBody2Matrix</a> () const override</td></tr>
 <tr class="memdesc:a2ada7d7eadcc3f9d235cb1d8c75f3e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 2 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_swing_twist_constraint.html#a2ada7d7eadcc3f9d235cb1d8c75f3e4a">More...</a><br /></td></tr>
 <tr class="separator:a2ada7d7eadcc3f9d235cb1d8c75f3e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constraint reference frame</div></td></tr>
@@ -173,10 +173,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae09dc01720e01f71e480f2ce3da32918 inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ede1df27455ff0177a7a4501bf3342a inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_body.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a9ede1df27455ff0177a7a4501bf3342a">GetBody2</a> () const</td></tr>
 <tr class="separator:a9ede1df27455ff0177a7a4501bf3342a inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0edd748869643b1c904a7bc1314dad7a">GetConstraintToBody1Matrix</a> () const =0</td></tr>
+<tr class="memitem:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0edd748869643b1c904a7bc1314dad7a">GetConstraintToBody1Matrix</a> () const =0</td></tr>
 <tr class="memdesc:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 1 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_two_body_constraint.html#a0edd748869643b1c904a7bc1314dad7a">More...</a><br /></td></tr>
 <tr class="separator:a0edd748869643b1c904a7bc1314dad7a inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0966503073a315b6087f10208e8a61ff">GetConstraintToBody2Matrix</a> () const =0</td></tr>
+<tr class="memitem:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual Mat44&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#a0966503073a315b6087f10208e8a61ff">GetConstraintToBody2Matrix</a> () const =0</td></tr>
 <tr class="memdesc:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transform that transforms from constraint space to body 2 space. The first column of the matrix is the primary constraint axis (e.g. the hinge axis / slider direction), second column the secondary etc.  <a href="class_two_body_constraint.html#a0966503073a315b6087f10208e8a61ff">More...</a><br /></td></tr>
 <tr class="separator:a0966503073a315b6087f10208e8a61ff inherit pub_methods_class_two_body_constraint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b2ede88a6180a8bff9fe873ff38619 inherit pub_methods_class_two_body_constraint"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_two_body_constraint.html#ae5b2ede88a6180a8bff9fe873ff38619">BuildIslands</a> (<a class="el" href="_core_8h.html#a5522c54735d837fae7d6ba026b858441">uint32</a> inConstraintIndex, <a class="el" href="class_island_builder.html">IslandBuilder</a> &amp;ioBuilder, <a class="el" href="class_body_manager.html">BodyManager</a> &amp;inBodyManager) override</td></tr>
@@ -341,7 +341,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_mat44.html">Mat44</a> SwingTwistConstraint::GetConstraintToBody1Matrix </td>
+          <td class="memname">virtual Mat44 SwingTwistConstraint::GetConstraintToBody1Matrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -395,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_mat44.html">Mat44</a> SwingTwistConstraint::GetConstraintToBody2Matrix </td>
+          <td class="memname">virtual Mat44 SwingTwistConstraint::GetConstraintToBody2Matrix </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

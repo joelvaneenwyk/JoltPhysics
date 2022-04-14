@@ -917,8 +917,6 @@ class_lock_free_hash_map_1_1_key_value-members.html
 class_lock_free_hash_map_1_1_key_value.html
 class_mass_properties-members.html
 class_mass_properties.html
-class_mat44-members.html
-class_mat44.html
 class_matrix-members.html
 class_matrix.html
 class_mesh_shape-members.html
@@ -1215,8 +1213,6 @@ class_unique_lock-members.html
 class_unique_lock.html
 class_vec3-members.html
 class_vec3.html
-class_vec4-members.html
-class_vec4.html
 class_vec8-members.html
 class_vec8.html
 class_vector-members.html

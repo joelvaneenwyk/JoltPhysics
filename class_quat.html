@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afa7fe10bf8a457fb2d524791ccd79ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the imaginary part of the quaternion.  <a href="class_quat.html#afa7fe10bf8a457fb2d524791ccd79ec4">More...</a><br /></td></tr>
 <tr class="separator:afa7fe10bf8a457fb2d524791ccd79ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d3a4be2202c90a04f26872ab88c4b01"><td class="memItemLeft" align="right" valign="top">JPH_INLINE <a class="el" href="_math_types_8h.html#a65d26967b0fb36c525cedad5022e5ebe">Vec4Arg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quat.html#a3d3a4be2202c90a04f26872ab88c4b01">GetXYZW</a> () const</td></tr>
-<tr class="memdesc:a3d3a4be2202c90a04f26872ab88c4b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the quaternion as a <a class="el" href="class_vec4.html">Vec4</a>.  <a href="class_quat.html#a3d3a4be2202c90a04f26872ab88c4b01">More...</a><br /></td></tr>
+<tr class="memdesc:a3d3a4be2202c90a04f26872ab88c4b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the quaternion as a Vec4.  <a href="class_quat.html#a3d3a4be2202c90a04f26872ab88c4b01">More...</a><br /></td></tr>
 <tr class="separator:a3d3a4be2202c90a04f26872ab88c4b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Length / normalization operations &lt;br&gt;</div></td></tr>
 <tr class="memitem:a60f30c650e027a892e699c156c7eca67"><td class="memItemLeft" align="right" valign="top">JPH_INLINE float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quat.html#a60f30c650e027a892e699c156c7eca67">LengthSq</a> () const</td></tr>
@@ -192,7 +192,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:afad087a5997d1318f544b5c9819c4d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quat.html#afad087a5997d1318f544b5c9819c4d9b">mValue</a></td></tr>
+<tr class="memitem:afad087a5997d1318f544b5c9819c4d9b"><td class="memItemLeft" align="right" valign="top">Vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quat.html#afad087a5997d1318f544b5c9819c4d9b">mValue</a></td></tr>
 <tr class="memdesc:afad087a5997d1318f544b5c9819c4d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">4 vector that stores [x, y, z, w] parts of the quaternion  <a href="class_quat.html#afad087a5997d1318f544b5c9819c4d9b">More...</a><br /></td></tr>
 <tr class="separator:afad087a5997d1318f544b5c9819c4d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -234,7 +234,7 @@ Friends</h2></td></tr>
 <p >\(q = [w, v] = [w, x, y, z]\)</p>
 <p >Where:</p>
 <p >w = the real part v = the imaginary part, (x, y, z)</p>
-<p >Note that we store the quaternion in a <a class="el" href="class_vec4.html">Vec4</a> as [x, y, z, w] because that makes it easy to extract the rotation axis of the quaternion:</p>
+<p >Note that we store the quaternion in a Vec4 as [x, y, z, w] because that makes it easy to extract the rotation axis of the quaternion:</p>
 <p >q = [cos(angle / 2), sin(angle / 2) * rotation_axis] </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab09b7638f6936a9ad7a1e4ffce606e8" name="aab09b7638f6936a9ad7a1e4ffce606e8"></a>
@@ -734,7 +734,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the quaternion as a <a class="el" href="class_vec4.html">Vec4</a>. </p>
+<p>Get the quaternion as a Vec4. </p>
 
 </div>
 </div>
@@ -1783,7 +1783,7 @@ template&lt;class Random &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_vec4.html">Vec4</a> Quat::mValue</td>
+          <td class="memname">Vec4 Quat::mValue</td>
         </tr>
       </table>
 </div><div class="memdoc">
