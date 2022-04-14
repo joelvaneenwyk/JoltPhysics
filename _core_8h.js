@@ -10,6 +10,7 @@ var _core_8h =
     [ "JPH_IF_DEBUG", "_core_8h.html#a3feba9adfefa0cf951f6b4aeb4990fb4", null ],
     [ "JPH_IF_NOT_ANDROID", "_core_8h.html#aac5e592f9e714fda0c006772758e3c6f", null ],
     [ "JPH_MSVC_SUPPRESS_WARNING", "_core_8h.html#a7e50ac7352b8f5948a91b543756c84a8", null ],
+    [ "JPH_MSVC_SUPPRESSS_WARNING_V1927", "_core_8h.html#a6e96f30959c1266ce81e4986e9876d98", null ],
     [ "JPH_NAMESPACE_BEGIN", "_core_8h.html#ad14098b68b8c44ea6112601031268405", null ],
     [ "JPH_NAMESPACE_END", "_core_8h.html#a73da8725998b00321a9db341202d650d", null ],
     [ "JPH_PLATFORM_WINDOWS", "_core_8h.html#a06421dbef09f6a781ed52965f5f5eac8", null ],

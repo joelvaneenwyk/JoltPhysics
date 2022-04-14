@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"class_quat.html#ab226b2147a748e53008556bcf1a3cd76":[3,0,181,43],
 "class_quat.html#ab93ff288ad62172d343e11ce4fbf07d0":[3,0,181,24],
 "class_quat.html#abba5ae611cba89b67e967945ffe32c8f":[3,0,181,9],
 "class_quat.html#abdb3a55008ba319143df69f97b94d7e5":[3,0,181,35],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "class_rotation_quat_constraint_part.html#ad464b428f6994ee02ac203b29c561324":[3,0,196,5],
 "class_s_t_l_aligned_allocator.html":[3,0,232],
 "class_s_t_l_aligned_allocator.html#a0004fb3a233bcaa84924f839156d06b3":[3,0,232,6],
-"class_s_t_l_aligned_allocator.html#a00f960ad0c626b48190ed45c3a9f4f93":[3,0,232,4],
-"class_s_t_l_aligned_allocator.html#a07e008a7bc893d0386c0e98f2f2d485e":[3,0,232,12]
+"class_s_t_l_aligned_allocator.html#a00f960ad0c626b48190ed45c3a9f4f93":[3,0,232,4]
 };

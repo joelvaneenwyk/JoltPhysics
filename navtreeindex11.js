@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"class_linear_curve.html#a24eda4be408b24e5dfeba9bf94edb295":[3,0,128,6],
 "class_linear_curve.html#a2d5721b04dfe7c3cb67ce8ae87ff3fe3":[3,0,128,11],
 "class_linear_curve.html#a7e8f85b447ccb50d077a1fd61da102e0":[3,0,128,9],
 "class_linear_curve.html#a97a229bd7bbda997fab1f22649afcd9c":[3,0,128,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "class_mutable_compound_shape.html#a6b947de024a9a91039f4b472072efdba":[3,0,139,12],
 "class_mutable_compound_shape.html#a82bca0ceeeaad1a0911752b5a062d37e":[3,0,139,7],
 "class_mutable_compound_shape.html#a9458aa61fe8880812c3268442fe3e2a3":[3,0,139,0],
-"class_mutable_compound_shape.html#aa1412a6fbb245ef5476d7c72597f7aa9":[3,0,139,1],
-"class_mutable_compound_shape.html#aabd799e121f048e83a6ef43490422fbe":[3,0,139,10]
+"class_mutable_compound_shape.html#aa1412a6fbb245ef5476d7c72597f7aa9":[3,0,139,1]
 };
