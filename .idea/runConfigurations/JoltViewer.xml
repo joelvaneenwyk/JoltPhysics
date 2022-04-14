@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="JoltViewer" type="CMakeRunConfiguration" factoryName="Application" folderName="Samples" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="JoltPhysics" TARGET_NAME="JoltViewer" CONFIG_NAME="Debug | x64" RUN_TARGET_PROJECT_NAME="JoltPhysics" RUN_TARGET_NAME="JoltViewer">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
