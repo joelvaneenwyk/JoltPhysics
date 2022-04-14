@@ -1,0 +1,39 @@
+#
+# Clang format for Jolt Physics
+#
+
+BasedOnStyle: WebKit
+
+AlignConsecutiveDeclarations: AcrossEmptyLines
+
+Standard: c++17
+
+UseTab: ForContinuationAndIndentation
+IndentWidth: 3
+TabWidth: 3
+ColumnLimit: 130
+ContinuationIndentWidth: 3
+
+AccessModifierOffset: -4
+AlignConsecutiveAssignments: AcrossEmptyLines
+AlignConsecutiveMacros: AcrossEmptyLines
+AlignAfterOpenBracket: AlwaysBreak
+AlignArrayOfStructures: Right
+AlignEscapedNewlines: DontAlign
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: true
+BinPackArguments: true
+BinPackParameters: false
+BreakBeforeBraces: Allman
+BreakConstructorInitializers: BeforeComma
+BreakStringLiterals: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+FixNamespaceComments: false
+IndentPPDirectives: AfterHash
+NamespaceIndentation: All
+SortIncludes: Never
+SpaceAfterTemplateKeyword: true
+SpaceBeforeParens: ControlStatements
+SpacesBeforeTrailingComments: 2
+SpacesInParentheses: false

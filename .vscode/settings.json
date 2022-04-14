@@ -1,11 +1,17 @@
 {
-    "cmake.buildDirectory": "${workspaceFolder}/Build/intermediate/vscode",
+    "C_Cpp.default.intelliSenseMode": "windows-msvc-x64",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "C_Cpp.loggingLevel": "Debug",
     "[cpp]": {
         "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": false,
         "editor.suggest.insertMode": "replace",
         "editor.semanticHighlighting.enabled": true
     },
+    "cmake.buildDirectory": "${workspaceFolder}/Build/intermediate/vscode",
     "cmake.sourceDirectory": "${workspaceFolder}/Build",
     "cSpell.words": [
         "Architecting",
